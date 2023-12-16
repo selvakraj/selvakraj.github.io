@@ -2948,11 +2948,10 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _desktop = require("./screens/Desktop");
-var _desktopDefault = parcelHelpers.interopDefault(_desktop);
+var _app = require("./App");
 const app = document.getElementById("app");
 const root = (0, _clientDefault.default).createRoot(app);
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktopDefault.default), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
     fileName: "src/index.jsx",
     lineNumber: 7,
     columnNumber: 13
@@ -2963,7 +2962,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktopDefault.default
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./screens/Desktop":"4vBH2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27150,1383 +27149,178 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"4vBH2":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$645c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"e9Zfo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2430 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$645c.prelude(module);
+$parcel$ReactRefreshHelpers$2430.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _desktop = require("./Desktop");
-var _page2 = require("./Page2");
-function App() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    exact: true,
-                    path: "/",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktop.Desktop), {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/index.js",
-                    lineNumber: 10,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/2023-research",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _page2.Page2), {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/index.js",
-                    lineNumber: 11,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/screens/Desktop/index.js",
-            lineNumber: 9,
-            columnNumber: 9
-        }, this)
+var _homeWrapper = require("./screens/WrapperScreens/HomeWrapper");
+var _screen12 = require("./screens/Screen12");
+var _screen7 = require("./screens/Screen7");
+var _desktopScreen = require("./screens/DesktopScreen");
+var _screen11 = require("./screens/Screen11");
+var _iphonePlus = require("./screens/IphonePlus");
+var _desktop = require("./screens/Desktop");
+var _iphonePlusScreen = require("./screens/IphonePlusScreen");
+var _divWrapper = require("./screens/DivWrapper");
+var _screen5 = require("./screens/Screen5");
+var _screen6 = require("./screens/Screen6");
+var _screen8 = require("./screens/Screen8");
+var _screen9 = require("./screens/Screen9");
+var _screen10 = require("./screens/Screen10");
+var _screen13 = require("./screens/Screen13");
+const router = (0, _reactRouterDom.createBrowserRouter)([
+    {
+        path: "/*",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeWrapper.HomeWrapper), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 25,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-1",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iphonePlus.IphonePlus), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 29,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/resources-tab-2",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktop.Desktop), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 33,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-2",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iphonePlusScreen.IphonePlusScreen), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 37,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/resources",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktopScreen.DesktopScreen), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 41,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-6",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _divWrapper.DivWrapper), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 45,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-5",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen5.Screen5), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 49,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-9",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen6.Screen6), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 53,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/research-details",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeWrapper.ResearchDetailsWrapper), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 57,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-8",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen8.Screen8), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 61,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-7",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen9.Screen9), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 65,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-3",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen10.Screen10), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 69,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/contact-us",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen11.Screen11), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 73,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/home",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen12.Screen12), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 77,
+            columnNumber: 14
+        }, undefined)
+    },
+    {
+        path: "/iphone-8-plus-4",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen13.Screen13), {}, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 81,
+            columnNumber: 14
+        }, undefined)
+    }
+]);
+const App = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+        router: router
     }, void 0, false, {
-        fileName: "src/screens/Desktop/index.js",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
+        fileName: "src/App.jsx",
+        lineNumber: 86,
+        columnNumber: 10
+    }, undefined);
+};
 _c = App;
-exports.default = App;
 var _c;
 $RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$645c.postlude(module);
+  $parcel$ReactRefreshHelpers$2430.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"./Desktop":"5c16b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Page2":"k9740","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5c16b":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e51c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e51c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Desktop", ()=>Desktop);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _component = require("../../components/Component");
-var _styleCss = require("./style.css");
-const Desktop = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "desktop",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "div",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "p",
-                            children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0B8E\u0BB5\u0BCD\u0BB5\u0BBE\u0BB1\u0BC1 \u0BA4\u0BA9\u0BBF \u0B9A\u0BBF\u0BB1\u0BAA\u0BCD\u0BAA\u0BC1\u0BAE\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BB0\u0BBE\u0B95 \u0BAE\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1\u0B95\u0BBF\u0BB1\u0BA4\u0BC1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-2",
-                            children: "2023 Research Highlights"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 13,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "group",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "group-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "text-wrapper-3",
-                                            children: "different research topics were submitted"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 16,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-4",
-                                            children: "28"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 17,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "time",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "overlap-group",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "ellipse"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 20,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                        className: "image",
-                                                        alt: "Image",
-                                                        src: "/img/image-37.png"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 21,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/screens/Desktop/Desktop.jsx",
-                                                lineNumber: 19,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 18,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 15,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "group-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-5",
-                                            children: "young tamil learners participated"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 26,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-6",
-                                            children: "58"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 27,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "overlap-group-wrapper",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "overlap-group-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "ellipse-2"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 30,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                        className: "img",
-                                                        alt: "Image",
-                                                        src: "/img/image-28.png"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 31,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/screens/Desktop/Desktop.jsx",
-                                                lineNumber: 29,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 28,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 25,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "group-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-7",
-                                            children: "of planned activities"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 36,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-wrapper-8",
-                                            children: "60 days"
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 37,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "overlap-group-wrapper",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "overlap-group-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "ellipse-3"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 40,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                        className: "img",
-                                                        alt: "Image",
-                                                        src: "/img/image-29.png"
-                                                    }, void 0, false, {
-                                                        fileName: "src/screens/Desktop/Desktop.jsx",
-                                                        lineNumber: 41,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/screens/Desktop/Desktop.jsx",
-                                                lineNumber: 39,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/screens/Desktop/Desktop.jsx",
-                                            lineNumber: 38,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 35,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 14,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "image-wrapper",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "image-2",
-                                alt: "Image",
-                                src: "/img/image-36.png"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Desktop.jsx",
-                                lineNumber: 47,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 46,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "div-wrapper",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-9",
-                                children: "View All Researches"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Desktop.jsx",
-                                lineNumber: 50,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Desktop/Desktop.jsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "navbar",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/",
-                                    className: "text-wrapper-10",
-                                    children: "Home"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 55,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-11",
-                                    children: "Program Details"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 56,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/2023-research",
-                                    className: "text-wrapper-12",
-                                    children: "2023 Research"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 57,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-13",
-                                    children: "About"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 58,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-14",
-                                    children: "Contact"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 59,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "rectangle"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 60,
-                                    columnNumber: 15
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "group-5",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-wrapper-15",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit, orci sit amet maximus."
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 63,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-wrapper-16",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit, orci sit amet maximus."
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 66,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-wrapper-17",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit, orci sit amet maximus."
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-wrapper-18",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit, orci sit amet maximus."
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 72,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-19",
-                                    children: "Register"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 75,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-20",
-                                    children: "Research"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 76,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-21",
-                                    children: "Evaluate"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 77,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-22",
-                                    children: "Submit"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 78,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-23",
-                                    children: "How it works?"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 79,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text",
-                                    children: ""
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 80,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "image-3",
-                                    alt: "Image",
-                                    src: "/img/image-31.png"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 81,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "image-4",
-                                    alt: "Image",
-                                    src: "/img/image-32.png"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 82,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "image-5",
-                                    alt: "Image",
-                                    src: "/img/image-33.png"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 83,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "image-6",
-                                    alt: "Image",
-                                    src: "/img/image-34.png"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 84,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "line",
-                                    alt: "Line",
-                                    src: "/img/line-1.svg"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Desktop.jsx",
-                                    lineNumber: 85,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 62,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Desktop/Desktop.jsx",
-                    lineNumber: 53,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "group-6",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-24",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 89,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-25",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 90,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-26",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 91,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-27",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 92,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-28",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 93,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-29",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 94,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-30",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 95,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-31",
-                            children: "Topic 1"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 96,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-32",
-                            children: "Research Topics"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 97,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-2"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 98,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-3"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 99,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-4"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 100,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-5"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 101,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-6"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 102,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-7"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 103,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-8"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 104,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "rectangle-9"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Desktop.jsx",
-                            lineNumber: 105,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Desktop/Desktop.jsx",
-                    lineNumber: 88,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
-                    className: "component-1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Desktop.jsx",
-                    lineNumber: 107,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/screens/Desktop/Desktop.jsx",
-            lineNumber: 10,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/screens/Desktop/Desktop.jsx",
-        lineNumber: 9,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Desktop;
-var _c;
-$RefreshReg$(_c, "Desktop");
-
-  $parcel$ReactRefreshHelpers$e51c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/Component":"eLDOD","./style.css":"71OGf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"eLDOD":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Component", ()=>(0, _component.Component));
-var _component = require("./Component");
-
-},{"./Component":"2AZAu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2AZAu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1462 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1462.prelude(module);
-
-try {
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Component", ()=>Component);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _styleCss = require("./style.css");
-const Component = ({ className })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `component ${className}`,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "text-wrapper",
-                children: "@Schamburg Tamil Fair 2024"
-            }, void 0, false, {
-                fileName: "src/components/Component/Component.jsx",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "resarch",
-                alt: "Resarch",
-                src: "/img/resarch-badge2024-2.png"
-            }, void 0, false, {
-                fileName: "src/components/Component/Component.jsx",
-                lineNumber: 13,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Component/Component.jsx",
-        lineNumber: 11,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Component;
-var _c;
-$RefreshReg$(_c, "Component");
-
-  $parcel$ReactRefreshHelpers$1462.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"Ptj5i","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Ptj5i":[function() {},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"jEdJI"}],"jEdJI":[function(require,module,exports) {
-"use strict";
-module.exports = require("9e039173d01172ab");
-
-},{"9e039173d01172ab":"uTjV2"}],"uTjV2":[function(require,module,exports) {
-/** @license React v0.9.0
- * react-refresh-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var REACT_ELEMENT_TYPE = 0xeac7;
-    var REACT_PORTAL_TYPE = 0xeaca;
-    var REACT_FRAGMENT_TYPE = 0xeacb;
-    var REACT_STRICT_MODE_TYPE = 0xeacc;
-    var REACT_PROFILER_TYPE = 0xead2;
-    var REACT_PROVIDER_TYPE = 0xeacd;
-    var REACT_CONTEXT_TYPE = 0xeace;
-    var REACT_FORWARD_REF_TYPE = 0xead0;
-    var REACT_SUSPENSE_TYPE = 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-    var REACT_MEMO_TYPE = 0xead3;
-    var REACT_LAZY_TYPE = 0xead4;
-    var REACT_BLOCK_TYPE = 0xead9;
-    var REACT_SERVER_BLOCK_TYPE = 0xeada;
-    var REACT_FUNDAMENTAL_TYPE = 0xead5;
-    var REACT_SCOPE_TYPE = 0xead7;
-    var REACT_OPAQUE_ID_TYPE = 0xeae0;
-    var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-    var REACT_OFFSCREEN_TYPE = 0xeae2;
-    var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
-    if (typeof Symbol === "function" && Symbol.for) {
-        var symbolFor = Symbol.for;
-        REACT_ELEMENT_TYPE = symbolFor("react.element");
-        REACT_PORTAL_TYPE = symbolFor("react.portal");
-        REACT_FRAGMENT_TYPE = symbolFor("react.fragment");
-        REACT_STRICT_MODE_TYPE = symbolFor("react.strict_mode");
-        REACT_PROFILER_TYPE = symbolFor("react.profiler");
-        REACT_PROVIDER_TYPE = symbolFor("react.provider");
-        REACT_CONTEXT_TYPE = symbolFor("react.context");
-        REACT_FORWARD_REF_TYPE = symbolFor("react.forward_ref");
-        REACT_SUSPENSE_TYPE = symbolFor("react.suspense");
-        REACT_SUSPENSE_LIST_TYPE = symbolFor("react.suspense_list");
-        REACT_MEMO_TYPE = symbolFor("react.memo");
-        REACT_LAZY_TYPE = symbolFor("react.lazy");
-        REACT_BLOCK_TYPE = symbolFor("react.block");
-        REACT_SERVER_BLOCK_TYPE = symbolFor("react.server.block");
-        REACT_FUNDAMENTAL_TYPE = symbolFor("react.fundamental");
-        REACT_SCOPE_TYPE = symbolFor("react.scope");
-        REACT_OPAQUE_ID_TYPE = symbolFor("react.opaque.id");
-        REACT_DEBUG_TRACING_MODE_TYPE = symbolFor("react.debug_trace_mode");
-        REACT_OFFSCREEN_TYPE = symbolFor("react.offscreen");
-        REACT_LEGACY_HIDDEN_TYPE = symbolFor("react.legacy_hidden");
-    }
-    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map; // We never remove these associations.
-    // It's OK to reference families, but use WeakMap/Set for types.
-    var allFamiliesByID = new Map();
-    var allFamiliesByType = new PossiblyWeakMap();
-    var allSignaturesByType = new PossiblyWeakMap(); // This WeakMap is read by React, so we only put families
-    // that have actually been edited here. This keeps checks fast.
-    // $FlowIssue
-    var updatedFamiliesByType = new PossiblyWeakMap(); // This is cleared on every performReactRefresh() call.
-    // It is an array of [Family, NextType] tuples.
-    var pendingUpdates = []; // This is injected by the renderer via DevTools global hook.
-    var helpersByRendererID = new Map();
-    var helpersByRoot = new Map(); // We keep track of mounted roots so we can schedule updates.
-    var mountedRoots = new Set(); // If a root captures an error, we remember it so we can retry on edit.
-    var failedRoots = new Set(); // In environments that support WeakMap, we also remember the last element for every root.
-    // It needs to be weak because we do this even for roots that failed to mount.
-    // If there is no WeakMap, we won't attempt to do retrying.
-    // $FlowIssue
-    var rootElements = typeof WeakMap === "function" ? new WeakMap() : null;
-    var isPerformingRefresh = false;
-    function computeFullKey(signature) {
-        if (signature.fullKey !== null) return signature.fullKey;
-        var fullKey = signature.ownKey;
-        var hooks;
-        try {
-            hooks = signature.getCustomHooks();
-        } catch (err) {
-            // This can happen in an edge case, e.g. if expression like Foo.useSomething
-            // depends on Foo which is lazily initialized during rendering.
-            // In that case just assume we'll have to remount.
-            signature.forceReset = true;
-            signature.fullKey = fullKey;
-            return fullKey;
-        }
-        for(var i = 0; i < hooks.length; i++){
-            var hook = hooks[i];
-            if (typeof hook !== "function") {
-                // Something's wrong. Assume we need to remount.
-                signature.forceReset = true;
-                signature.fullKey = fullKey;
-                return fullKey;
-            }
-            var nestedHookSignature = allSignaturesByType.get(hook);
-            if (nestedHookSignature === undefined) continue;
-            var nestedHookKey = computeFullKey(nestedHookSignature);
-            if (nestedHookSignature.forceReset) signature.forceReset = true;
-            fullKey += "\n---\n" + nestedHookKey;
-        }
-        signature.fullKey = fullKey;
-        return fullKey;
-    }
-    function haveEqualSignatures(prevType, nextType) {
-        var prevSignature = allSignaturesByType.get(prevType);
-        var nextSignature = allSignaturesByType.get(nextType);
-        if (prevSignature === undefined && nextSignature === undefined) return true;
-        if (prevSignature === undefined || nextSignature === undefined) return false;
-        if (computeFullKey(prevSignature) !== computeFullKey(nextSignature)) return false;
-        if (nextSignature.forceReset) return false;
-        return true;
-    }
-    function isReactClass(type) {
-        return type.prototype && type.prototype.isReactComponent;
-    }
-    function canPreserveStateBetween(prevType, nextType) {
-        if (isReactClass(prevType) || isReactClass(nextType)) return false;
-        if (haveEqualSignatures(prevType, nextType)) return true;
-        return false;
-    }
-    function resolveFamily(type) {
-        // Only check updated types to keep lookups fast.
-        return updatedFamiliesByType.get(type);
-    } // If we didn't care about IE11, we could use new Map/Set(iterable).
-    function cloneMap(map) {
-        var clone = new Map();
-        map.forEach(function(value, key) {
-            clone.set(key, value);
-        });
-        return clone;
-    }
-    function cloneSet(set) {
-        var clone = new Set();
-        set.forEach(function(value) {
-            clone.add(value);
-        });
-        return clone;
-    }
-    function performReactRefresh() {
-        if (pendingUpdates.length === 0) return null;
-        if (isPerformingRefresh) return null;
-        isPerformingRefresh = true;
-        try {
-            var staleFamilies = new Set();
-            var updatedFamilies = new Set();
-            var updates = pendingUpdates;
-            pendingUpdates = [];
-            updates.forEach(function(_ref) {
-                var family = _ref[0], nextType = _ref[1];
-                // Now that we got a real edit, we can create associations
-                // that will be read by the React reconciler.
-                var prevType = family.current;
-                updatedFamiliesByType.set(prevType, family);
-                updatedFamiliesByType.set(nextType, family);
-                family.current = nextType; // Determine whether this should be a re-render or a re-mount.
-                if (canPreserveStateBetween(prevType, nextType)) updatedFamilies.add(family);
-                else staleFamilies.add(family);
-            }); // TODO: rename these fields to something more meaningful.
-            var update = {
-                updatedFamilies: updatedFamilies,
-                // Families that will re-render preserving state
-                staleFamilies: staleFamilies // Families that will be remounted
-            };
-            helpersByRendererID.forEach(function(helpers) {
-                // Even if there are no roots, set the handler on first update.
-                // This ensures that if *new* roots are mounted, they'll use the resolve handler.
-                helpers.setRefreshHandler(resolveFamily);
-            });
-            var didError = false;
-            var firstError = null; // We snapshot maps and sets that are mutated during commits.
-            // If we don't do this, there is a risk they will be mutated while
-            // we iterate over them. For example, trying to recover a failed root
-            // may cause another root to be added to the failed list -- an infinite loop.
-            var failedRootsSnapshot = cloneSet(failedRoots);
-            var mountedRootsSnapshot = cloneSet(mountedRoots);
-            var helpersByRootSnapshot = cloneMap(helpersByRoot);
-            failedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                failedRoots.has(root);
-                if (rootElements === null) return;
-                if (!rootElements.has(root)) return;
-                var element = rootElements.get(root);
-                try {
-                    helpers.scheduleRoot(root, element);
-                } catch (err) {
-                    if (!didError) {
-                        didError = true;
-                        firstError = err;
-                    } // Keep trying other roots.
-                }
-            });
-            mountedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                mountedRoots.has(root);
-                try {
-                    helpers.scheduleRefresh(root, update);
-                } catch (err) {
-                    if (!didError) {
-                        didError = true;
-                        firstError = err;
-                    } // Keep trying other roots.
-                }
-            });
-            if (didError) throw firstError;
-            return update;
-        } finally{
-            isPerformingRefresh = false;
-        }
-    }
-    function register(type, id) {
-        if (type === null) return;
-        if (typeof type !== "function" && typeof type !== "object") return;
-         // This can happen in an edge case, e.g. if we register
-        // return value of a HOC but it returns a cached component.
-        // Ignore anything but the first registration for each type.
-        if (allFamiliesByType.has(type)) return;
-         // Create family or remember to update it.
-        // None of this bookkeeping affects reconciliation
-        // until the first performReactRefresh() call above.
-        var family = allFamiliesByID.get(id);
-        if (family === undefined) {
-            family = {
-                current: type
-            };
-            allFamiliesByID.set(id, family);
-        } else pendingUpdates.push([
-            family,
-            type
-        ]);
-        allFamiliesByType.set(type, family); // Visit inner types because we might not have registered them.
-        if (typeof type === "object" && type !== null) switch(type.$$typeof){
-            case REACT_FORWARD_REF_TYPE:
-                register(type.render, id + "$render");
-                break;
-            case REACT_MEMO_TYPE:
-                register(type.type, id + "$type");
-                break;
-        }
-    }
-    function setSignature(type, key) {
-        var forceReset = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-        var getCustomHooks = arguments.length > 3 ? arguments[3] : undefined;
-        allSignaturesByType.set(type, {
-            forceReset: forceReset,
-            ownKey: key,
-            fullKey: null,
-            getCustomHooks: getCustomHooks || function() {
-                return [];
-            }
-        });
-    } // This is lazily called during first render for a type.
-    // It captures Hook list at that time so inline requires don't break comparisons.
-    function collectCustomHooksForSignature(type) {
-        var signature = allSignaturesByType.get(type);
-        if (signature !== undefined) computeFullKey(signature);
-    }
-    function getFamilyByID(id) {
-        return allFamiliesByID.get(id);
-    }
-    function getFamilyByType(type) {
-        return allFamiliesByType.get(type);
-    }
-    function findAffectedHostInstances(families) {
-        var affectedInstances = new Set();
-        mountedRoots.forEach(function(root) {
-            var helpers = helpersByRoot.get(root);
-            if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-            var instancesForRoot = helpers.findHostInstancesForRefresh(root, families);
-            instancesForRoot.forEach(function(inst) {
-                affectedInstances.add(inst);
-            });
-        });
-        return affectedInstances;
-    }
-    function injectIntoGlobalHook(globalObject) {
-        // For React Native, the global hook will be set up by require('react-devtools-core').
-        // That code will run before us. So we need to monkeypatch functions on existing hook.
-        // For React Web, the global hook will be set up by the extension.
-        // This will also run before us.
-        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-        if (hook === undefined) {
-            // However, if there is no DevTools extension, we'll need to set up the global hook ourselves.
-            // Note that in this case it's important that renderer code runs *after* this method call.
-            // Otherwise, the renderer will think that there is no global hook, and won't do the injection.
-            var nextID = 0;
-            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
-                renderers: new Map(),
-                supportsFiber: true,
-                inject: function(injected) {
-                    return nextID++;
-                },
-                onScheduleFiberRoot: function(id, root, children) {},
-                onCommitFiberRoot: function(id, root, maybePriorityLevel, didError) {},
-                onCommitFiberUnmount: function() {}
-            };
-        } // Here, we just want to get a reference to scheduleRefresh.
-        var oldInject = hook.inject;
-        hook.inject = function(injected) {
-            var id = oldInject.apply(this, arguments);
-            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
-            helpersByRendererID.set(id, injected);
-            return id;
-        }; // Do the same for any already injected roots.
-        // This is useful if ReactDOM has already been initialized.
-        // https://github.com/facebook/react/issues/17626
-        hook.renderers.forEach(function(injected, id) {
-            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
-            helpersByRendererID.set(id, injected);
-        }); // We also want to track currently mounted roots.
-        var oldOnCommitFiberRoot = hook.onCommitFiberRoot;
-        var oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
-        hook.onScheduleFiberRoot = function(id, root, children) {
-            if (!isPerformingRefresh) {
-                // If it was intentionally scheduled, don't attempt to restore.
-                // This includes intentionally scheduled unmounts.
-                failedRoots.delete(root);
-                if (rootElements !== null) rootElements.set(root, children);
-            }
-            return oldOnScheduleFiberRoot.apply(this, arguments);
-        };
-        hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
-            var helpers = helpersByRendererID.get(id);
-            if (helpers === undefined) return;
-            helpersByRoot.set(root, helpers);
-            var current = root.current;
-            var alternate = current.alternate; // We need to determine whether this root has just (un)mounted.
-            // This logic is copy-pasted from similar logic in the DevTools backend.
-            // If this breaks with some refactoring, you'll want to update DevTools too.
-            if (alternate !== null) {
-                var wasMounted = alternate.memoizedState != null && alternate.memoizedState.element != null;
-                var isMounted = current.memoizedState != null && current.memoizedState.element != null;
-                if (!wasMounted && isMounted) {
-                    // Mount a new root.
-                    mountedRoots.add(root);
-                    failedRoots.delete(root);
-                } else if (wasMounted && isMounted) ;
-                else if (wasMounted && !isMounted) {
-                    // Unmount an existing root.
-                    mountedRoots.delete(root);
-                    if (didError) // We'll remount it on future edits.
-                    failedRoots.add(root);
-                    else helpersByRoot.delete(root);
-                } else if (!wasMounted && !isMounted) {
-                    if (didError) // We'll remount it on future edits.
-                    failedRoots.add(root);
-                }
-            } else // Mount a new root.
-            mountedRoots.add(root);
-            return oldOnCommitFiberRoot.apply(this, arguments);
-        };
-    }
-    function hasUnrecoverableErrors() {
-        // TODO: delete this after removing dependency in RN.
-        return false;
-    } // Exposed for testing.
-    function _getMountedRootCount() {
-        return mountedRoots.size;
-    } // This is a wrapper over more primitive functions for setting signature.
-    // Signatures let us decide whether the Hook order has changed on refresh.
-    //
-    // This function is intended to be used as a transform target, e.g.:
-    // var _s = createSignatureFunctionForTransform()
-    //
-    // function Hello() {
-    //   const [foo, setFoo] = useState(0);
-    //   const value = useCustomHook();
-    //   _s(); /* Second call triggers collecting the custom Hook list.
-    //          * This doesn't happen during the module evaluation because we
-    //          * don't want to change the module order with inline requires.
-    //          * Next calls are noops. */
-    //   return <h1>Hi</h1>;
-    // }
-    //
-    // /* First call specifies the signature: */
-    // _s(
-    //   Hello,
-    //   'useState{[foo, setFoo]}(0)',
-    //   () => [useCustomHook], /* Lazy to avoid triggering inline requires */
-    // );
-    function createSignatureFunctionForTransform() {
-        // We'll fill in the signature in two steps.
-        // First, we'll know the signature itself. This happens outside the component.
-        // Then, we'll know the references to custom Hooks. This happens inside the component.
-        // After that, the returned function will be a fast path no-op.
-        var status = "needsSignature";
-        var savedType;
-        var hasCustomHooks;
-        return function(type, key, forceReset, getCustomHooks) {
-            switch(status){
-                case "needsSignature":
-                    if (type !== undefined) {
-                        // If we received an argument, this is the initial registration call.
-                        savedType = type;
-                        hasCustomHooks = typeof getCustomHooks === "function";
-                        setSignature(type, key, forceReset, getCustomHooks); // The next call we expect is from inside a function, to fill in the custom Hooks.
-                        status = "needsCustomHooks";
-                    }
-                    break;
-                case "needsCustomHooks":
-                    if (hasCustomHooks) collectCustomHooksForSignature(savedType);
-                    status = "resolved";
-                    break;
-            }
-            return type;
-        };
-    }
-    function isLikelyComponentType(type) {
-        switch(typeof type){
-            case "function":
-                // First, deal with classes.
-                if (type.prototype != null) {
-                    if (type.prototype.isReactComponent) // React class.
-                    return true;
-                    var ownNames = Object.getOwnPropertyNames(type.prototype);
-                    if (ownNames.length > 1 || ownNames[0] !== "constructor") // This looks like a class.
-                    return false;
-                     // eslint-disable-next-line no-proto
-                    if (type.prototype.__proto__ !== Object.prototype) // It has a superclass.
-                    return false;
-                     // Pass through.
-                // This looks like a regular function with empty prototype.
-                } // For plain functions and arrows, use name as a heuristic.
-                var name = type.name || type.displayName;
-                return typeof name === "string" && /^[A-Z]/.test(name);
-            case "object":
-                if (type != null) switch(type.$$typeof){
-                    case REACT_FORWARD_REF_TYPE:
-                    case REACT_MEMO_TYPE:
-                        // Definitely React components.
-                        return true;
-                    default:
-                        return false;
-                }
-                return false;
-            default:
-                return false;
-        }
-    }
-    exports._getMountedRootCount = _getMountedRootCount;
-    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
-    exports.createSignatureFunctionForTransform = createSignatureFunctionForTransform;
-    exports.findAffectedHostInstances = findAffectedHostInstances;
-    exports.getFamilyByID = getFamilyByID;
-    exports.getFamilyByType = getFamilyByType;
-    exports.hasUnrecoverableErrors = hasUnrecoverableErrors;
-    exports.injectIntoGlobalHook = injectIntoGlobalHook;
-    exports.isLikelyComponentType = isLikelyComponentType;
-    exports.performReactRefresh = performReactRefresh;
-    exports.register = register;
-    exports.setSignature = setSignature;
-})();
-
-},{}],"71OGf":[function() {},{}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./screens/IphonePlus":"5CLJ5","./screens/Desktop":"4vBH2","./screens/IphonePlusScreen":"d96ZZ","./screens/DesktopScreen":"3GAFO","./screens/DivWrapper":"3cPy6","./screens/Screen5":"iEvgV","./screens/Screen6":"a5MPT","./screens/Screen7":"1XZrb","./screens/Screen8":"79eH5","./screens/Screen9":"542HL","./screens/Screen10":"ePoni","./screens/Screen11":"5NHn2","./screens/Screen12":"c3jD2","./screens/Screen13":"i6T3l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./screens/WrapperScreens/HomeWrapper":"87Nm6"}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.20.0
+ * React Router DOM v6.21.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -29121,6 +27915,11 @@ class Deferred {
         vtContext.isTransitioning,
         interruption
     ]);
+    _react.useEffect(()=>{
+        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
+    // Only log this once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     let navigator = _react.useMemo(()=>{
         return {
             createHref: router.createHref,
@@ -29168,15 +27967,19 @@ class Deferred {
         basename: basename,
         location: state.location,
         navigationType: state.historyAction,
-        navigator: navigator
-    }, state.initialized ? /*#__PURE__*/ _react.createElement(DataRoutes, {
+        navigator: navigator,
+        future: {
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(DataRoutes, {
         routes: router.routes,
+        future: router.future,
         state: state
     }) : fallbackElement))))), null);
 }
 function DataRoutes(_ref3) {
-    let { routes, state } = _ref3;
-    return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state);
+    let { routes, future, state } = _ref3;
+    return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state, future);
 }
 /**
  * A `<Router>` for use in web browsers. Provides the cleanest URLs.
@@ -29208,7 +28011,8 @@ function DataRoutes(_ref3) {
         children: children,
         location: state.location,
         navigationType: state.action,
-        navigator: history
+        navigator: history,
+        future: future
     });
 }
 /**
@@ -29242,7 +28046,8 @@ function DataRoutes(_ref3) {
         children: children,
         location: state.location,
         navigationType: state.action,
-        navigator: history
+        navigator: history,
+        future: future
     });
 }
 /**
@@ -29272,7 +28077,8 @@ function DataRoutes(_ref3) {
         children: children,
         location: state.location,
         navigationType: state.action,
-        navigator: history
+        navigator: history,
+        future: future
     });
 }
 HistoryRouter.displayName = "unstable_HistoryRouter";
@@ -29916,7 +28722,7 @@ let savedScrollPositions = {};
 
 },{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.20.0
+ * React Router v6.21.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -30118,10 +28924,10 @@ function useNavigateUnstable() {
     !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useNavigate() may be used only in the context of a <Router> component.");
     let dataRouterContext = _react.useContext(DataRouterContext);
-    let { basename, navigator } = _react.useContext(NavigationContext);
+    let { basename, future, navigator } = _react.useContext(NavigationContext);
     let { matches } = _react.useContext(RouteContext);
     let { pathname: locationPathname } = useLocation();
-    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches));
+    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath));
     let activeRef = _react.useRef(false);
     useIsomorphicLayoutEffect(()=>{
         activeRef.current = true;
@@ -30193,9 +28999,10 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
  * @see https://reactrouter.com/hooks/use-resolved-path
  */ function useResolvedPath(to, _temp2) {
     let { relative } = _temp2 === void 0 ? {} : _temp2;
+    let { future } = _react.useContext(NavigationContext);
     let { matches } = _react.useContext(RouteContext);
     let { pathname: locationPathname } = useLocation();
-    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches));
+    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath));
     return _react.useMemo(()=>(0, _router.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [
         to,
         routePathnamesJson,
@@ -30214,7 +29021,7 @@ const OutletContext = /*#__PURE__*/ _react.createContext(null);
     return useRoutesImpl(routes, locationArg);
 }
 // Internal implementation with accept optional param for RouterProvider usage
-function useRoutesImpl(routes, locationArg, dataRouterState) {
+function useRoutesImpl(routes, locationArg, dataRouterState, future) {
     !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
     "useRoutes() may be used only in the context of a <Router> component.");
     let { navigator } = _react.useContext(NavigationContext);
@@ -30275,7 +29082,7 @@ function useRoutesImpl(routes, locationArg, dataRouterState) {
                 // Re-encode pathnames that were decoded inside matchRoutes
                 navigator.encodeLocation ? navigator.encodeLocation(match.pathnameBase).pathname : match.pathnameBase
             ])
-        })), parentMatches, dataRouterState);
+        })), parentMatches, dataRouterState, future);
     // When a user passes in a `locationArg`, the associated routes need to
     // be wrapped in a new `LocationContext.Provider` in order for `useLocation`
     // to use the scoped location instead of the global location.
@@ -30355,7 +29162,7 @@ class RenderErrorBoundary extends _react.Component {
         // this because the error provided from the app state may be cleared without
         // the location changing.
         return {
-            error: props.error || state.error,
+            error: props.error !== undefined ? props.error : state.error,
             location: state.location,
             revalidation: props.revalidation || state.revalidation
         };
@@ -30364,7 +29171,7 @@ class RenderErrorBoundary extends _react.Component {
         console.error("React Router caught the following error during render", error, errorInfo);
     }
     render() {
-        return this.state.error ? /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
+        return this.state.error !== undefined ? /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
             value: this.props.routeContext
         }, /*#__PURE__*/ _react.createElement(RouteErrorContext.Provider, {
             value: this.state.error,
@@ -30382,10 +29189,11 @@ function RenderedRoute(_ref) {
         value: routeContext
     }, children);
 }
-function _renderMatches(matches, parentMatches, dataRouterState) {
+function _renderMatches(matches, parentMatches, dataRouterState, future) {
     var _dataRouterState2;
     if (parentMatches === void 0) parentMatches = [];
     if (dataRouterState === void 0) dataRouterState = null;
+    if (future === void 0) future = null;
     if (matches == null) {
         var _dataRouterState;
         if ((_dataRouterState = dataRouterState) != null && _dataRouterState.errors) // Don't bail if we have data router errors so we can render them in the
@@ -30401,15 +29209,51 @@ function _renderMatches(matches, parentMatches, dataRouterState) {
         !(errorIndex >= 0) && (0, _router.UNSAFE_invariant)(false, "Could not find a matching route for errors on route IDs: " + Object.keys(errors).join(","));
         renderedMatches = renderedMatches.slice(0, Math.min(renderedMatches.length, errorIndex + 1));
     }
+    // If we're in a partial hydration mode, detect if we need to render down to
+    // a given HydrateFallback while we load the rest of the hydration data
+    let renderFallback = false;
+    let fallbackIndex = -1;
+    if (dataRouterState && future && future.v7_partialHydration) for(let i = 0; i < renderedMatches.length; i++){
+        let match = renderedMatches[i];
+        // Track the deepest fallback up until the first route without data
+        if (match.route.HydrateFallback || match.route.hydrateFallbackElement) fallbackIndex = i;
+        if (match.route.loader && match.route.id && dataRouterState.loaderData[match.route.id] === undefined && (!dataRouterState.errors || dataRouterState.errors[match.route.id] === undefined)) {
+            // We found the first route without data/errors which means it's loader
+            // still needs to run.  Flag that we need to render a fallback and
+            // render up until the appropriate fallback
+            renderFallback = true;
+            if (fallbackIndex >= 0) renderedMatches = renderedMatches.slice(0, fallbackIndex + 1);
+            else renderedMatches = [
+                renderedMatches[0]
+            ];
+            break;
+        }
+    }
     return renderedMatches.reduceRight((outlet, match, index)=>{
-        let error = match.route.id ? errors == null ? void 0 : errors[match.route.id] : null;
-        // Only data routers handle errors
+        // Only data routers handle errors/fallbacks
+        let error;
+        let shouldRenderHydrateFallback = false;
         let errorElement = null;
-        if (dataRouterState) errorElement = match.route.errorElement || defaultErrorElement;
+        let hydrateFallbackElement = null;
+        if (dataRouterState) {
+            error = errors && match.route.id ? errors[match.route.id] : undefined;
+            errorElement = match.route.errorElement || defaultErrorElement;
+            if (renderFallback) {
+                if (fallbackIndex < 0 && index === 0) {
+                    warningOnce("route-fallback", false, "No `HydrateFallback` element provided to render during initial hydration");
+                    shouldRenderHydrateFallback = true;
+                    hydrateFallbackElement = null;
+                } else if (fallbackIndex === index) {
+                    shouldRenderHydrateFallback = true;
+                    hydrateFallbackElement = match.route.hydrateFallbackElement || null;
+                }
+            }
+        }
         let matches = parentMatches.concat(renderedMatches.slice(0, index + 1));
         let getChildren = ()=>{
             let children;
             if (error) children = errorElement;
+            else if (shouldRenderHydrateFallback) children = hydrateFallbackElement;
             else if (match.route.Component) // Note: This is a de-optimized path since React won't re-use the
             // ReactElement since it's identity changes with each new
             // React.createElement call.  We keep this so folks can use
@@ -30561,7 +29405,7 @@ function useCurrentRouteId(hookName) {
     let routeId = useCurrentRouteId(DataRouterStateHook.UseRouteError);
     // If this was a render error, we put it in a RouteError context inside
     // of RenderErrorBoundary
-    if (error) return error;
+    if (error !== undefined) return error;
     // Otherwise look for errors from our data router state
     return (_state$errors = state.errors) == null ? void 0 : _state$errors[routeId];
 }
@@ -30705,6 +29549,11 @@ const startTransitionImpl = _react[START_TRANSITION];
         router,
         setState
     ]);
+    _react.useEffect(()=>{
+        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
+    // Only log this once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     let navigator = _react.useMemo(()=>{
         return {
             createHref: router.createHref,
@@ -30748,15 +29597,19 @@ const startTransitionImpl = _react[START_TRANSITION];
         basename: basename,
         location: state.location,
         navigationType: state.historyAction,
-        navigator: navigator
-    }, state.initialized ? /*#__PURE__*/ _react.createElement(DataRoutes, {
+        navigator: navigator,
+        future: {
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(DataRoutes, {
         routes: router.routes,
+        future: router.future,
         state: state
     }) : fallbackElement))), null);
 }
 function DataRoutes(_ref2) {
-    let { routes, state } = _ref2;
-    return useRoutesImpl(routes, undefined, state);
+    let { routes, future, state } = _ref2;
+    return useRoutesImpl(routes, undefined, state, future);
 }
 /**
  * A `<Router>` that stores all entries in memory.
@@ -30791,7 +29644,8 @@ function DataRoutes(_ref2) {
         children: children,
         location: state.location,
         navigationType: state.action,
-        navigator: history
+        navigator: history,
+        future: future
     });
 }
 /**
@@ -30806,13 +29660,14 @@ function DataRoutes(_ref2) {
     let { to, replace, state, relative } = _ref4;
     !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // the router loaded. We can help them understand how to avoid that.
     "<Navigate> may be used only in the context of a <Router> component.");
-    (0, _router.UNSAFE_warning)(!_react.useContext(NavigationContext).static, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
+    let { future, static: isStatic } = _react.useContext(NavigationContext);
+    (0, _router.UNSAFE_warning)(!isStatic, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
     let { matches } = _react.useContext(RouteContext);
     let { pathname: locationPathname } = useLocation();
     let navigate = useNavigate();
     // Resolve the path outside of the effect so that when effects run twice in
     // StrictMode they navigate to the same place
-    let path = (0, _router.resolveTo)(to, (0, _router.UNSAFE_getResolveToMatches)(matches), locationPathname, relative === "path");
+    let path = (0, _router.resolveTo)(to, (0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath), locationPathname, relative === "path");
     let jsonPath = JSON.stringify(path);
     _react.useEffect(()=>navigate(JSON.parse(jsonPath), {
             replace,
@@ -30850,7 +29705,7 @@ function DataRoutes(_ref2) {
  *
  * @see https://reactrouter.com/router-components/router
  */ function Router(_ref5) {
-    let { basename: basenameProp = "/", children = null, location: locationProp, navigationType = (0, _router.Action).Pop, navigator, static: staticProp = false } = _ref5;
+    let { basename: basenameProp = "/", children = null, location: locationProp, navigationType = (0, _router.Action).Pop, navigator, static: staticProp = false, future } = _ref5;
     !!useInRouterContext() && (0, _router.UNSAFE_invariant)(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app.");
     // Preserve trailing slashes on basename, so we can let the user control
     // the enforcement of trailing slashes throughout the app
@@ -30858,9 +29713,13 @@ function DataRoutes(_ref2) {
     let navigationContext = _react.useMemo(()=>({
             basename,
             navigator,
-            static: staticProp
+            static: staticProp,
+            future: _extends({
+                v7_relativeSplatPath: false
+            }, future)
         }), [
         basename,
+        future,
         navigator,
         staticProp
     ]);
@@ -31072,6 +29931,13 @@ function mapRouteProperties(route) {
             Component: undefined
         });
     }
+    if (route.HydrateFallback) {
+        if (route.hydrateFallbackElement) (0, _router.UNSAFE_warning)(false, "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used.");
+        Object.assign(updates, {
+            hydrateFallbackElement: /*#__PURE__*/ _react.createElement(route.HydrateFallback),
+            HydrateFallback: undefined
+        });
+    }
     if (route.ErrorBoundary) {
         if (route.errorElement) (0, _router.UNSAFE_warning)(false, "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used.");
         Object.assign(updates, {
@@ -31099,7 +29965,7 @@ function createMemoryRouter(routes, opts) {
 
 },{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.13.0
+ * @remix-run/router v1.14.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -31959,9 +30825,13 @@ function getInvalidPathError(char, field, dest, path) {
 }
 // Return the array of pathnames for the current route matches - used to
 // generate the routePathnames input for resolveTo()
-function getResolveToMatches(matches) {
-    // Use the full pathname for the leaf match so we include splat values for "." links
-    return getPathContributingMatches(matches).map((match, idx)=>idx === matches.length - 1 ? match.pathname : match.pathnameBase);
+function getResolveToMatches(matches, v7_relativeSplatPath) {
+    let pathMatches = getPathContributingMatches(matches);
+    // When v7_relativeSplatPath is enabled, use the full pathname for the leaf
+    // match so we include splat values for "." links.  See:
+    // https://github.com/remix-run/react-router/issues/11052#issuecomment-1836589329
+    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === matches.length - 1 ? match.pathname : match.pathnameBase);
+    return pathMatches.map((match)=>match.pathnameBase);
 }
 /**
  * @private
@@ -31989,7 +30859,7 @@ function getResolveToMatches(matches) {
     // to the current location's pathname and *not* the route pathname.
     if (toPathname == null) from = locationPathname;
     else if (isPathRelative) {
-        let fromSegments = routePathnames[routePathnames.length - 1].replace(/^\//, "").split("/");
+        let fromSegments = routePathnames.length === 0 ? [] : routePathnames[routePathnames.length - 1].replace(/^\//, "").split("/");
         if (toPathname.startsWith("..")) {
             let toSegments = toPathname.split("/");
             // With relative="path", each leading .. segment means "go up one URL segment"
@@ -32327,7 +31197,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     let future = _extends({
         v7_fetcherPersist: false,
         v7_normalizeFormMethod: false,
-        v7_prependBasename: false
+        v7_partialHydration: false,
+        v7_prependBasename: false,
+        v7_relativeSplatPath: false
     }, init.future);
     // Cleanup function for history
     let unlistenHistory = null;
@@ -32360,10 +31232,24 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             [route.id]: error
         };
     }
-    let initialized = // All initialMatches need to be loaded before we're ready.  If we have lazy
+    let initialized;
+    let hasLazyRoutes = initialMatches.some((m)=>m.route.lazy);
+    let hasLoaders = initialMatches.some((m)=>m.route.loader);
+    if (hasLazyRoutes) // All initialMatches need to be loaded before we're ready.  If we have lazy
     // functions around still then we'll need to run them in initialize()
-    !initialMatches.some((m)=>m.route.lazy) && // And we have to either have no loaders or have been provided hydrationData
-    (!initialMatches.some((m)=>m.route.loader) || init.hydrationData != null);
+    initialized = false;
+    else if (!hasLoaders) // If we've got no loaders to run, then we're good to go
+    initialized = true;
+    else if (future.v7_partialHydration) {
+        // If partial hydration is enabled, we're initialized so long as we were
+        // provided with hydrationData for every route with a loader, and no loaders
+        // were marked for explicit hydration
+        let loaderData = init.hydrationData ? init.hydrationData.loaderData : null;
+        let errors = init.hydrationData ? init.hydrationData.errors : null;
+        initialized = initialMatches.every((m)=>m.route.loader && m.route.loader.hydrate !== true && (loaderData && loaderData[m.route.id] !== undefined || errors && errors[m.route.id] !== undefined));
+    } else // Without partial hydration - we're initialized if we were provided any
+    // hydrationData - which is expected to be complete
+    initialized = init.hydrationData != null;
     let router;
     let state = {
         historyAction: init.history.action,
@@ -32502,7 +31388,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         // in the normal navigation flow.  For SSR it's expected that lazy modules are
         // resolved prior to router creation since we can't go into a fallbackElement
         // UI for SSR'd apps
-        if (!state.initialized) startNavigation(Action.Pop, state.location);
+        if (!state.initialized) startNavigation(Action.Pop, state.location, {
+            initialHydration: true
+        });
         return router;
     }
     // Clean up a router and it's side effects
@@ -32656,7 +31544,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             init.history.go(to);
             return;
         }
-        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, to, opts == null ? void 0 : opts.fromRouteId, opts == null ? void 0 : opts.relative);
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, to, future.v7_relativeSplatPath, opts == null ? void 0 : opts.fromRouteId, opts == null ? void 0 : opts.relative);
         let { path, submission, error } = normalizeNavigateOptions(future.v7_normalizeFormMethod, false, normalizedPath, opts);
         let currentLocation = state.location;
         let nextLocation = createLocation(state.location, path, opts && opts.state);
@@ -32827,7 +31715,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             });
         }
         // Call loaders
-        let { shortCircuited, loaderData, errors } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, flushSync, pendingActionData, pendingError);
+        let { shortCircuited, loaderData, errors } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, opts && opts.initialHydration === true, flushSync, pendingActionData, pendingError);
         if (shortCircuited) return;
         // Clean up now that the action/loaders have completed.  Don't clean up if
         // we short circuited because pendingNavigationController will have already
@@ -32866,7 +31754,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
             })
         };
         else {
-            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename);
+            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath);
             if (request.signal.aborted) return {
                 shortCircuited: true
             };
@@ -32914,14 +31802,14 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
     }
     // Call all applicable loaders for the given matches, handling redirects,
     // errors, etc.
-    async function handleLoaders(request, location, matches, overrideNavigation, submission, fetcherSubmission, replace, flushSync, pendingActionData, pendingError) {
+    async function handleLoaders(request, location, matches, overrideNavigation, submission, fetcherSubmission, replace, initialHydration, flushSync, pendingActionData, pendingError) {
         // Figure out the right navigation we want to use for data loading
         let loadingNavigation = overrideNavigation || getLoadingNavigation(location, submission);
         // If this was a redirect from an action we don't have a "submission" but
         // we have it on the loading navigation so use that if available
         let activeSubmission = submission || fetcherSubmission || getSubmissionFromNavigation(loadingNavigation);
         let routesToUse = inFlightDataRoutes || dataRoutes;
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionData, pendingError);
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, future.v7_partialHydration && initialHydration === true, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionData, pendingError);
         // Cancel pending deferreds for no-longer-matched routes or routes we're
         // about to reload.  Note that if this is an action reload we would have
         // already cancelled all pending deferreds so this would be a no-op
@@ -32950,7 +31838,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         // state.  If not, we need to switch to our loading state and load data,
         // preserving any new action data or existing action data (in the case of
         // a revalidation interrupting an actionReload)
-        if (!isUninterruptedRevalidation) {
+        // If we have partialHydration enabled, then don't update the state for the
+        // initial data load since iot's not a "navigation"
+        if (!isUninterruptedRevalidation && (!future.v7_partialHydration || !initialHydration)) {
             revalidatingFetchers.forEach((rf)=>{
                 let fetcher = state.fetchers.get(rf.key);
                 let revalidatingFetcher = getLoadingFetcher(undefined, fetcher ? fetcher.data : undefined);
@@ -33032,7 +31922,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         if (fetchControllers.has(key)) abortFetcher(key);
         let flushSync = (opts && opts.unstable_flushSync) === true;
         let routesToUse = inFlightDataRoutes || dataRoutes;
-        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, routeId, opts == null ? void 0 : opts.relative);
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, future.v7_relativeSplatPath, routeId, opts == null ? void 0 : opts.relative);
         let matches = matchRoutes(routesToUse, normalizedPath, basename);
         if (!matches) {
             setFetcherError(key, routeId, getInternalRouterError(404, {
@@ -33089,7 +31979,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let fetchRequest = createClientSideRequest(init.history, path, abortController.signal, submission);
         fetchControllers.set(key, abortController);
         let originatingLoadId = incrementingLoadId;
-        let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, manifest, mapRouteProperties, basename);
+        let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath);
         if (fetchRequest.signal.aborted) {
             // We can delete this so long as we weren't aborted by our own fetcher
             // re-submit which would have put _new_ controller is in fetchControllers
@@ -33136,7 +32026,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         fetchReloadIds.set(key, loadId);
         let loadFetcher = getLoadingFetcher(submission, actionResult.data);
         state.fetchers.set(key, loadFetcher);
-        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, {
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, false, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, {
             [match.route.id]: actionResult.data
         }, undefined // No need to send through errors since we short circuit above
         );
@@ -33217,7 +32107,7 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         let fetchRequest = createClientSideRequest(init.history, path, abortController.signal);
         fetchControllers.set(key, abortController);
         let originatingLoadId = incrementingLoadId;
-        let result = await callLoaderOrAction("loader", fetchRequest, match, matches, manifest, mapRouteProperties, basename);
+        let result = await callLoaderOrAction("loader", fetchRequest, match, matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath);
         // Deferred isn't supported for fetcher loads, await everything and treat it
         // as a normal load.  resolveDeferredData will return undefined if this
         // fetcher gets aborted, so we just leave result untouched and short circuit
@@ -33331,9 +32221,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         // then slice off the results into separate arrays so we can handle them
         // accordingly
         let results = await Promise.all([
-            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename)),
+            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath)),
             ...fetchersToLoad.map((f)=>{
-                if (f.matches && f.match && f.controller) return callLoaderOrAction("loader", createClientSideRequest(init.history, f.path, f.controller.signal), f.match, f.matches, manifest, mapRouteProperties, basename);
+                if (f.matches && f.match && f.controller) return callLoaderOrAction("loader", createClientSideRequest(init.history, f.path, f.controller.signal), f.match, f.matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath);
                 else {
                     let error = {
                         type: ResultType.error,
@@ -33574,6 +32464,9 @@ const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
         get basename () {
             return basename;
         },
+        get future () {
+            return future;
+        },
         get state () {
             return state;
         },
@@ -33624,6 +32517,10 @@ function createStaticHandler(routes, opts) {
                 hasErrorBoundary: detectErrorBoundary(route)
             });
     } else mapRouteProperties = defaultMapRouteProperties;
+    // Config driven behavior flags
+    let future = _extends({
+        v7_relativeSplatPath: false
+    }, opts ? opts.future : null);
     let dataRoutes = convertRoutesToDataRoutes(routes, mapRouteProperties, undefined, manifest);
     /**
    * The query() method is intended for document requests, in which we want to
@@ -33798,7 +32695,7 @@ function createStaticHandler(routes, opts) {
                 error
             };
         } else {
-            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename, {
+            result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath, {
                 isStaticRequest: true,
                 isRouteRequest,
                 requestContext
@@ -33908,7 +32805,7 @@ function createStaticHandler(routes, opts) {
             activeDeferreds: null
         };
         let results = await Promise.all([
-            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename, {
+            ...matchesToLoad.map((match)=>callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename, future.v7_relativeSplatPath, {
                     isStaticRequest: true,
                     isRouteRequest,
                     requestContext
@@ -33956,7 +32853,7 @@ function createStaticHandler(routes, opts) {
 function isSubmissionNavigation(opts) {
     return opts != null && ("formData" in opts && opts.formData != null || "body" in opts && opts.body !== undefined);
 }
-function normalizeTo(location, matches, basename, prependBasename, to, fromRouteId, relative) {
+function normalizeTo(location, matches, basename, prependBasename, to, v7_relativeSplatPath, fromRouteId, relative) {
     let contextualMatches;
     let activeRouteMatch;
     if (fromRouteId) {
@@ -33975,7 +32872,7 @@ function normalizeTo(location, matches, basename, prependBasename, to, fromRoute
         activeRouteMatch = matches[matches.length - 1];
     }
     // Resolve the relative path
-    let path = resolveTo(to ? to : ".", getResolveToMatches(contextualMatches), stripBasename(location.pathname, basename) || location.pathname, relative === "path");
+    let path = resolveTo(to ? to : ".", getResolveToMatches(contextualMatches, v7_relativeSplatPath), stripBasename(location.pathname, basename) || location.pathname, relative === "path");
     // When `to` is not specified we inherit search/hash from the current
     // location, unlike when to="." and we just inherit the path.
     // See https://github.com/remix-run/remix/issues/927
@@ -34114,7 +33011,7 @@ function getLoaderMatchesUntilBoundary(matches, boundaryId) {
     }
     return boundaryMatches;
 }
-function getMatchesToLoad(history, state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionData, pendingError) {
+function getMatchesToLoad(history, state, matches, submission, location, isInitialLoad, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionData, pendingError) {
     let actionResult = pendingError ? Object.values(pendingError)[0] : pendingActionData ? Object.values(pendingActionData)[0] : undefined;
     let currentUrl = history.createURL(state.location);
     let nextUrl = history.createURL(location);
@@ -34122,6 +33019,9 @@ function getMatchesToLoad(history, state, matches, submission, location, isReval
     let boundaryId = pendingError ? Object.keys(pendingError)[0] : undefined;
     let boundaryMatches = getLoaderMatchesUntilBoundary(matches, boundaryId);
     let navigationMatches = boundaryMatches.filter((match, index)=>{
+        if (isInitialLoad) // On initial hydration we don't do any shouldRevalidate stuff - we just
+        // call the unhydrated loaders
+        return isUnhydratedRoute(state, match.route);
         if (match.route.lazy) // We haven't loaded this route yet so we don't know if it's got a loader!
         return true;
         if (match.route.loader == null) return false;
@@ -34149,8 +33049,12 @@ function getMatchesToLoad(history, state, matches, submission, location, isReval
     // Pick fetcher.loads that need to be revalidated
     let revalidatingFetchers = [];
     fetchLoadMatches.forEach((f, key)=>{
-        // Don't revalidate if fetcher won't be present in the subsequent render
-        if (!matches.some((m)=>m.route.id === f.routeId) || deletedFetchers.has(key)) return;
+        // Don't revalidate:
+        //  - on initial load (shouldn't be any fetchers then anyway)
+        //  - if fetcher won't be present in the subsequent render
+        //    - no longer matches the URL (v7_fetcherPersist=false)
+        //    - was unmounted but persisted due to v7_fetcherPersist=true
+        if (isInitialLoad || !matches.some((m)=>m.route.id === f.routeId) || deletedFetchers.has(key)) return;
         let fetcherMatches = matchRoutes(routesToUse, f.path, basename);
         // If the fetcher path no longer matches, push it in with null matches so
         // we can trigger a 404 in callLoadersAndMaybeResolveData.  Note this is
@@ -34205,6 +33109,14 @@ function getMatchesToLoad(history, state, matches, submission, location, isReval
         navigationMatches,
         revalidatingFetchers
     ];
+}
+// Is this route unhydrated (when v7_partialHydration=true) such that we need
+// to call it's loader on the initial router creation
+function isUnhydratedRoute(state, route) {
+    if (!route.loader) return false;
+    if (route.loader.hydrate) return true;
+    return state.loaderData[route.id] === undefined && (!state.errors || // Loader ran but errored - don't re-run
+    state.errors[route.id] === undefined);
 }
 function isNewLoader(currentLoaderData, currentMatch, match) {
     let isNew = // [a] -> [a, b]
@@ -34270,7 +33182,7 @@ function shouldRevalidateLoader(loaderMatch, arg) {
         lazy: undefined
     }));
 }
-async function callLoaderOrAction(type, request, match, matches, manifest, mapRouteProperties, basename, opts) {
+async function callLoaderOrAction(type, request, match, matches, manifest, mapRouteProperties, basename, v7_relativeSplatPath, opts) {
     if (opts === void 0) opts = {};
     let resultType;
     let result;
@@ -34351,7 +33263,7 @@ async function callLoaderOrAction(type, request, match, matches, manifest, mapRo
             let location = result.headers.get("Location");
             invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header");
             // Support relative routing in internal redirects
-            if (!ABSOLUTE_URL_REGEX.test(location)) location = normalizeTo(new URL(request.url), matches.slice(0, matches.indexOf(match) + 1), basename, true, location);
+            if (!ABSOLUTE_URL_REGEX.test(location)) location = normalizeTo(new URL(request.url), matches.slice(0, matches.indexOf(match) + 1), basename, true, location, v7_relativeSplatPath);
             else if (!opts.isStaticRequest) {
                 // Strip off the protocol+origin for same-origin + same-basename absolute
                 // redirects. If this is a static request, we can let it go back to the
@@ -34388,11 +33300,18 @@ async function callLoaderOrAction(type, request, match, matches, manifest, mapRo
             throw queryRouteResponse;
         }
         let data;
-        let contentType = result.headers.get("Content-Type");
-        // Check between word boundaries instead of startsWith() due to the last
-        // paragraph of https://httpwg.org/specs/rfc9110.html#field.content-type
-        if (contentType && /\bapplication\/json\b/.test(contentType)) data = await result.json();
-        else data = await result.text();
+        try {
+            let contentType = result.headers.get("Content-Type");
+            // Check between word boundaries instead of startsWith() due to the last
+            // paragraph of https://httpwg.org/specs/rfc9110.html#field.content-type
+            if (contentType && /\bapplication\/json\b/.test(contentType)) data = await result.json();
+            else data = await result.text();
+        } catch (e) {
+            return {
+                type: ResultType.error,
+                error: e
+            };
+        }
         if (resultType === ResultType.error) return {
             type: resultType,
             error: new ErrorResponseImpl(status, result.statusText, data),
@@ -34874,509 +33793,10287 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"k9740":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e638 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"5CLJ5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IphonePlus", ()=>(0, _iphonePlus.IphonePlus));
+var _iphonePlus = require("./IphonePlus");
+
+},{"./IphonePlus":"kz3SZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kz3SZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5834 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e638.prelude(module);
+$parcel$ReactRefreshHelpers$5834.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Page2", ()=>Page2);
+parcelHelpers.export(exports, "IphonePlus", ()=>IphonePlus);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _style2Css = require("./style2.css");
-const Page2 = ()=>{
+var _groupWrapper = require("../../components/GroupWrapper");
+var _styleCss = require("./style.css");
+const IphonePlus = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "desktop2",
+        className: "iphone-plus",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "div",
+            className: "div-3",
             children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-3",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "button",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-5",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            className: "rectangle-3",
+                                            href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                                            rel: "noopener noreferrer",
+                                            target: "_blank"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 13,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-19",
+                                            children: "Register"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 19,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 12,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-20",
+                                    to: "/iphone-8-plus-2",
+                                    children: "Learn More"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 21,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-5",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "image-8",
+                                alt: "Image",
+                                src: "/img/image-46.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "logo",
+                            alt: "Logo",
+                            src: "/img/resarch-badge2024-2.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "how-it-works",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-21",
+                            children: "On March 31, 2024 we are planning to conduct a 3rd Schaumburg Tamil Fair 2024 for all Thamizh Schools USA research students. The main theme of this fair is \u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1. This will be educational research experience for the parents, kids and visitors. This project is collaboration among Tamil scholar, grand parents, parents, and students. We give sample project, and some documents about the topic for a good start. During the Schaumburg Tamil Fair 2024, Each student will be the representatives of their project, present it through a tri-fold poster board."
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-22",
+                            children: "The top students for each level will be recognized. Also top students will be showcase their project and recognized by giving trophies during the 5th World Thirukkural Conference at Chicago conduct by Chicago Tamil Sangam/IAS/IATR on April 5-7, 2024. We are confident that it would be an invigorating and rewarding experience for the parents and the students. We would leave it up to parents and students to use their imagination, creativity and their passion to showcase their talent."
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-31",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-32",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-9",
+                                            alt: "Image",
+                                            src: "/img/image-33.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 48,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-10",
+                                            alt: "Image",
+                                            src: "/img/image-34.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-23",
+                                            children: "Research"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-24",
+                                            children: "Evaluate"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 51,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-25",
+                                            children: "Paper Presentation"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 52,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-26",
+                                            children: "Register"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 53,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-27",
+                                            children: "Choose Topic"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 54,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-11",
+                                            alt: "Image",
+                                            src: "/img/image-31.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 55,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-12",
+                                            alt: "Image",
+                                            src: "/img/image-32.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 56,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-13",
+                                            alt: "Image",
+                                            src: "/img/image-35.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 57,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "line-2",
+                                    alt: "Line",
+                                    src: "/img/line-1.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-14",
+                            alt: "Image",
+                            src: "/img/image-45.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-28",
+                            children: "How it works?"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-33",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-29",
+                            children: "Research Topics"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "line-3",
+                            alt: "Line",
+                            src: "/img/line-1-1.svg"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 66,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-30",
+                            children: "2024 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B9A\u0BBF\u0BB2 \u0BA4\u0BC8\u0BB2\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD - \u0BAE\u0BBE\u0BA4\u0BBF\u0BB0\u0BBF\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-34",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-6",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-4",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-16.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 70,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-31",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 73,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BA4\u0BAF\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 75,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 77,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0BC1\u0BA3\u0BCD\u0BA3\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B89\u0BB5\u0BC8\u0BAE\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 81,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0BB5\u0BBF\u0BB2\u0B99\u0BCD\u0B95\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 85,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B95\u0BB1\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 87,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BA9\u0BCD\u0BB1\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 89,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 91,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 93,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B89\u0BB3\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC7\u0BA8\u0BBE\u0B95\u0BCD\u0B95\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 95,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0BC1\u0B9F\u0BC1\u0BAE\u0BCD\u0BAA\u0BAE\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4 \u0B89\u0BB1\u0BB5\u0BC1\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 97,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BAE\u0BC2\u0B95\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 99,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 101,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BC6\u0BAE\u0BAF\u0BCD\u0BAF\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 103,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BA3\u0BCD\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 105,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BBE\u0BA4\u0BC1\u0BB5\u0BC1\u0B9F\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 107,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BC1\u0BB1\u0BCD\u0BB1\u0BC1\u0B9A\u0BCD\u0B9A\u0BC2\u0BB4\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 109,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 71,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-15",
+                                        alt: "Image",
+                                        src: "/img/image-24-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 112,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-16",
+                                        alt: "Image",
+                                        src: "/img/image-22-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 113,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 69,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 68,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-wrapper",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-4",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-16-1.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 118,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-17",
+                                        alt: "Image",
+                                        src: "/img/image-25-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 119,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-18",
+                                        alt: "Image",
+                                        src: "/img/image-23-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 120,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-32",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 123,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BA9\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 125,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BAF\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 127,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC1\u0B95\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 129,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BC1\u0BB1\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 131,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B8A\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 133,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 135,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BA9\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 137,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BBF\u0BC8\u0BB2\u0BAF\u0BBE\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 139,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BB1\u0BCD\u0BAA\u0BA3\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 141,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B88\u0BC8\u0B95",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 143,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9 \u0B89\u0BB1\u0BC1\u0BA4\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 145,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BAA\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 147,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BC6\u0BB5\u0BB1\u0BBF \u0B8E\u0BA4\u0BBF\u0BB0\u0BCD\u0BAA\u0BCD\u0BAA\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 149,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 151,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB3\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 153,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0B9A\u0BB2\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 155,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BBE\u0BA9\u0BC1\u0B9F\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 157,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BB4\u0BCD\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 159,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB1\u0BB5\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BAF\u0BC1\u0BAE\u0BCD"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 121,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 117,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                            lineNumber: 116,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                    lineNumber: 64,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-35",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-5",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-36",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-37",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-wrapper-33",
+                                            children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 169,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "element",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "span",
+                                                    children: "28"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 171,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-wrapper-34",
+                                                    children: "\xa0"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 172,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 170,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "time-2",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overlap-group-7",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "ellipse-4"
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                        lineNumber: 176,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "image-19",
+                                                        alt: "Image",
+                                                        src: "/img/image-37.png"
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                        lineNumber: 177,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 175,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 174,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 168,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 167,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button-2",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-6",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-35",
+                                        children: "2023 Research Articles"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 184,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                    lineNumber: 183,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 182,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-7",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "https://www.youtube.com/watch?v=d5KpuI0JJJY",
+                                        rel: "noopener noreferrer",
+                                        target: "_blank",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-20",
+                                            alt: "Image",
+                                            src: "/img/image-35-1.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 189,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 188,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-21",
+                                        alt: "Image",
+                                        src: "/img/image-36.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 191,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 187,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "text-wrapper-36",
+                                children: "2023 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAA\u0BC1\u0BB3\u0BCD\u0BB3\u0BBF\u0BB5\u0BBF\u0BB5\u0BB0\u0B99\u0BCD\u0B95\u0BB3\u0BCD"
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 193,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-38",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-37",
+                                        children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 195,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "element-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "span",
+                                                children: "58"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 197,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-wrapper-34",
+                                                children: "\xa0\xa0"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                lineNumber: 198,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 196,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "student",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "overlap-group-8",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ellipse-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 202,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-22",
+                                                    alt: "Image",
+                                                    src: "/img/image-28.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 203,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 201,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 200,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 194,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "group-39",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-38",
+                                        children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 208,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-39",
+                                        children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 209,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "volunteer",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "overlap-group-9",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ellipse-6"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 212,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-23",
+                                                    alt: "Image",
+                                                    src: "/img/image-29.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                                    lineNumber: 213,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                            lineNumber: 211,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                        lineNumber: 210,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 207,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-wrapper-40",
+                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0B8E\u0BB5\u0BCD\u0BB5\u0BBE\u0BB1\u0BC1 \u0BA4\u0BA9\u0BBF \u0B9A\u0BBF\u0BB1\u0BAA\u0BCD\u0BAA\u0BC1\u0BAE\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BB0\u0BBE\u0B95 \u0BAE\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1\u0B95\u0BBF\u0BB1\u0BA4\u0BC1"
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                                lineNumber: 217,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                        lineNumber: 166,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                    lineNumber: 165,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupWrapper.GroupWrapper), {
+                    className: "group-18-instance",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+                    lineNumber: 222,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/IphonePlus/IphonePlus.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = IphonePlus;
+var _c;
+$RefreshReg$(_c, "IphonePlus");
+
+  $parcel$ReactRefreshHelpers$5834.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/GroupWrapper":"3Q5Ke","./style.css":"ePiga","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3Q5Ke":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GroupWrapper", ()=>(0, _groupWrapper.GroupWrapper));
+var _groupWrapper = require("./GroupWrapper");
+
+},{"./GroupWrapper":"7j8kd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7j8kd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e832 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e832.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GroupWrapper", ()=>GroupWrapper);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const GroupWrapper = ({ className, href })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `group-wrapper ${className}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text-wrapper-6",
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                className: "text-wrapper-7",
+                href: href,
+                rel: "noopener noreferrer",
+                target: "_blank",
+                children: "thamizh.research.usa@gmail.com"
+            }, void 0, false, {
+                fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "resarch-badge",
+                alt: "Resarch"
+            }, void 0, false, {
+                fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-group-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-wrapper-8",
+                        children: "3rd Schaumburg Tamil Fair 2024"
+                    }, void 0, false, {
+                        fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-wrapper-9",
+                        children: "Tamil Research"
+                    }, void 0, false, {
+                        fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/GroupWrapper/GroupWrapper.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = GroupWrapper;
+GroupWrapper.propTypes = {
+    href: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "GroupWrapper");
+
+  $parcel$ReactRefreshHelpers$e832.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"gU0E1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var ReactIs = require("96e34ae03f5a2631");
+// By explicitly using `prop-types` you are opting into new development behavior.
+// http://fb.me/prop-types-in-prod
+var throwOnDirectAccess = true;
+module.exports = require("cb216452e2171041")(ReactIs.isElement, throwOnDirectAccess);
+
+},{"96e34ae03f5a2631":"7EuwB","cb216452e2171041":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+"use strict";
+module.exports = require("2255125a8e8b1051");
+
+},{"2255125a8e8b1051":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === "function" && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
+    function isValidElementType(type) {
+        return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+        type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_ASYNC_MODE_TYPE:
+                        case REACT_CONCURRENT_MODE_TYPE:
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+        }
+        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"bBUgD":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactIs = require("c437388b089702c3");
+var assign = require("c067a60101d8520c");
+var ReactPropTypesSecret = require("74a0f89a70b9f3c2");
+var has = require("18441b11647bc78");
+var checkPropTypes = require("bec3f6ff89f0b072");
+var printWarning = function() {};
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === "function") return iteratorFn;
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = "<<anonymous>>";
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker("array"),
+        bigint: createPrimitiveTypeChecker("bigint"),
+        bool: createPrimitiveTypeChecker("boolean"),
+        func: createPrimitiveTypeChecker("function"),
+        number: createPrimitiveTypeChecker("number"),
+        object: createPrimitiveTypeChecker("object"),
+        string: createPrimitiveTypeChecker("string"),
+        symbol: createPrimitiveTypeChecker("symbol"),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) // Steps 1-5, 7-10
+        // Steps 6.b-6.e: +0 != -0
+        return x !== 0 || 1 / x === 1 / y;
+        else // Step 6.a: NaN == NaN
+        return x !== x && y !== y;
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === "object" ? data : {};
+        this.stack = "";
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        var manualPropTypeCallCache = {};
+        var manualPropTypeWarningCount = 0;
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
+                    err.name = "Invariant Violation";
+                    throw err;
+                } else if (typeof console !== "undefined") {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ":" + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+                }
+                return null;
+            } else return validate(props, propName, componentName, location, propFullName);
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            {
+                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
+                else printWarning("Invalid argument supplied to oneOf, expected an array.");
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) return null;
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === "symbol") return String(value);
+                return value;
+            });
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+            for(var key in propValue)if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== "function") {
+                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) return null;
+                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case "number":
+            case "string":
+            case "undefined":
+                return true;
+            case "boolean":
+                return !propValue;
+            case "object":
+                if (Array.isArray(propValue)) return propValue.every(isNode);
+                if (propValue === null || isValidElement(propValue)) return true;
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
+                        if (!isNode(step.value)) return false;
+                    }
+                    else // Iterator will provide entry [k,v] tuples rather than values.
+                    while(!(step = iterator.next()).done){
+                        var entry = step.value;
+                        if (entry) {
+                            if (!isNode(entry[1])) return false;
+                        }
+                    }
+                } else return false;
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === "symbol") return true;
+        // falsy value can't be a Symbol
+        if (!propValue) return false;
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue["@@toStringTag"] === "Symbol") return true;
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) return "array";
+        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
+        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+        // passes PropTypes.object.
+        return "object";
+        if (isSymbol(propType, propValue)) return "symbol";
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
+        var propType = getPropType(propValue);
+        if (propType === "object") {
+            if (propValue instanceof Date) return "date";
+            else if (propValue instanceof RegExp) return "regexp";
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case "array":
+            case "object":
+                return "an " + type;
+            case "boolean":
+            case "date":
+            case "regexp":
+                return "a " + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+
+},{"c437388b089702c3":"7EuwB","c067a60101d8520c":"7OXxh","74a0f89a70b9f3c2":"jZTZJ","18441b11647bc78":"fqKuf","bec3f6ff89f0b072":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ "use strict";
+/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if (!Object.assign) return false;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
+        test1[5] = "de";
+        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join("") !== "0123456789") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
+        }
+    }
+    return to;
+};
+
+},{}],"jZTZJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+module.exports = ReactPropTypesSecret;
+
+},{}],"fqKuf":[function(require,module,exports) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"5VwyJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var printWarning = function() {};
+var ReactPropTypesSecret = require("24ba1e58d167a82c");
+var loggedTypeFailures = {};
+var has = require("898bc82f39d83f7c");
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+            // This is intentionally an invariant that gets caught. It's the same
+            // behavior as without this statement except with a better message.
+            if (typeof typeSpecs[typeSpecName] !== "function") {
+                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                err.name = "Invariant Violation";
+                throw err;
+            }
+            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+            error = ex;
+        }
+        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+            // Only monitor this failure once because there tends to be a lot of the
+            // same error.
+            loggedTypeFailures[error.message] = true;
+            var stack = getStack ? getStack() : "";
+            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    loggedTypeFailures = {};
+};
+module.exports = checkPropTypes;
+
+},{"24ba1e58d167a82c":"jZTZJ","898bc82f39d83f7c":"fqKuf"}],"gU0E1":[function() {},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"jEdJI"}],"jEdJI":[function(require,module,exports) {
+"use strict";
+module.exports = require("9e039173d01172ab");
+
+},{"9e039173d01172ab":"uTjV2"}],"uTjV2":[function(require,module,exports) {
+/** @license React v0.9.0
+ * react-refresh-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var REACT_ELEMENT_TYPE = 0xeac7;
+    var REACT_PORTAL_TYPE = 0xeaca;
+    var REACT_FRAGMENT_TYPE = 0xeacb;
+    var REACT_STRICT_MODE_TYPE = 0xeacc;
+    var REACT_PROFILER_TYPE = 0xead2;
+    var REACT_PROVIDER_TYPE = 0xeacd;
+    var REACT_CONTEXT_TYPE = 0xeace;
+    var REACT_FORWARD_REF_TYPE = 0xead0;
+    var REACT_SUSPENSE_TYPE = 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = 0xead8;
+    var REACT_MEMO_TYPE = 0xead3;
+    var REACT_LAZY_TYPE = 0xead4;
+    var REACT_BLOCK_TYPE = 0xead9;
+    var REACT_SERVER_BLOCK_TYPE = 0xeada;
+    var REACT_FUNDAMENTAL_TYPE = 0xead5;
+    var REACT_SCOPE_TYPE = 0xead7;
+    var REACT_OPAQUE_ID_TYPE = 0xeae0;
+    var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
+    var REACT_OFFSCREEN_TYPE = 0xeae2;
+    var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+    if (typeof Symbol === "function" && Symbol.for) {
+        var symbolFor = Symbol.for;
+        REACT_ELEMENT_TYPE = symbolFor("react.element");
+        REACT_PORTAL_TYPE = symbolFor("react.portal");
+        REACT_FRAGMENT_TYPE = symbolFor("react.fragment");
+        REACT_STRICT_MODE_TYPE = symbolFor("react.strict_mode");
+        REACT_PROFILER_TYPE = symbolFor("react.profiler");
+        REACT_PROVIDER_TYPE = symbolFor("react.provider");
+        REACT_CONTEXT_TYPE = symbolFor("react.context");
+        REACT_FORWARD_REF_TYPE = symbolFor("react.forward_ref");
+        REACT_SUSPENSE_TYPE = symbolFor("react.suspense");
+        REACT_SUSPENSE_LIST_TYPE = symbolFor("react.suspense_list");
+        REACT_MEMO_TYPE = symbolFor("react.memo");
+        REACT_LAZY_TYPE = symbolFor("react.lazy");
+        REACT_BLOCK_TYPE = symbolFor("react.block");
+        REACT_SERVER_BLOCK_TYPE = symbolFor("react.server.block");
+        REACT_FUNDAMENTAL_TYPE = symbolFor("react.fundamental");
+        REACT_SCOPE_TYPE = symbolFor("react.scope");
+        REACT_OPAQUE_ID_TYPE = symbolFor("react.opaque.id");
+        REACT_DEBUG_TRACING_MODE_TYPE = symbolFor("react.debug_trace_mode");
+        REACT_OFFSCREEN_TYPE = symbolFor("react.offscreen");
+        REACT_LEGACY_HIDDEN_TYPE = symbolFor("react.legacy_hidden");
+    }
+    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map; // We never remove these associations.
+    // It's OK to reference families, but use WeakMap/Set for types.
+    var allFamiliesByID = new Map();
+    var allFamiliesByType = new PossiblyWeakMap();
+    var allSignaturesByType = new PossiblyWeakMap(); // This WeakMap is read by React, so we only put families
+    // that have actually been edited here. This keeps checks fast.
+    // $FlowIssue
+    var updatedFamiliesByType = new PossiblyWeakMap(); // This is cleared on every performReactRefresh() call.
+    // It is an array of [Family, NextType] tuples.
+    var pendingUpdates = []; // This is injected by the renderer via DevTools global hook.
+    var helpersByRendererID = new Map();
+    var helpersByRoot = new Map(); // We keep track of mounted roots so we can schedule updates.
+    var mountedRoots = new Set(); // If a root captures an error, we remember it so we can retry on edit.
+    var failedRoots = new Set(); // In environments that support WeakMap, we also remember the last element for every root.
+    // It needs to be weak because we do this even for roots that failed to mount.
+    // If there is no WeakMap, we won't attempt to do retrying.
+    // $FlowIssue
+    var rootElements = typeof WeakMap === "function" ? new WeakMap() : null;
+    var isPerformingRefresh = false;
+    function computeFullKey(signature) {
+        if (signature.fullKey !== null) return signature.fullKey;
+        var fullKey = signature.ownKey;
+        var hooks;
+        try {
+            hooks = signature.getCustomHooks();
+        } catch (err) {
+            // This can happen in an edge case, e.g. if expression like Foo.useSomething
+            // depends on Foo which is lazily initialized during rendering.
+            // In that case just assume we'll have to remount.
+            signature.forceReset = true;
+            signature.fullKey = fullKey;
+            return fullKey;
+        }
+        for(var i = 0; i < hooks.length; i++){
+            var hook = hooks[i];
+            if (typeof hook !== "function") {
+                // Something's wrong. Assume we need to remount.
+                signature.forceReset = true;
+                signature.fullKey = fullKey;
+                return fullKey;
+            }
+            var nestedHookSignature = allSignaturesByType.get(hook);
+            if (nestedHookSignature === undefined) continue;
+            var nestedHookKey = computeFullKey(nestedHookSignature);
+            if (nestedHookSignature.forceReset) signature.forceReset = true;
+            fullKey += "\n---\n" + nestedHookKey;
+        }
+        signature.fullKey = fullKey;
+        return fullKey;
+    }
+    function haveEqualSignatures(prevType, nextType) {
+        var prevSignature = allSignaturesByType.get(prevType);
+        var nextSignature = allSignaturesByType.get(nextType);
+        if (prevSignature === undefined && nextSignature === undefined) return true;
+        if (prevSignature === undefined || nextSignature === undefined) return false;
+        if (computeFullKey(prevSignature) !== computeFullKey(nextSignature)) return false;
+        if (nextSignature.forceReset) return false;
+        return true;
+    }
+    function isReactClass(type) {
+        return type.prototype && type.prototype.isReactComponent;
+    }
+    function canPreserveStateBetween(prevType, nextType) {
+        if (isReactClass(prevType) || isReactClass(nextType)) return false;
+        if (haveEqualSignatures(prevType, nextType)) return true;
+        return false;
+    }
+    function resolveFamily(type) {
+        // Only check updated types to keep lookups fast.
+        return updatedFamiliesByType.get(type);
+    } // If we didn't care about IE11, we could use new Map/Set(iterable).
+    function cloneMap(map) {
+        var clone = new Map();
+        map.forEach(function(value, key) {
+            clone.set(key, value);
+        });
+        return clone;
+    }
+    function cloneSet(set) {
+        var clone = new Set();
+        set.forEach(function(value) {
+            clone.add(value);
+        });
+        return clone;
+    }
+    function performReactRefresh() {
+        if (pendingUpdates.length === 0) return null;
+        if (isPerformingRefresh) return null;
+        isPerformingRefresh = true;
+        try {
+            var staleFamilies = new Set();
+            var updatedFamilies = new Set();
+            var updates = pendingUpdates;
+            pendingUpdates = [];
+            updates.forEach(function(_ref) {
+                var family = _ref[0], nextType = _ref[1];
+                // Now that we got a real edit, we can create associations
+                // that will be read by the React reconciler.
+                var prevType = family.current;
+                updatedFamiliesByType.set(prevType, family);
+                updatedFamiliesByType.set(nextType, family);
+                family.current = nextType; // Determine whether this should be a re-render or a re-mount.
+                if (canPreserveStateBetween(prevType, nextType)) updatedFamilies.add(family);
+                else staleFamilies.add(family);
+            }); // TODO: rename these fields to something more meaningful.
+            var update = {
+                updatedFamilies: updatedFamilies,
+                // Families that will re-render preserving state
+                staleFamilies: staleFamilies // Families that will be remounted
+            };
+            helpersByRendererID.forEach(function(helpers) {
+                // Even if there are no roots, set the handler on first update.
+                // This ensures that if *new* roots are mounted, they'll use the resolve handler.
+                helpers.setRefreshHandler(resolveFamily);
+            });
+            var didError = false;
+            var firstError = null; // We snapshot maps and sets that are mutated during commits.
+            // If we don't do this, there is a risk they will be mutated while
+            // we iterate over them. For example, trying to recover a failed root
+            // may cause another root to be added to the failed list -- an infinite loop.
+            var failedRootsSnapshot = cloneSet(failedRoots);
+            var mountedRootsSnapshot = cloneSet(mountedRoots);
+            var helpersByRootSnapshot = cloneMap(helpersByRoot);
+            failedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                failedRoots.has(root);
+                if (rootElements === null) return;
+                if (!rootElements.has(root)) return;
+                var element = rootElements.get(root);
+                try {
+                    helpers.scheduleRoot(root, element);
+                } catch (err) {
+                    if (!didError) {
+                        didError = true;
+                        firstError = err;
+                    } // Keep trying other roots.
+                }
+            });
+            mountedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                mountedRoots.has(root);
+                try {
+                    helpers.scheduleRefresh(root, update);
+                } catch (err) {
+                    if (!didError) {
+                        didError = true;
+                        firstError = err;
+                    } // Keep trying other roots.
+                }
+            });
+            if (didError) throw firstError;
+            return update;
+        } finally{
+            isPerformingRefresh = false;
+        }
+    }
+    function register(type, id) {
+        if (type === null) return;
+        if (typeof type !== "function" && typeof type !== "object") return;
+         // This can happen in an edge case, e.g. if we register
+        // return value of a HOC but it returns a cached component.
+        // Ignore anything but the first registration for each type.
+        if (allFamiliesByType.has(type)) return;
+         // Create family or remember to update it.
+        // None of this bookkeeping affects reconciliation
+        // until the first performReactRefresh() call above.
+        var family = allFamiliesByID.get(id);
+        if (family === undefined) {
+            family = {
+                current: type
+            };
+            allFamiliesByID.set(id, family);
+        } else pendingUpdates.push([
+            family,
+            type
+        ]);
+        allFamiliesByType.set(type, family); // Visit inner types because we might not have registered them.
+        if (typeof type === "object" && type !== null) switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                register(type.render, id + "$render");
+                break;
+            case REACT_MEMO_TYPE:
+                register(type.type, id + "$type");
+                break;
+        }
+    }
+    function setSignature(type, key) {
+        var forceReset = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+        var getCustomHooks = arguments.length > 3 ? arguments[3] : undefined;
+        allSignaturesByType.set(type, {
+            forceReset: forceReset,
+            ownKey: key,
+            fullKey: null,
+            getCustomHooks: getCustomHooks || function() {
+                return [];
+            }
+        });
+    } // This is lazily called during first render for a type.
+    // It captures Hook list at that time so inline requires don't break comparisons.
+    function collectCustomHooksForSignature(type) {
+        var signature = allSignaturesByType.get(type);
+        if (signature !== undefined) computeFullKey(signature);
+    }
+    function getFamilyByID(id) {
+        return allFamiliesByID.get(id);
+    }
+    function getFamilyByType(type) {
+        return allFamiliesByType.get(type);
+    }
+    function findAffectedHostInstances(families) {
+        var affectedInstances = new Set();
+        mountedRoots.forEach(function(root) {
+            var helpers = helpersByRoot.get(root);
+            if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+            var instancesForRoot = helpers.findHostInstancesForRefresh(root, families);
+            instancesForRoot.forEach(function(inst) {
+                affectedInstances.add(inst);
+            });
+        });
+        return affectedInstances;
+    }
+    function injectIntoGlobalHook(globalObject) {
+        // For React Native, the global hook will be set up by require('react-devtools-core').
+        // That code will run before us. So we need to monkeypatch functions on existing hook.
+        // For React Web, the global hook will be set up by the extension.
+        // This will also run before us.
+        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+        if (hook === undefined) {
+            // However, if there is no DevTools extension, we'll need to set up the global hook ourselves.
+            // Note that in this case it's important that renderer code runs *after* this method call.
+            // Otherwise, the renderer will think that there is no global hook, and won't do the injection.
+            var nextID = 0;
+            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
+                renderers: new Map(),
+                supportsFiber: true,
+                inject: function(injected) {
+                    return nextID++;
+                },
+                onScheduleFiberRoot: function(id, root, children) {},
+                onCommitFiberRoot: function(id, root, maybePriorityLevel, didError) {},
+                onCommitFiberUnmount: function() {}
+            };
+        } // Here, we just want to get a reference to scheduleRefresh.
+        var oldInject = hook.inject;
+        hook.inject = function(injected) {
+            var id = oldInject.apply(this, arguments);
+            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
+            helpersByRendererID.set(id, injected);
+            return id;
+        }; // Do the same for any already injected roots.
+        // This is useful if ReactDOM has already been initialized.
+        // https://github.com/facebook/react/issues/17626
+        hook.renderers.forEach(function(injected, id) {
+            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
+            helpersByRendererID.set(id, injected);
+        }); // We also want to track currently mounted roots.
+        var oldOnCommitFiberRoot = hook.onCommitFiberRoot;
+        var oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
+        hook.onScheduleFiberRoot = function(id, root, children) {
+            if (!isPerformingRefresh) {
+                // If it was intentionally scheduled, don't attempt to restore.
+                // This includes intentionally scheduled unmounts.
+                failedRoots.delete(root);
+                if (rootElements !== null) rootElements.set(root, children);
+            }
+            return oldOnScheduleFiberRoot.apply(this, arguments);
+        };
+        hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
+            var helpers = helpersByRendererID.get(id);
+            if (helpers === undefined) return;
+            helpersByRoot.set(root, helpers);
+            var current = root.current;
+            var alternate = current.alternate; // We need to determine whether this root has just (un)mounted.
+            // This logic is copy-pasted from similar logic in the DevTools backend.
+            // If this breaks with some refactoring, you'll want to update DevTools too.
+            if (alternate !== null) {
+                var wasMounted = alternate.memoizedState != null && alternate.memoizedState.element != null;
+                var isMounted = current.memoizedState != null && current.memoizedState.element != null;
+                if (!wasMounted && isMounted) {
+                    // Mount a new root.
+                    mountedRoots.add(root);
+                    failedRoots.delete(root);
+                } else if (wasMounted && isMounted) ;
+                else if (wasMounted && !isMounted) {
+                    // Unmount an existing root.
+                    mountedRoots.delete(root);
+                    if (didError) // We'll remount it on future edits.
+                    failedRoots.add(root);
+                    else helpersByRoot.delete(root);
+                } else if (!wasMounted && !isMounted) {
+                    if (didError) // We'll remount it on future edits.
+                    failedRoots.add(root);
+                }
+            } else // Mount a new root.
+            mountedRoots.add(root);
+            return oldOnCommitFiberRoot.apply(this, arguments);
+        };
+    }
+    function hasUnrecoverableErrors() {
+        // TODO: delete this after removing dependency in RN.
+        return false;
+    } // Exposed for testing.
+    function _getMountedRootCount() {
+        return mountedRoots.size;
+    } // This is a wrapper over more primitive functions for setting signature.
+    // Signatures let us decide whether the Hook order has changed on refresh.
+    //
+    // This function is intended to be used as a transform target, e.g.:
+    // var _s = createSignatureFunctionForTransform()
+    //
+    // function Hello() {
+    //   const [foo, setFoo] = useState(0);
+    //   const value = useCustomHook();
+    //   _s(); /* Second call triggers collecting the custom Hook list.
+    //          * This doesn't happen during the module evaluation because we
+    //          * don't want to change the module order with inline requires.
+    //          * Next calls are noops. */
+    //   return <h1>Hi</h1>;
+    // }
+    //
+    // /* First call specifies the signature: */
+    // _s(
+    //   Hello,
+    //   'useState{[foo, setFoo]}(0)',
+    //   () => [useCustomHook], /* Lazy to avoid triggering inline requires */
+    // );
+    function createSignatureFunctionForTransform() {
+        // We'll fill in the signature in two steps.
+        // First, we'll know the signature itself. This happens outside the component.
+        // Then, we'll know the references to custom Hooks. This happens inside the component.
+        // After that, the returned function will be a fast path no-op.
+        var status = "needsSignature";
+        var savedType;
+        var hasCustomHooks;
+        return function(type, key, forceReset, getCustomHooks) {
+            switch(status){
+                case "needsSignature":
+                    if (type !== undefined) {
+                        // If we received an argument, this is the initial registration call.
+                        savedType = type;
+                        hasCustomHooks = typeof getCustomHooks === "function";
+                        setSignature(type, key, forceReset, getCustomHooks); // The next call we expect is from inside a function, to fill in the custom Hooks.
+                        status = "needsCustomHooks";
+                    }
+                    break;
+                case "needsCustomHooks":
+                    if (hasCustomHooks) collectCustomHooksForSignature(savedType);
+                    status = "resolved";
+                    break;
+            }
+            return type;
+        };
+    }
+    function isLikelyComponentType(type) {
+        switch(typeof type){
+            case "function":
+                // First, deal with classes.
+                if (type.prototype != null) {
+                    if (type.prototype.isReactComponent) // React class.
+                    return true;
+                    var ownNames = Object.getOwnPropertyNames(type.prototype);
+                    if (ownNames.length > 1 || ownNames[0] !== "constructor") // This looks like a class.
+                    return false;
+                     // eslint-disable-next-line no-proto
+                    if (type.prototype.__proto__ !== Object.prototype) // It has a superclass.
+                    return false;
+                     // Pass through.
+                // This looks like a regular function with empty prototype.
+                } // For plain functions and arrows, use name as a heuristic.
+                var name = type.name || type.displayName;
+                return typeof name === "string" && /^[A-Z]/.test(name);
+            case "object":
+                if (type != null) switch(type.$$typeof){
+                    case REACT_FORWARD_REF_TYPE:
+                    case REACT_MEMO_TYPE:
+                        // Definitely React components.
+                        return true;
+                    default:
+                        return false;
+                }
+                return false;
+            default:
+                return false;
+        }
+    }
+    exports._getMountedRootCount = _getMountedRootCount;
+    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
+    exports.createSignatureFunctionForTransform = createSignatureFunctionForTransform;
+    exports.findAffectedHostInstances = findAffectedHostInstances;
+    exports.getFamilyByID = getFamilyByID;
+    exports.getFamilyByType = getFamilyByType;
+    exports.hasUnrecoverableErrors = hasUnrecoverableErrors;
+    exports.injectIntoGlobalHook = injectIntoGlobalHook;
+    exports.isLikelyComponentType = isLikelyComponentType;
+    exports.performReactRefresh = performReactRefresh;
+    exports.register = register;
+    exports.setSignature = setSignature;
+})();
+
+},{}],"ePiga":[function() {},{}],"4vBH2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Desktop", ()=>(0, _desktop.Desktop));
+var _desktop = require("./Desktop");
+
+},{"./Desktop":"5c16b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5c16b":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e51c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e51c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Desktop", ()=>Desktop);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _component = require("../../components/Component");
+var _group = require("../../components/Group");
+var _styleCss = require("./style.css");
+var _styleWithMenuCss = require("./styleWithMenu.css");
+const Desktop = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "desktop",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div-2",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-44",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "banner-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "vector",
+                                    alt: "Vector",
+                                    src: "/img/vector-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 15,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "mask-group",
+                                    alt: "Mask group",
+                                    src: "/img/banner.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "logo-6",
+                                    alt: "Logo",
+                                    src: "/img/resarch-badge2024-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 17,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "navbar-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-128",
+                                    to: "/",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-129",
+                                    to: "/research-details",
+                                    children: "Research Details"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 21,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-130",
+                                    to: "/resources",
+                                    children: "Resources"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-131",
+                                    to: "/contact-us",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-22"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    className: "text-wrapper-10",
+                    to: "/resources",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper-11",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-20",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-7.png",
+                    text: "\u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BBF\u0BA4\u0BC7\u0B9A\u0BC1 \u0BAA\u0BB5\u0BBE\u0BA9\u0BBF \u0B9A\u0B99\u0BCD\u0B95\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-instance",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-8.png",
+                    text: "\u0B89\u0BA3\u0BC7\u0BB5 \u0BAE\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BC1",
+                    text1: "\u0B87\u0BB2\u0BBE\u0B9A\u0BBF\u0BAF\u0BAA\u0BBF\u0BB0\u0BBF\u0BAF\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-20-instance",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-9.png",
+                    text: "\u0BB5\u0BBE\u0BAF\u0BCD\u0BAE\u0BC8",
+                    text1: "\u0B9A\u0BBE\u0BA9\u0B95\u0BBF \u0B9A\u0BC1\u0BB5\u0BBE\u0BAE\u0BBF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 51,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "design-component-instance-node",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-10.png",
+                    text: "\u0B85\u0BB1\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5...",
+                    text1: "\u0B86\u0BA4\u0BB5\u0BCD \u0B9A\u0BBF\u0BB0\u0BBF\u0BB0\u0BBE\u0BAE\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 58,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-2",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-11.png",
+                    text: "\u0BB5\u0BC7\u0BB3\u0BBE\u0BA3\u0BCD\u0BAE\u0BC8\u0BAF\u0BBF\u0BA9\u0BCD \u0BAA\u0BC6\u0BB0\u0BC1...",
+                    text1: "\u0B9A\u0BBF\u0BA4\u0BCD\u0BA4\u0BBE\u0BB0\u0BCD\u0BA4\u0BC1 \u0B9A\u0BC6\u0BB2\u0BCD\u0BB5\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 65,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-3",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-12.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BB0\u0BBF\u0B9A\u0BB0\u0BA3\u0B82"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 72,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-4",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-13.png",
+                    text: "\u0BAE\u0BBE\u0BB0\u0BCD\u0B95\u0BB4\u0BBF \u0BAE\u0BBE\u0BA4 \u0B95\u0BCB\u0BB2\u0B99\u0BCD\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B85\u0B9A\u0BC1\u0BB5\u0BBF\u0B95\u0BBE \u0B9A\u0BC1\u0BB0\u0BC7\u0B9A\u0BC1 \u0BAA\u0BC1\u0BB5\u0BA9\u0BC7\u0B9A\u0BC1\u0BB5\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 79,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-5",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-14.png",
+                    text: "\u0BA8\u0BC7\u0BB0\u0BCD\u0BAE\u0BC8",
+                    text1: "\u0B9A\u0BCC\u0B9A\u0BA9\u0BCD\u0BAF\u0BBE \u0B9A\u0BC6\u0BA8\u0BCD\u0BA4\u0BBF\u0BB2\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 86,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-6",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-15.png",
+                    text: "\u0BAA\u0BB1\u0BC8",
+                    text1: "\u0BAE\u0BC1\u0B95\u0BC1\u0BA8\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1 \u0B95\u0BBF\u0BB0\u0BC1\u0B9F\u0BCD\u0B9F\u0BBF\u0BA3\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 93,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-7",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-16.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0BAA\u0BC2\u0BB0\u0BCD\u0BB5\u0BBF \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BBF\u0BA8\u0BBE\u0BB0\u0BBE\u0BAF\u0BA3\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 100,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-8",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-17.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD\u0B95\u0BCD\u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                    text1: "\u0BAF\u0B9A\u0BCD\u0BB5\u0BA8\u0BCD\u0BA4\u0BCD \u0BB0\u0BBE\u0B9C\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-9",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-18.png",
+                    text: "\u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B86\u0BB0\u0BBE\u0BA4\u0BA9\u0BBE \u0B95\u0BA3\u0BC7\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 114,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-10",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-19.png",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0BC1\u0BA4\u0BB0\u0BCD\u0B9A\u0BA9 \u0BA8\u0BBF\u0BAE\u0BB2\u0BCD \u0BA4\u0BAF\u0BBE\u0BB3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 121,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-11",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-20.png",
+                    text: "\u0B9A\u0BBF\u0BB1\u0BCD\u0BAA\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B87\u0BB0\u0BBF\u0B95\u0BCD\u0B95\u0BBF \u0B9A\u0BCB\u0BA9\u0BCD\u0B9A\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 128,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-12",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-21.png",
+                    text: "\u0BAE\u0BA9\u0BBF\u0BA4\u0BA8\u0BC7\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0B9A\u0B9E\u0BCD\u0B9A\u0BA9\u0BBE \u0B9A\u0BA8\u0BCD\u0BA4\u0BC0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 135,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-13",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BC7\u0BA9\u0B9A\u0BC1 \u0BAA\u0BB5\u0BBE\u0BA9\u0BBF \u0B9A\u0B99\u0BCD\u0B95\u0BB0"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 142,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-14",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-23.png",
+                    text: "\u0B95\u0BCB\u0BB5\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B87\u0BB2\u0B9F\u0BCD\u0B9A\u0BA9\u0BBE \u0B85\u0BB0\u0BC1\u0BA3\u0BAA\u0BBF\u0BB0\u0B9A\u0BBE\u0BA4\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 149,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-15",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-24.png",
+                    text: "\u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B85\u0B9A\u0BAF\u0BCD \u0BB5\u0BC0\u0BB0\u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 156,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-16",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-1.png",
+                    text: "\u0B9A\u0BBF\u0BB2\u0BAE\u0BCD\u0BAA\u0BBE\u0B9F\u0BCD\u0B9F\u0BAE\u0BCD",
+                    text1: "\u0B85\u0B95\u0BBF\u0BB2\u0BCD \u0BA8\u0BBF\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BA8\u0BCD\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 163,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-17",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-2.png",
+                    text: "\u0BA8\u0BC0\u0BB0\u0BCD\u0BB5\u0BB3\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0BA8\u0BC7\u0B95\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 170,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-18",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0B8F\u0BB1\u0BC1\u0BA4\u0BB4\u0BC1\u0BB5\u0BC1\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BB5\u0BB0\u0BC1\u0BA3\u0BCD \u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 177,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-19",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-26.png",
+                    text: "\u0BAA\u0BCA\u0BB0\u0BC1\u0BB3\u0BC8 \u0B88\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BB1\u0BC8...",
+                    text1: "\u0B9A\u0BA8\u0BCD\u0BA4\u0BBF\u0BB0\u0BC7\u0B9A\u0BC1 \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 184,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-21",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-27.png",
+                    text: "\u0BAA\u0BCA\u0BB0\u0BC1\u0BB3\u0BC8 \u0B88\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BB1\u0BC8...",
+                    text1: "\u0B85\u0B95\u0BCD\u0B9A\u0BB0\u0BBE \u0B85\u0BB0\u0BC1\u0BA3\u0BCD \u0B95\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BBF\u0B95\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 191,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-22",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0B85\u0BA4\u0BBF\u0BA4\u0BBF \u0BA8\u0BBF\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BA8\u0BCD\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 198,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-23",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-28.png",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B87\u0BA9\u0BBF\u0BAF\u0BA9\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD\u0B9A\u0BCD\u0B9A\u0BC6\u0BB2\u0BCD\u0BB5\u0BA9\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BB4\u0B95\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 205,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-24",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-29.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BB5\u0BB0\u0BCD\u0B9A\u0BBF\u0BA9\u0BBF \u0BB5\u0BBF\u0B9A\u0BAF\u0B95\u0BBE\u0BB3\u0BBF\u0BB0\u0BBE\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 212,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-25",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0B95\u0BB4\u0BCD \u0BAA\u0BCA\u0BA9\u0BCD\u0B9A\u0BBF\u0BB0\u0BBF\xa0\xa0\u0BAA\u0BCA\u0BA9\u0BCD\u0BA9\u0BB0\u0B9A\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 219,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-26",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-30.png",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BB5\u0BCD \u0BB5\u0BC8\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 226,
+                    columnNumber: 9
+                }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "overlap",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "screenshot",
                             alt: "Screenshot",
-                            src: "https://c.animaapp.com/anMiAFxl/img/screenshot-2023-11-23-at-3-59-1.png"
+                            src: "/img/screenshot-2023-11-23-at-3-59-1.png"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 10,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 234,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper",
+                            className: "text-wrapper-12",
                             children: "2023 Event Highlights"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "image",
-                            alt: "Image",
-                            src: "https://c.animaapp.com/anMiAFxl/img/image-38@2x.png"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "img",
-                            alt: "Image",
-                            src: "https://c.animaapp.com/anMiAFxl/img/image-39@2x.png"
-                        }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 17,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 235,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "image-2",
                             alt: "Image",
-                            src: "https://c.animaapp.com/anMiAFxl/img/image-40@2x.png"
+                            src: "/img/image-38.png"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 18,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 236,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "image-3",
                             alt: "Image",
-                            src: "https://c.animaapp.com/anMiAFxl/img/image-41@2x.png"
+                            src: "/img/image-39.png"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 19,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 237,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-4",
+                            alt: "Image",
+                            src: "/img/image-40.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 238,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-5",
+                            alt: "Image",
+                            src: "/img/image-41.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 239,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 9,
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 233,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "overlap-group",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "navbar",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                className: "text-wrapper-2",
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 23,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-3",
-                                children: "Program Details"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 24,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/2023-research",
-                                className: "text-wrapper-4",
-                                children: "2023 Research"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 25,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-5",
-                                children: "About"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "text-wrapper-6",
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 27,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "rectangle"
-                            }, void 0, false, {
-                                fileName: "src/screens/Desktop/Page2.jsx",
-                                lineNumber: 28,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/screens/Desktop/Page2.jsx",
-                        lineNumber: 22,
-                        columnNumber: 11
-                    }, undefined)
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
+                    className: "component-1",
+                    href: "mailto:thamizh.research.usa@gmail.com"
                 }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 21,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-7",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-8",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-9",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 33,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-10",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 34,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-11",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 35,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-12",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 36,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-13",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-14",
-                    children: "Topic 1"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 38,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper-15",
-                    children: "Research Topics"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-2"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-3"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 41,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-4"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 42,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-5"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 43,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-6"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 44,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-7"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 45,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-8"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 46,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "rectangle-9"
-                }, void 0, false, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "group-2",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "p",
-                                    children: "different research topics were submitted"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 50,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-16",
-                                    children: "28"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 51,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "time",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-group-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "ellipse"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 54,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                className: "image-4",
-                                                alt: "Image",
-                                                src: "https://c.animaapp.com/anMiAFxl/img/image-37@2x.png"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 55,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Desktop/Page2.jsx",
-                                        lineNumber: 53,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 52,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "group-3",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-17",
-                                    children: "young tamil learners participated"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 60,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-18",
-                                    children: "58"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 61,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-group-wrapper",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-group-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "ellipse-2"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 64,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                className: "image-5",
-                                                alt: "Image",
-                                                src: "https://c.animaapp.com/anMiAFxl/img/image-28@2x.png"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 65,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Desktop/Page2.jsx",
-                                        lineNumber: 63,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 62,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 59,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "group-4",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-19",
-                                    children: "of planned activities"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 70,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-wrapper-20",
-                                    children: "60 days"
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 71,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "overlap-group-wrapper",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "overlap-group-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "ellipse-3"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 74,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                className: "image-5",
-                                                alt: "Image",
-                                                src: "https://c.animaapp.com/anMiAFxl/img/image-29@2x.png"
-                                            }, void 0, false, {
-                                                fileName: "src/screens/Desktop/Page2.jsx",
-                                                lineNumber: 75,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/screens/Desktop/Page2.jsx",
-                                        lineNumber: 73,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/screens/Desktop/Page2.jsx",
-                                    lineNumber: 72,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 69,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 48,
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 241,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "overlap-2",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-wrapper-21",
-                            children: "@Schamburg Tamil Fair 2024"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "line",
+                            alt: "Line",
+                            src: "/img/line-2.svg"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 81,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 243,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "resarch",
-                            alt: "Resarch",
-                            src: "https://c.animaapp.com/anMiAFxl/img/resarch-badge2024-2@2x.png"
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-2"
                         }, void 0, false, {
-                            fileName: "src/screens/Desktop/Page2.jsx",
-                            lineNumber: 82,
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 244,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/screens/Desktop/Page2.jsx",
-                    lineNumber: 80,
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 242,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-27",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-28",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-13",
+                                    children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 248,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-14",
+                                    children: "28"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 249,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "time",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 252,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-6",
+                                                alt: "Image",
+                                                src: "/img/image-37.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 253,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Desktop/Desktop.jsx",
+                                        lineNumber: 251,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 250,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 247,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-29",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-15",
+                                    children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 258,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-16",
+                                    children: "58"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 259,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-wrapper",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse-2"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 262,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-7",
+                                                alt: "Image",
+                                                src: "/img/image-28.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 263,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Desktop/Desktop.jsx",
+                                        lineNumber: 261,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 260,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 257,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-30",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-17",
+                                    children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 268,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-18",
+                                    children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 269,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-wrapper",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse-3"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 272,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-7",
+                                                alt: "Image",
+                                                src: "/img/image-29.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Desktop/Desktop.jsx",
+                                                lineNumber: 273,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Desktop/Desktop.jsx",
+                                        lineNumber: 271,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Desktop/Desktop.jsx",
+                                    lineNumber: 270,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Desktop/Desktop.jsx",
+                            lineNumber: 267,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Desktop/Desktop.jsx",
+                    lineNumber: 246,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/screens/Desktop/Page2.jsx",
-            lineNumber: 8,
+            fileName: "src/screens/Desktop/Desktop.jsx",
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/screens/Desktop/Page2.jsx",
-        lineNumber: 7,
+        fileName: "src/screens/Desktop/Desktop.jsx",
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
-_c = Page2;
+_c = Desktop;
 var _c;
-$RefreshReg$(_c, "Page2");
+$RefreshReg$(_c, "Desktop");
 
-  $parcel$ReactRefreshHelpers$e638.postlude(module);
+  $parcel$ReactRefreshHelpers$e51c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style2.css":"2JBC3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2JBC3":[function() {},{}]},["d8m58","1xC6H","d8Dch"], "d8Dch", "parcelRequireb8e7")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Component":"eLDOD","../../components/Group":"74UMT","./style.css":"71OGf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styleWithMenu.css":"gYeGl"}],"eLDOD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Component", ()=>(0, _component.Component));
+var _component = require("./Component");
+
+},{"./Component":"2AZAu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2AZAu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1462 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1462.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Component", ()=>Component);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Component = ({ className, href })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `component ${className}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-group",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-wrapper-2",
+                        children: "@Schamburg Tamil Fair 2024"
+                    }, void 0, false, {
+                        fileName: "src/components/Component/Component.jsx",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "p",
+                        children: "3rd Schaumburg Tamil Fair 2024"
+                    }, void 0, false, {
+                        fileName: "src/components/Component/Component.jsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-wrapper-3",
+                        children: "Tamil Research"
+                    }, void 0, false, {
+                        fileName: "src/components/Component/Component.jsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Component/Component.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "resarch",
+                alt: "Resarch",
+                src: "/img/resarch-badge2024-2.png"
+            }, void 0, false, {
+                fileName: "src/components/Component/Component.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text-wrapper-4",
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/components/Component/Component.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                className: "text-wrapper-5",
+                href: href,
+                rel: "noopener noreferrer",
+                target: "_blank",
+                children: "thamizh.research.usa@gmail.com"
+            }, void 0, false, {
+                fileName: "src/components/Component/Component.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Component/Component.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Component;
+Component.propTypes = {
+    href: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "Component");
+
+  $parcel$ReactRefreshHelpers$1462.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"Ptj5i","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Ptj5i":[function() {},{}],"74UMT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Group", ()=>(0, _group.Group));
+var _group = require("./Group");
+
+},{"./Group":"ceBbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ceBbF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4138 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4138.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Group", ()=>Group);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Group = ({ className, text = "\u0BA4\u0BAE\u0BBF\u0BB4\u0BBF\u0BA9\u0BCD \u0B87\u0B9A\u0BC8 \u0BAE\u0BB0\u0BAA\u0BC1", text1 = "\u0B85\u0BB0\u0BCD\u0B9A\u0BC1\u0BA9\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BAF\u0BBE\u0B9A\u0B99\u0BCD\u0B95\u0BB0\u0BCD", rectangle = "/img/rectangle-15.png", href })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `group ${className}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text-wrapper",
+                children: text
+            }, void 0, false, {
+                fileName: "src/components/Group/Group.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "div",
+                children: text1
+            }, void 0, false, {
+                fileName: "src/components/Group/Group.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: href,
+                rel: "noopener noreferrer",
+                target: "_blank",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "rectangle",
+                    alt: "Rectangle",
+                    src: rectangle
+                }, void 0, false, {
+                    fileName: "src/components/Group/Group.jsx",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Group/Group.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Group/Group.jsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Group;
+Group.propTypes = {
+    text: (0, _propTypesDefault.default).string,
+    text1: (0, _propTypesDefault.default).string,
+    rectangle: (0, _propTypesDefault.default).string,
+    href: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "Group");
+
+  $parcel$ReactRefreshHelpers$4138.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"c7zx6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c7zx6":[function() {},{}],"71OGf":[function() {},{}],"gYeGl":[function() {},{}],"d96ZZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IphonePlusScreen", ()=>(0, _iphonePlusScreen.IphonePlusScreen));
+var _iphonePlusScreen = require("./IphonePlusScreen");
+
+},{"./IphonePlusScreen":"lw9pb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lw9pb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5511 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5511.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IphonePlusScreen", ()=>IphonePlusScreen);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _groupWrapper = require("../../components/GroupWrapper");
+var _styleCss = require("./style.css");
+const IphonePlusScreen = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "iphone-plus-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-2",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button-3",
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-10",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-41",
+                                    children: "Register"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 18,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 17,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-9",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-42",
+                                    children: "2024 Research Theme"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-43",
+                                    children: "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/iphone-8-plus-6",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "image-24",
+                        alt: "Image",
+                        src: "/img/image-46.png"
+                    }, void 0, false, {
+                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/iphone-8-plus-1",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "logo-2",
+                        alt: "Logo",
+                        src: "/img/resarch-badge2024-2.png"
+                    }, void 0, false, {
+                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                        lineNumber: 30,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-40",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-44",
+                            children: "Research Topics"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-45",
+                            children: "2024 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B9A\u0BBF\u0BB2 \u0BA4\u0BC8\u0BB2\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD - \u0BAE\u0BBE\u0BA4\u0BBF\u0BB0\u0BBF\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-41",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-11",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-5",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-16.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-46",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 40,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BA4\u0BAF\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 42,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 44,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0BC1\u0BA3\u0BCD\u0BA3\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 46,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B89\u0BB5\u0BC8\u0BAE\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 48,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 50,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0BB5\u0BBF\u0BB2\u0B99\u0BCD\u0B95\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 52,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B95\u0BB1\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 54,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BA9\u0BCD\u0BB1\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 60,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B89\u0BB3\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC7\u0BA8\u0BBE\u0B95\u0BCD\u0B95\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 62,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0BC1\u0B9F\u0BC1\u0BAE\u0BCD\u0BAA\u0BAE\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4 \u0B89\u0BB1\u0BB5\u0BC1\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 64,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BAE\u0BC2\u0B95\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 66,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BC6\u0BAE\u0BAF\u0BCD\u0BAF\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 70,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BA3\u0BCD\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 72,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BBE\u0BA4\u0BC1\u0BB5\u0BC1\u0B9F\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 74,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BC1\u0BB1\u0BCD\u0BB1\u0BC1\u0B9A\u0BCD\u0B9A\u0BC2\u0BB4\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 76,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 38,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-25",
+                                        alt: "Image",
+                                        src: "/img/image-24-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 79,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-26",
+                                        alt: "Image",
+                                        src: "/img/image-22-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 80,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-42",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-10",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-5",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-16-1.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 85,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-27",
+                                        alt: "Image",
+                                        src: "/img/image-25-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 86,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-28",
+                                        alt: "Image",
+                                        src: "/img/image-23-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-47",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 90,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BA9\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 92,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BAF\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 94,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC1\u0B95\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 96,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BC1\u0BB1\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 98,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B8A\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 100,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 102,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BA9\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 104,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BBF\u0BC8\u0BB2\u0BAF\u0BBE\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 106,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BB1\u0BCD\u0BAA\u0BA3\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 108,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B88\u0BC8\u0B95",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 110,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9 \u0B89\u0BB1\u0BC1\u0BA4\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 112,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BAA\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 114,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BC6\u0BB5\u0BB1\u0BBF \u0B8E\u0BA4\u0BBF\u0BB0\u0BCD\u0BAA\u0BCD\u0BAA\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 116,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 118,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB3\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 120,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0B9A\u0BB2\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 122,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BBE\u0BA9\u0BC1\u0B9F\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 124,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BB4\u0BCD\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB1\u0BB5\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BAF\u0BC1\u0BAE\u0BCD"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 88,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 84,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 83,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper-48",
+                    children: "Who can participate"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 132,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-wrapper-49",
+                    children: "All ~550 Thamizh Schools USA students"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 133,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-43",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "group-44",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-12",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-7"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 137,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-29",
+                                        alt: "Image",
+                                        src: "/img/image-44.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 138,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 136,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "element-3",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-50",
+                                        children: "\u0BA8\u0BBF\u0BB2\u0BC8 1:\xa0\xa0"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 141,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-51",
+                                        children: "\u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 142,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 140,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                        lineNumber: 135,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 134,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-45",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "image-wrapper",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "image-30",
+                                alt: "Image",
+                                src: "/img/image-43.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 148,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 147,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "element-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-50",
+                                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2: "
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 151,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-51",
+                                    children: "\u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 2, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 1, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 2, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 1, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 2, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 1, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 2 \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 1, \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 152,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 150,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 146,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-46",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-11",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-13",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "thirukkural-research",
+                                        children: [
+                                            "Thirukkural Research Project Presentation - All ~550 Thamizh Schools USA students (During the assembly / online)",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 163,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 164,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Volunteer registration: 2 volunteer / School for 100 days",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 166,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 167,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Registration: Google Forms to All ~ 550 Thamizh Schools USA students",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 169,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 170,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Select the 100 students based on their Thirukkural research abstract",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 172,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 173,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Split into 2 Groups \u0BA8\u0BBF\u0BC8\u0BB2 1 and \u0BA8\u0BBF\u0BC8\u0BB2 2. (\u0BA8\u0BBF\u0BC8\u0BB2 1 : \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1. \u0BA8\u0BBF\u0BC8\u0BB2 2 : \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 2, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 1, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 2, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 1, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 2, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 1, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 2 \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 1, \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 2)."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 160,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 159,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-52",
+                                    children: "Phase 1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 178,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 158,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-12",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-13",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "onboarding-teachers",
+                                        children: [
+                                            "Onboarding Teachers - 10 ( 10 students / 1 Teacher)",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 184,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 185,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Onboarding students - Placing all the student on the two Google Classrooms ( Level 1 and Level 2)",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 187,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 188,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Grading / Reviewing Students weekly Google Slides ( 10 assignments / Google Slides)",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 190,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 191,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Guide Students to make the tri-fold poster board",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 193,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                lineNumber: 194,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Reviewing / judging - 1st level : Thirukkural research project audio / poster boards - Google Slides."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                        lineNumber: 182,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 181,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-53",
+                                    children: "Phase 2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 198,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 180,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-13",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-14",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "rectangle-6",
+                                            alt: "Rectangle",
+                                            src: "/img/rectangle-27.svg"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 202,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "thirukkural-research-2",
+                                            children: [
+                                                "Thirukkural Research Conference on March 31, 2024 at conant high school : Judging - 2nd level and selecting Top Thirukkural research papers and recognize them",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                    lineNumber: 206,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                                    lineNumber: 207,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Top students showcase their Thirukkural research project and recognized during 5th World Thirukkural Conference on April 5-7 , 2024 at Chicago."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 203,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-31",
+                                            alt: "Image",
+                                            src: "/img/image-45.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 211,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 201,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-54",
+                                    children: "Phase 3"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 213,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-55",
+                            children: "Research Phases"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 215,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 157,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "assignment",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "element-coordinator-s",
+                            children: [
+                                "\u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0BAA\u0BA4\u0BBF\u0BB5\u0BC1",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 220,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0BA4\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0BC8 \u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 222,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0B86\u0BAF\u0BCD\u0BB5\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8 \u0B9A\u0BC1\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD\xa0\xa0\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 224,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0B86\u0BAF\u0BCD\u0BB5\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8\xa0\xa0\xa0\xa0\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 226,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0BAA\u0BBF\u0BA9\u0BCD\u0BA9\u0BA3\u0BBF \u0BA4\u0B95\u0BB5\u0BB2\u0BCD\xa0\xa0\xa0\xa0\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 228,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0BA4\u0BB1\u0BCD\u0B95\u0BBE\u0BB2 \u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 229,
+                                    columnNumber: 30
+                                }, undefined),
+                                "\u0B9A\u0BBE\u0BA9\u0BCD\u0BB1\u0BC1 1 ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 230,
+                                    columnNumber: 22
+                                }, undefined),
+                                "\u0B9A\u0BBE\u0BA9\u0BCD\u0BB1\u0BC1 2\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 232,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0BAA\u0BC1\u0BB3\u0BCD\u0BB3\u0BBF\u0BB5\u0BBF\u0BB5\u0BB0 \u0BA4\u0BB0\u0BB5\u0BC1 / \u0BB5\u0BB0\u0BC8\u0BAA\u0B9F\u0BAE\u0BCD,\xa0\xa0\xa0\xa0 ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 233,
+                                    columnNumber: 64
+                                }, undefined),
+                                "\u0BAA\u0B95\u0BC1\u0BAA\u0BCD\u0BAA\u0BBE\u0BAF\u0BCD\u0BB5\u0BC1\xa0\xa0 ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 234,
+                                    columnNumber: 37
+                                }, undefined),
+                                "\u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0BB0\u0BC8\xa0\xa0\xa0\xa0",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 236,
+                                    columnNumber: 13
+                                }, undefined),
+                                "\u0BB5\u0BBF\u0BB3\u0B95\u0BCD\u0B95\u0B95\u0BCD\u0B95\u0BBE\u0B9F\u0BCD\u0B9A\u0BBF/coordinator\u2019s approval\xa0\xa0\xa0 \xa0 \xa0\xa0\xa0 ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 237,
+                                    columnNumber: 80
+                                }, undefined),
+                                "\u0BAA\u0BCB\u0B9F\u0BCD\u0B9F\u0BBF\u0BAF\u0BBF\u0BB2\u0BCD \u0BAA\u0B99\u0BCD\u0B95\u0BC7\u0BB1\u0BCD\u0BB1\u0BB2\u0BCD"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 218,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element-5",
+                            children: [
+                                "12/16/2023",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 242,
+                                    columnNumber: 13
+                                }, undefined),
+                                "01/07/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 244,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 245,
+                                    columnNumber: 13
+                                }, undefined),
+                                "01/14/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 247,
+                                    columnNumber: 13
+                                }, undefined),
+                                "01/28/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 249,
+                                    columnNumber: 13
+                                }, undefined),
+                                "02/04/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 251,
+                                    columnNumber: 13
+                                }, undefined),
+                                "02/11/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 253,
+                                    columnNumber: 13
+                                }, undefined),
+                                "02/18/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 255,
+                                    columnNumber: 13
+                                }, undefined),
+                                "02/25/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 257,
+                                    columnNumber: 13
+                                }, undefined),
+                                "03/03/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 259,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 260,
+                                    columnNumber: 13
+                                }, undefined),
+                                "03/10/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 262,
+                                    columnNumber: 13
+                                }, undefined),
+                                "03/17/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 264,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 265,
+                                    columnNumber: 13
+                                }, undefined),
+                                "03/24/2024",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 267,
+                                    columnNumber: 13
+                                }, undefined),
+                                "03/31/2024"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 240,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-56",
+                            children: "Assignments Checkpoints"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 270,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-57",
+                            children: "Research Template"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 271,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-47",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-12",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "ellipse-7"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 274,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-29",
+                                            alt: "Image",
+                                            src: "/img/image-44.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 275,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 273,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "element-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-wrapper-50",
+                                            children: "\u0BA8\u0BBF\u0BB2\u0BC8 1:\xa0\xa0"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 278,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-wrapper-51",
+                                            children: "\u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                            lineNumber: 279,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 277,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 272,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 217,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "image-32",
+                    alt: "Image",
+                    src: "/img/image-50.png"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 283,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "image-33",
+                    alt: "Image",
+                    src: "/img/image-48.png"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 284,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "button-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-15",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-58",
+                            children: "Download"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 287,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                        lineNumber: 286,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 285,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-17",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "ellipse-8"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 292,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-34",
+                                    alt: "Image",
+                                    src: "/img/image-19.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 293,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-35",
+                                    alt: "Image",
+                                    src: "/img/image-30.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 294,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 291,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-59",
+                            children: "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 296,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button-5",
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-18",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-60",
+                                    children: "Register"
+                                }, void 0, false, {
+                                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                    lineNumber: 304,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                                lineNumber: 303,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 297,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 290,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "button-6",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-15",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-58",
+                            children: "Download"
+                        }, void 0, false, {
+                            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                            lineNumber: 310,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                        lineNumber: 309,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 308,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupWrapper.GroupWrapper), {
+                    className: "group-48",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+                    lineNumber: 313,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/IphonePlusScreen/IphonePlusScreen.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = IphonePlusScreen;
+var _c;
+$RefreshReg$(_c, "IphonePlusScreen");
+
+  $parcel$ReactRefreshHelpers$5511.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/GroupWrapper":"3Q5Ke","./style.css":"2qdCr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2qdCr":[function() {},{}],"3GAFO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DesktopScreen", ()=>(0, _desktopScreen.DesktopScreen));
+var _desktopScreen = require("./DesktopScreen");
+
+},{"./DesktopScreen":"dZK6S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dZK6S":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$53e2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$53e2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DesktopScreen", ()=>DesktopScreen);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _component = require("../../components/Component");
+var _group = require("../../components/Group");
+var _styleCss = require("./style.css");
+var _styleWithMenuCss = require("./styleWithMenu.css");
+var _styleWithBannerCss = require("./styleWithBanner.css");
+const DesktopScreen = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "desktop-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-2",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-44",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "banner-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "vector",
+                                    alt: "Vector",
+                                    src: "/img/vector-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 17,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "mask-group",
+                                    alt: "Mask group",
+                                    src: "/img/banner.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "logo-6",
+                                    alt: "Logo",
+                                    src: "/img/resarch-badge2024-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "navbar-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-128",
+                                    to: "/",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-129",
+                                    to: "/research-details",
+                                    children: "Research Details"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-130",
+                                    to: "/resources",
+                                    children: "Resources"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-131",
+                                    to: "/contact-us",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-22"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper-61",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    className: "text-wrapper-62",
+                    to: "/resources-tab-2",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-49",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BBF\u0BA9\u0BCD \u0B87\u0B9A\u0BC8 \u0BAE\u0BB0\u0BAA\u0BC1",
+                    text1: "\u0B85\u0BB0\u0BCD\u0B9A\u0BC1\u0BA9\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BAF\u0BBE\u0B9A\u0B99\u0BCD\u0B95\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-50",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B9A\u0BAE\u0BBF\u0B95\u0B82\u0B9A\u0BBE \u0B95\u0BA3\u0BC7\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-51",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-31.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B85\u0BAE\u0BCD\u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBE \u0BAA\u0BBE\u0BB2\u0BB0\u0BBE\u0BAE\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-52",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-32.png",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BC1\u0B9A\u0BC1\u0BAF\u0BBE \u0B9A\u0BC1\u0BB5\u0BBE\u0BAE\u0BBF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 59,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-53",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B9A\u0BBF\u0BB1\u0BCD\u0BAA\u0B95\u0BB2\u0BC8",
+                    text1: "\u0BAE\u0B95\u0BA4\u0BBF \u0B95\u0BB2\u0BBE\u0BA8\u0BBF\u0BA4\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 66,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-54",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-33.png",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0B95\u0BC7\u0B9A\u0BB5\u0BCD \u0BAA\u0BC1\u0BB2\u0BBF\u0B95\u0BC7\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 72,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-55",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BB0\u0BBF\u0BB7\u0BAA\u0BCD \u0BA4\u0BA3\u0BCD\u0B9F\u0BAA\u0BBE\u0BA3\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 79,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-56",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-34.png",
+                    text: "\u0BAA\u0BBE\u0BB0\u0BAE\u0BCD\u0BAA\u0BB0\u0BBF\u0BAF \u0BA4\u0BBF\u0BA9\u0BCD\u0BAA\u0BA3\u0BCD\u0B9F\u0B99\u0BCD...",
+                    text1: "\u0BA4\u0BC1\u0BB0\u0BC1\u0BB5\u0BA9\u0BCD \u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BB0\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 85,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-57",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-35.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B9A.\u0BB0\u0BC7. \u0BA8\u0BBF\u0B95\u0BCD\u0B95\u0BBF\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 92,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-58",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-36.png",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BC0\u0B9A\u0BC1\u0BB5\u0BB0\u0BCD \u0BAA\u0BBE\u0BB2\u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 99,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-59",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-37.png",
+                    text: "\u0BA8\u0BC0\u0BB0\u0BCD\u0BB5\u0BB3\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B9A\u0BCC\u0BB0\u0BB5\u0BCD \u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBF\u0BB0\u0BBF\u0B9F\u0BCD\u0B9F\u0BBF\u0BA9\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 106,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-60",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-38.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BB5\u0BB0\u0BB2\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1 \u0B95\u0BC8\u0BA4\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BAF\u0BBE \u0BAA\u0BBE\u0BB2\u0B9A\u0BA8\u0BCD\u0BA4\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 113,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-61",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BA4\u0BA3\u0BCD\u0BB5\u0BBF \u0BAA\u0BBF\u0BB0\u0BBF\u0BAF\u0BBE \u0BAA\u0BC1\u0BB2\u0BBF\u0BC7\u0B95\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 120,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-62",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-39.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BB5\u0BA8\u0BC7\u0BA4\u0BCD\u0BB0\u0BBE \u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BA3\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 126,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-63",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-40.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1",
+                    text1: "\u0BB5\u0BB0\u0BCD\u0B9A\u0BBF\u0BA9\u0BBF \u0BAA\u0BCB\u0B95\u0BBF\u0BB0\u0BC6\u0B9F\u0BCD\u0B9F\u0BBF \u0B9A\u0BC0\u0BA9\u0BBF\u0BB5\u0BBE\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 133,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-64",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-41.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAE\u0BB0\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5\u0BAE\u0BCD",
+                    text1: "\u0B9A. \u0BB0. \u0B85\u0BB0\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 140,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-65",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B85\u0BB5\u0BCD\u0BAF\u0BC1\u0B95\u0BCD\u0BA4\u0BC1 \u0B9A\u0BC6\u0BAF\u0BAA\u0BBF\u0BB0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 147,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-66",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BA4\u0BC0\u0BB5\u0BCD \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 153,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-67",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BCD\u0BAA\u0BBF\u0BB2\u0BCD \u0B9A\u0BC6\u0BB2\u0BCD\u0BB2\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0B9A\u0BBE\u0BAE\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 159,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-68",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0BAF\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 165,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-69",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0B95\u0B9A\u0BB0\u0BBE \u0BB5\u0BC8\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 171,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-70",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAE\u0BB0\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5\u0BAE\u0BCD",
+                    text1: "\u0B85\u0B9A\u0BC1\u0BB5\u0BA4\u0BCD\u0BA4\u0BC1 \u0BA8\u0BBE\u0BB0\u0BBE\u0BAF\u0BA3\u0BCD \u0BAA\u0BBE\u0BB2\u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 177,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-71",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-42.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BC1\u0BA4\u0BB0\u0BCD\u0B9A\u0BA9\u0BA9\u0BCD \u0B9A\u0BAA\u0BB0\u0BBF\u0BA8\u0BBE\u0BA4\u0BCD\u0BA4\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 183,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-72",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-43.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BAA\u0BA3\u0BCD\u0B9F\u0BBF\u0B95\u0BC8",
+                    text1: "\u0B9A\u0BA9\u0BB5\u0BCD \u0B9A\u0BA8\u0BCD\u0BA4\u0BC0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 190,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-73",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0B86\u0BB0\u0BB5\u0BCD \u0B9A\u0BBE\u0BAF\u0BCD \u0B9A\u0BB0\u0BB5\u0BA3\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 197,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-74",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B9A\u0BBF\u0BA4\u0BCD\u0BA4\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1 \u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBF\u0BB0\u0BBF\u0B9F\u0BCD\u0B9F\u0BBF\u0BA9\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 204,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-75",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-44.png",
+                    text: "\u0B85\u0BA3\u0BBF\u0B95\u0BB2\u0BA9\u0B82\u0B95\u0BB3\u0BC1\u0BAE\u0B82 \u0B85\u0BB1\u0BBF\u0BB5\u0BBF..",
+                    text1: "\u0BB5\u0BBF\u0BB0\u0BC1\u0B9A\u0BAA\u0BCD\u0BB0\u0BBF\u0BAF\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 210,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-76",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-45.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD\u0B95\u0BB3\u0BCD \u0B85\u0BA3\u0BBF\u0BAF\u0BC1\u0BAE\u0BCD \u0B86\u0B9F\u0BC8",
+                    text1: "\u0BA4\u0BC0\u0BA4\u0BCD\u0BAF\u0BBE \u0B95\u0BB2\u0BCD\u0BAF\u0BBE\u0BA3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 217,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-77",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-46.png",
+                    text: "\u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B95\u0BBE\u0B9A\u0BBF\u0BA3\u0BBF \u0B95\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BBF\u0B95\u0BC7\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 224,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-78",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0B85\u0BA4\u0BCD\u0BB5\u0BBF\u0B95\u0BBE \u0B95\u0BBF\u0BB0\u0BC1\u0B9F\u0BCD\u0B9F\u0BBF\u0BA3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 231,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-19",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "screenshot-2",
+                            alt: "Screenshot",
+                            src: "/img/screenshot-2023-11-23-at-3-59-1.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 239,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-63",
+                            children: "2023 Event Highlights"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 241,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-36",
+                            alt: "Image",
+                            src: "/img/image-38.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 242,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-37",
+                            alt: "Image",
+                            src: "/img/image-39.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 243,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-38",
+                            alt: "Image",
+                            src: "/img/image-40.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 244,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-39",
+                            alt: "Image",
+                            src: "/img/image-41.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 245,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 238,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
+                    className: "component-instance",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 247,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-20",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "line-4",
+                            alt: "Line",
+                            src: "/img/line-2.svg"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 249,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-7"
+                        }, void 0, false, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 250,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 248,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-27",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-28",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-13",
+                                    children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 255,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-14",
+                                    children: "28"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 256,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "time",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 259,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-6",
+                                                alt: "Image",
+                                                src: "/img/image-37.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 260,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                        lineNumber: 258,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 257,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 254,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-29",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-15",
+                                    children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 265,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-16",
+                                    children: "58"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 266,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-wrapper",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse-2"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 269,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-7",
+                                                alt: "Image",
+                                                src: "/img/image-28.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 270,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                        lineNumber: 268,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 267,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 264,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-30",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-17",
+                                    children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 275,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-18",
+                                    children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 276,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-wrapper",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "ellipse-3"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 279,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-7",
+                                                alt: "Image",
+                                                src: "/img/image-29.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                                lineNumber: 280,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                        lineNumber: 278,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                                    lineNumber: 277,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                            lineNumber: 274,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+                    lineNumber: 253,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+            lineNumber: 12,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/DesktopScreen/DesktopScreen.jsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined);
+};
+_c = DesktopScreen;
+var _c;
+$RefreshReg$(_c, "DesktopScreen");
+
+  $parcel$ReactRefreshHelpers$53e2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Component":"eLDOD","../../components/Group":"74UMT","./style.css":"7ePYp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styleWithMenu.css":"1DHHl","./styleWithBanner.css":"h1Ru8"}],"7ePYp":[function() {},{}],"1DHHl":[function() {},{}],"h1Ru8":[function() {},{}],"3cPy6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DivWrapper", ()=>(0, _divWrapper.DivWrapper));
+var _divWrapper = require("./DivWrapper");
+
+},{"./DivWrapper":"4gBWj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4gBWj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6885 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6885.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DivWrapper", ()=>DivWrapper);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _styleCss = require("./style.css");
+const DivWrapper = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "div-wrapper",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-3",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-21",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "rectangle-8"
+                    }, void 0, false, {
+                        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        className: "text-wrapper-64",
+                        to: "/iphone-8-plus-1",
+                        children: "X"
+                    }, void 0, false, {
+                        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "menu",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-65",
+                                to: "/iphone-8-plus-1",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-14",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-66",
+                                        children: "Research Details"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "rectangle-9"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                        lineNumber: 20,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-67",
+                                to: "/iphone-8-plus-3",
+                                children: "Resources"
+                            }, void 0, false, {
+                                fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-68",
+                                to: "/iphone-8-plus-8",
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/DivWrapper/DivWrapper.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = DivWrapper;
+var _c;
+$RefreshReg$(_c, "DivWrapper");
+
+  $parcel$ReactRefreshHelpers$6885.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style.css":"cQ1WN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cQ1WN":[function() {},{}],"iEvgV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen5", ()=>(0, _screen5.Screen5));
+var _screen5 = require("./Screen5");
+
+},{"./Screen5":"kkB78","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kkB78":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$342c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$342c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen5", ()=>Screen5);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _styleCss = require("./style.css");
+const Screen5 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-5",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-wrapper",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "iphone-plus-4",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-22",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-10"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen5/Screen5.jsx",
+                            lineNumber: 11,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: "text-wrapper-69",
+                            to: "/iphone-8-plus-1",
+                            children: "X"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen5/Screen5.jsx",
+                            lineNumber: 12,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "menu-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-15",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: "text-wrapper-70",
+                                            to: "/iphone-8-plus-1",
+                                            children: "Home"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen5/Screen5.jsx",
+                                            lineNumber: 17,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "rectangle-11"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen5/Screen5.jsx",
+                                            lineNumber: 20,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen5/Screen5.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-71",
+                                    to: "/iphone-8-plus-2",
+                                    children: "Research Details"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen5/Screen5.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-72",
+                                    to: "/iphone-8-plus-3",
+                                    children: "Resources"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen5/Screen5.jsx",
+                                    lineNumber: 25,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-73",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen5/Screen5.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen5/Screen5.jsx",
+                            lineNumber: 15,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen5/Screen5.jsx",
+                    lineNumber: 10,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/Screen5/Screen5.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/screens/Screen5/Screen5.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen5/Screen5.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen5;
+var _c;
+$RefreshReg$(_c, "Screen5");
+
+  $parcel$ReactRefreshHelpers$342c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style.css":"f9E2C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f9E2C":[function() {},{}],"a5MPT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen6", ()=>(0, _screen6.Screen6));
+var _screen6 = require("./Screen6");
+
+},{"./Screen6":"7kln5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7kln5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0e74 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0e74.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen6", ()=>Screen6);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _styleCss = require("./style.css");
+const Screen6 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-6",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-5",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-23",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "rectangle-12"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen6/Screen6.jsx",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        className: "text-wrapper-74",
+                        to: "/iphone-8-plus-3",
+                        children: "X"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen6/Screen6.jsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "menu-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-75",
+                                to: "/iphone-8-plus-1",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen6/Screen6.jsx",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-76",
+                                to: "/iphone-8-plus-2",
+                                children: "Research Details"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen6/Screen6.jsx",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-77",
+                                to: "/iphone-8-plus-3",
+                                children: "Resources"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen6/Screen6.jsx",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-16",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-78",
+                                        children: "Contact"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen6/Screen6.jsx",
+                                        lineNumber: 25,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "rectangle-13"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen6/Screen6.jsx",
+                                        lineNumber: 26,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen6/Screen6.jsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/Screen6/Screen6.jsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/screens/Screen6/Screen6.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/screens/Screen6/Screen6.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen6/Screen6.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen6;
+var _c;
+$RefreshReg$(_c, "Screen6");
+
+  $parcel$ReactRefreshHelpers$0e74.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style.css":"gQyxw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gQyxw":[function() {},{}],"1XZrb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen7", ()=>(0, _screen7.Screen7));
+var _screen7 = require("./Screen7");
+
+},{"./Screen7":"4BsAa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4BsAa":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e9c5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e9c5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen7", ()=>Screen7);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _content = require("./Content");
+var _component = require("../../components/Component");
+var _styleCss = require("./style.css");
+const Screen7 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-7",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-3",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/desktop-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "logo-3",
+                        alt: "Logo",
+                        src: "/img/resarch-badge2024-2.png"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen7/Screen7.jsx",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "navbar",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: "text-wrapper-79",
+                            to: "/",
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: "text-wrapper-80",
+                            to: "/research-details",
+                            children: "Research Details"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 16,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: "text-wrapper-81",
+                            to: "/resources",
+                            children: "Resources"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 19,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            className: "text-wrapper-82",
+                            to: "/contact-us",
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 22,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-14"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 25,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-24",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button-7",
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-17",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-83",
+                                    children: "Register"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-84",
+                            children: "2024 Research Theme"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-85",
+                            children: "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-79",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-86",
+                            children: "Research Topics"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-80",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-18",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-15",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-15-4.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-40",
+                                        alt: "Image",
+                                        src: "/img/image-25-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 46,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-41",
+                                        alt: "Image",
+                                        src: "/img/image-23-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 47,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-87",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 50,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BA9\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 52,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BAF\u0BCD\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 54,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC1\u0B95\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BC1\u0BB1\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B8A\u0BB4\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 60,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 62,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BA9\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 64,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BBF\u0BC8\u0BB2\u0BAF\u0BBE\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 66,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BB1\u0BCD\u0BAA\u0BA3\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B88\u0BC8\u0B95",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 70,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9 \u0B89\u0BB1\u0BC1\u0BA4\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 72,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BAA\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 74,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BC6\u0BB5\u0BB1\u0BBF \u0B8E\u0BA4\u0BBF\u0BB0\u0BCD\u0BAA\u0BCD\u0BAA\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 76,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 78,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB3\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 80,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0B9A\u0BB2\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 82,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BBE\u0BA9\u0BC1\u0B9F\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 84,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BB4\u0BCD\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 86,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB1\u0BB5\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BAF\u0BC1\u0BAE\u0BCD"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 48,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-81",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-25",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "rectangle-15",
+                                        alt: "Rectangle",
+                                        src: "/img/rectangle-16-4.svg"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 93,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-wrapper-88",
+                                        children: [
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 96,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BA4\u0BAF\u0BCD\u0BB5\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 98,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 100,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0BC1\u0BA3\u0BCD\u0BA3\u0BB1\u0BBF\u0BB5\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 102,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B89\u0BB5\u0BC8\u0BAE\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 104,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 106,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0BB5\u0BBF\u0BB2\u0B99\u0BCD\u0B95\u0BC1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 108,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B95\u0BB1\u0BCD\u0BAA\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 110,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BA9\u0BCD\u0BB1\u0BBF",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 112,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 114,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 116,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B89\u0BB3\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC7\u0BA8\u0BBE\u0B95\u0BCD\u0B95\u0BC1",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 118,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0BC1\u0B9F\u0BC1\u0BAE\u0BCD\u0BAA\u0BAE\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4 \u0B89\u0BB1\u0BB5\u0BC1\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 120,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BAE\u0BC2\u0B95\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 122,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 124,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BC6\u0BAE\u0BAF\u0BCD\u0BAF\u0BBF\u0BAF\u0BB2\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BA3\u0BCD\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 128,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BBE\u0BA4\u0BC1\u0BB5\u0BC1\u0B9F\u0BC8\u0BAE",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 130,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BC1\u0BB1\u0BCD\u0BB1\u0BC1\u0B9A\u0BCD\u0B9A\u0BC2\u0BB4\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 132,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 94,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-42",
+                                        alt: "Image",
+                                        src: "/img/image-24-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 135,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-43",
+                                        alt: "Image",
+                                        src: "/img/image-22-1.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen7/Screen7.jsx",
+                                        lineNumber: 136,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                lineNumber: 92,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-89",
+                            children: "2024 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B9A\u0BBF\u0BB2 \u0BA4\u0BC8\u0BB2\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD - \u0BAE\u0BBE\u0BA4\u0BBF\u0BB0\u0BBF\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 139,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-82",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-90",
+                            children: "Who can participate"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 142,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-91",
+                            children: "All ~550 Thamizh Schools USA students"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 143,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-83",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-84",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "img-wrapper",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-44",
+                                                alt: "Image",
+                                                src: "/img/image-43.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                                lineNumber: 147,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 146,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "element-7",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-wrapper-92",
+                                                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2: "
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 150,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-wrapper-93",
+                                                    children: "\u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 2, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 1, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 2, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 1, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 2, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 1, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 2 \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 1, \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 2"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 149,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 145,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-85",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "overlap-26",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ellipse-9"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 158,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-45",
+                                                    alt: "Image",
+                                                    src: "/img/image-44.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 159,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 157,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "element-8",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-wrapper-92",
+                                                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1:\xa0\xa0"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 162,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-wrapper-94",
+                                                    children: "\u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                                    lineNumber: 163,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 161,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 156,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 144,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 141,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-86",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-27",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "rectangle-16",
+                                    alt: "Rectangle",
+                                    src: "/img/rectangle-27.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 170,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "thirukkural-research-3",
+                                    children: [
+                                        "Thirukkural Research Project Presentation - All ~550 Thamizh Schools USA students (During the assembly / online)",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 174,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 175,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Volunteer registration: 2 volunteer / School for 100 days",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 177,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 178,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Registration: Google Forms to All ~ 550 Thamizh Schools USA students",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 180,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 181,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Select the 100 students based on their Thirukkural research abstract",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 183,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 184,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Split into 2 Groups \u0BA8\u0BBF\u0BC8\u0BB2 1 and \u0BA8\u0BBF\u0BC8\u0BB2 2. (\u0BA8\u0BBF\u0BC8\u0BB2 1 : \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1. \u0BA8\u0BBF\u0BC8\u0BB2 2 : \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 2, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 1, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 2, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 1, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 2, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 1, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 2 \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 1, \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 2)."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 171,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-95",
+                                    children: "Phase 1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 188,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 169,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-28",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "rectangle-17",
+                                    alt: "Rectangle",
+                                    src: "/img/rectangle-27.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 191,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "onboarding-teachers-2",
+                                    children: [
+                                        "Onboarding Teachers - 10 ( 10 students / 1 Teacher)",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 194,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 195,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Onboarding students - Placing all the student on the two Google Classrooms ( Level 1 and Level 2)",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 197,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 198,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Grading / Reviewing Students weekly Google Slides ( 10 assignments / Google Slides)",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 200,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 201,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Guide Students to make the tri-fold poster board",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 203,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 204,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Reviewing / judging - 1st level : Thirukkural research project audio / poster boards - Google Slides."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 192,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-96",
+                                    children: "Phase 2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 207,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 190,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-29",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "rectangle-17",
+                                    alt: "Rectangle",
+                                    src: "/img/rectangle-27.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 210,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "thirukkural-research-4",
+                                    children: [
+                                        "Thirukkural Research Conference on March 31, 2024 at conant high school : Judging - 2nd level and selecting Top Thirukkural research papers and recognize them",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 214,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Screen7.jsx",
+                                            lineNumber: 215,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "Top students showcase their Thirukkural research project and recognized during 5th World Thirukkural Conference on April 5-7 , 2024 at Chicago."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 211,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-46",
+                                    alt: "Image",
+                                    src: "/img/image-45.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 219,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-97",
+                                    children: "Phase 3"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 220,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 209,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-98",
+                            children: "Research Phases"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 222,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 168,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _content.ContentBox), {}, void 0, false, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 225,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
+                    className: "component-1-instance",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 226,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-30",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-31",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "ellipse-10"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 229,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-47",
+                                    alt: "Image",
+                                    src: "/img/image-19.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 230,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-48",
+                                    alt: "Image",
+                                    src: "/img/image-30.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 231,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 228,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-99",
+                            children: "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 233,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button-8",
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-32",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-100",
+                                    children: "Register"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Screen7.jsx",
+                                    lineNumber: 241,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen7/Screen7.jsx",
+                                lineNumber: 240,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Screen7.jsx",
+                            lineNumber: 234,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Screen7.jsx",
+                    lineNumber: 227,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen7/Screen7.jsx",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen7/Screen7.jsx",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen7;
+var _c;
+$RefreshReg$(_c, "Screen7");
+
+  $parcel$ReactRefreshHelpers$e9c5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Component":"eLDOD","./style.css":"8aBOo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Content":"6yD18"}],"8aBOo":[function() {},{}],"6yD18":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$98a4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$98a4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ContentBox", ()=>ContentBox);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _contentstyleCss = require("./contentstyle.css");
+const ContentBox = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "box",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "group",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper",
+                    children: "Research Template"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "assignment",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "element-coordinator-s",
+                                    children: [
+                                        "\u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0BAA\u0BA4\u0BBF\u0BB5\u0BC1                  \xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 13,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0BA4\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0BC8 \u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 15,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0B86\u0BAF\u0BCD\u0BB5\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8 \u0B9A\u0BC1\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 17,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0B86\u0BAF\u0BCD\u0BB5\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8\xa0\xa0\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 19,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0BAA\u0BBF\u0BA9\u0BCD\u0BA9\u0BA3\u0BBF \u0BA4\u0B95\u0BB5\u0BB2\u0BCD\xa0\xa0\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 21,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0BA4\u0BB1\u0BCD\u0B95\u0BBE\u0BB2 \u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 22,
+                                            columnNumber: 32
+                                        }, undefined),
+                                        "\u0B9A\u0BBE\u0BA9\u0BCD\u0BB1\u0BC1 1 ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 23,
+                                            columnNumber: 24
+                                        }, undefined),
+                                        "\u0B9A\u0BBE\u0BA9\u0BCD\u0BB1\u0BC1 2\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 25,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0BAA\u0BC1\u0BB3\u0BCD\u0BB3\u0BBF\u0BB5\u0BBF\u0BB5\u0BB0 \u0BA4\u0BB0\u0BB5\u0BC1 / \u0BB5\u0BB0\u0BC8\u0BAA\u0B9F\u0BAE\u0BCD,\xa0\xa0\xa0\xa0 ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 26,
+                                            columnNumber: 66
+                                        }, undefined),
+                                        "\u0BAA\u0B95\u0BC1\u0BAA\u0BCD\u0BAA\u0BBE\u0BAF\u0BCD\u0BB5\u0BC1\xa0\xa0 ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 27,
+                                            columnNumber: 39
+                                        }, undefined),
+                                        "\u0BAE\u0BC1\u0B9F\u0BBF\u0BB5\u0BC1\u0BB0\u0BC8\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 29,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "\u0BB5\u0BBF\u0BB3\u0B95\u0BCD\u0B95\u0B95\u0BCD\u0B95\u0BBE\u0B9F\u0BCD\u0B9A\u0BBF/coordinator\u2019s approval\xa0\xa0     \xa0\xa0 ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 30,
+                                            columnNumber: 82
+                                        }, undefined),
+                                        "\u0BAA\u0BCB\u0B9F\u0BCD\u0B9F\u0BBF\u0BAF\u0BBF\u0BB2\u0BCD \u0BAA\u0B99\u0BCD\u0B95\u0BC7\u0BB1\u0BCD\u0BB1\u0BB2\u0BCD"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 11,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "element",
+                                    children: [
+                                        "12/16/2023",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 35,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "01/07/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 37,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "01/14/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 39,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "01/28/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 41,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "02/04/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 43,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "02/11/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "02/18/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 47,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "02/25/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "03/03/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 51,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "03/10/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 53,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "03/17/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 55,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "03/24/2024",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/screens/Screen7/Content.jsx",
+                                            lineNumber: 57,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        "03/31/2024"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "div",
+                            children: "Assignments Checkpoints"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "image",
+                    alt: "Image",
+                    src: "/img/image-48.png"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "img",
+                                alt: "Image",
+                                src: "/img/image-43.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen7/Content.jsx",
+                                lineNumber: 66,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "p",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "span",
+                                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2: "
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 69,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-2",
+                                    children: "\u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 2, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 1, \u0B85\u0BB0\u0BC1\u0BAE\u0BCD\u0BAA\u0BC1 2, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 1, \u0BAE\u0BB2\u0BB0\u0BCD\u0B95\u0BB3\u0BCD 2, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 1, \u0B95\u0BA9\u0BBF\u0B95\u0BB3\u0BCD 2 \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 1, \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BA4\u0BC1 2"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 70,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 68,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 64,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "image-2",
+                    alt: "Image",
+                    src: "/img/image-50.png"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 75,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "button",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "div-wrapper",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-3",
+                            children: "Download"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 78,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen7/Content.jsx",
+                        lineNumber: 77,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 76,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "overlap-wrapper",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "div-wrapper",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-3",
+                            children: "Download"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 83,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen7/Content.jsx",
+                        lineNumber: 82,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 81,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-3",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "ellipse"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 88,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-3",
+                                    alt: "Image",
+                                    src: "/img/image-44.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 89,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 87,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "element-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "span",
+                                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1:\xa0\xa0"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 92,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-2",
+                                    children: "\u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD1, \u0BA4\u0BC1\u0BB3\u0BBF\u0BB0\u0BCD 2, \u0BC6\u0BAE\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1 1"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen7/Content.jsx",
+                                    lineNumber: 93,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen7/Content.jsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen7/Content.jsx",
+                    lineNumber: 86,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen7/Content.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen7/Content.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ContentBox;
+var _c;
+$RefreshReg$(_c, "ContentBox");
+
+  $parcel$ReactRefreshHelpers$98a4.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./contentstyle.css":"gMcB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gMcB6":[function() {},{}],"79eH5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen8", ()=>(0, _screen8.Screen8));
+var _screen8 = require("./Screen8");
+
+},{"./Screen8":"bbP3n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bbP3n":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0790 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0790.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen8", ()=>Screen8);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _groupWrapper = require("../../components/GroupWrapper");
+var _styleCss = require("./style.css");
+const Screen8 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-8",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-6",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-33",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-5",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "image-49",
+                                alt: "Image",
+                                src: "/img/image-46.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen8/Screen8.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "logo-4",
+                                alt: "Logo",
+                                src: "/img/resarch-badge2024-2.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen8/Screen8.jsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen8/Screen8.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupWrapper.GroupWrapper), {
+                    className: "group-87",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen8/Screen8.jsx",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    className: "text-wrapper-101",
+                    to: "/iphone-8-plus-8",
+                    children: "Contact"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen8/Screen8.jsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-88",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-34",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-wrapper-102",
+                                children: "Interested in lending a helping hand?"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-35",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-11"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen8/Screen8.jsx",
+                                        lineNumber: 26,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-50",
+                                        alt: "Image",
+                                        src: "/img/image-19.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen8/Screen8.jsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-51",
+                                        alt: "Image"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen8/Screen8.jsx",
+                                        lineNumber: 28,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "button-9",
+                                href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                                rel: "noopener noreferrer",
+                                target: "_blank",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-19",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-103",
+                                        children: "Volunteer"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen8/Screen8.jsx",
+                                        lineNumber: 37,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen8/Screen8.jsx",
+                                    lineNumber: 36,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "text-wrapper-104",
+                                children: "\u0BA4\u0BA9\u0BCD\u0BA9\u0BBE\u0BB0\u0BCD\u0BB5\u0BA4\u0BCD \u0BA4\u0BCA\u0BA3\u0BCD\u0B9F\u0BC1"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen8/Screen8.jsx",
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/Screen8/Screen8.jsx",
+                        lineNumber: 23,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen8/Screen8.jsx",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen8/Screen8.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen8/Screen8.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen8;
+var _c;
+$RefreshReg$(_c, "Screen8");
+
+  $parcel$ReactRefreshHelpers$0790.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/GroupWrapper":"3Q5Ke","./style.css":"i0nL6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i0nL6":[function() {},{}],"542HL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen9", ()=>(0, _screen9.Screen9));
+var _screen9 = require("./Screen9");
+
+},{"./Screen9":"hVYQC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hVYQC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0ed2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0ed2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen9", ()=>Screen9);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _styleCss = require("./style.css");
+const Screen9 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-9",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-7",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "overlap-36",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "rectangle-18"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen9/Screen9.jsx",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        className: "text-wrapper-105",
+                        to: "/iphone-8-plus-3",
+                        children: "X"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen9/Screen9.jsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "menu-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-106",
+                                to: "/iphone-8-plus-1",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen9/Screen9.jsx",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-107",
+                                to: "/iphone-8-plus-2",
+                                children: "Research Details"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen9/Screen9.jsx",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-wrapper-108",
+                                        children: "Resources"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen9/Screen9.jsx",
+                                        lineNumber: 22,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "rectangle-19"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen9/Screen9.jsx",
+                                        lineNumber: 23,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen9/Screen9.jsx",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                className: "text-wrapper-109",
+                                to: "/iphone-8-plus-8",
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen9/Screen9.jsx",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/Screen9/Screen9.jsx",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/screens/Screen9/Screen9.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/screens/Screen9/Screen9.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen9/Screen9.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen9;
+var _c;
+$RefreshReg$(_c, "Screen9");
+
+  $parcel$ReactRefreshHelpers$0ed2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style.css":"4m0uq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4m0uq":[function() {},{}],"ePoni":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen10", ()=>(0, _screen10.Screen10));
+var _screen10 = require("./Screen10");
+
+},{"./Screen10":"2ZNCX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2ZNCX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$01e5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$01e5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen10", ()=>Screen10);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _group = require("../../components/Group");
+var _styleCss = require("./style.css");
+const Screen10 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-10",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-8",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-37",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-7",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "image-52",
+                                alt: "Image",
+                                src: "/img/image-46.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "logo-5",
+                                alt: "Logo",
+                                src: "/img/resarch-badge2024-2.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper-110",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-89",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "group-90",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "text-wrapper-111",
+                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "element-9",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-112",
+                                        children: "28"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 23,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-113",
+                                        children: "\xa0"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 24,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "time-3",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-21",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "ellipse-12"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen10/Screen10.jsx",
+                                            lineNumber: 28,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-53",
+                                            alt: "Image",
+                                            src: "/img/image-37.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen10/Screen10.jsx",
+                                            lineNumber: 29,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen10/Screen10.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/Screen10/Screen10.jsx",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-91",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-114",
+                            children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "element-10",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-112",
+                                    children: "58"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen10/Screen10.jsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-113",
+                                    children: "\xa0\xa0"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen10/Screen10.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "student-2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-22",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-13"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-54",
+                                        alt: "Image",
+                                        src: "/img/image-28.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 43,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 41,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 40,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-92",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-115",
+                            children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 48,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-116",
+                            children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "volunteer-2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-23",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-14"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 52,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-55",
+                                        alt: "Image",
+                                        src: "/img/image-29.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen10/Screen10.jsx",
+                                        lineNumber: 53,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen10/Screen10.jsx",
+                                lineNumber: 51,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    className: "text-wrapper-117",
+                    to: "/iphone-8-plus-4",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 57,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-38",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "line-5",
+                            alt: "Line",
+                            src: "/img/line-2-2.svg"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 61,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-20"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen10/Screen10.jsx",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-93",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15.png",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BBF\u0BA9\u0BCD \u0B87\u0B9A\u0BC8 \u0BAE\u0BB0\u0BAA\u0BC1",
+                    text1: "\u0B85\u0BB0\u0BCD\u0B9A\u0BC1\u0BA9\u0BCD \u0BB5\u0BBF\u0BA4\u0BCD\u0BAF\u0BBE\u0B9A\u0B99\u0BCD\u0B95\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 64,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-94",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B9A.\u0BB0\u0BC7. \u0BA8\u0BBF\u0B95\u0BCD\u0B95\u0BBF\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-95",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B85\u0BB5\u0BCD\u0BAF\u0BC1\u0B95\u0BCD\u0BA4\u0BC1 \u0B9A\u0BC6\u0BAF\u0BAA\u0BBF\u0BB0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 77,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-96",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BAA\u0BA3\u0BCD\u0B9F\u0BBF\u0B95\u0BC8",
+                    text1: "\u0B9A\u0BA9\u0BB5\u0BCD \u0B9A\u0BA8\u0BCD\u0BA4\u0BC0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 83,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-97",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B85\u0BAE\u0BCD\u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBE \u0BAA\u0BBE\u0BB2\u0BB0\u0BBE\u0BAE\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 89,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-98",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0BC0\u0BB0\u0BCD\u0BB5\u0BB3\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B9A\u0BCC\u0BB0\u0BB5\u0BCD \u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBF\u0BB0\u0BBF\u0B9F\u0BCD\u0B9F\u0BBF\u0BA9\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 95,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-99",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BCD\u0BAA\u0BBF\u0BB2\u0BCD \u0B9A\u0BC6\u0BB2\u0BCD\u0BB2\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0B9A\u0BBE\u0BAE\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 101,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-100",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B9A\u0BBF\u0BA4\u0BCD\u0BA4\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1 \u0B9A\u0BBF\u0BB0\u0BBF\u0B95\u0BBF\u0BB0\u0BBF\u0B9F\u0BCD\u0B9F\u0BBF\u0BA9\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-101",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B9A\u0BBF\u0BB1\u0BCD\u0BAA\u0B95\u0BB2\u0BC8",
+                    text1: "\u0BAE\u0B95\u0BA4\u0BBF \u0B95\u0BB2\u0BBE\u0BA8\u0BBF\u0BA4\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 113,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-102",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BA4\u0BA3\u0BCD\u0BB5\u0BBF \u0BAA\u0BBF\u0BB0\u0BBF\u0BAF\u0BBE \u0BAA\u0BC1\u0BB2\u0BBF\u0BC7\u0B95\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 119,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-103",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0B95\u0B9A\u0BB0\u0BBE \u0BB5\u0BC8\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 125,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-104",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD\u0B95\u0BB3\u0BCD \u0B85\u0BA3\u0BBF\u0BAF\u0BC1\u0BAE\u0BCD \u0B86\u0B9F\u0BC8",
+                    text1: "\u0BA4\u0BC0\u0BA4\u0BCD\u0BAF\u0BBE \u0B95\u0BB2\u0BCD\u0BAF\u0BBE\u0BA3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 131,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-105",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B9A\u0BAE\u0BBF\u0B95\u0B82\u0B9A\u0BBE \u0B95\u0BA3\u0BC7\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 137,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-106",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BC0\u0B9A\u0BC1\u0BB5\u0BB0\u0BCD \u0BAA\u0BBE\u0BB2\u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 143,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-107",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BA4\u0BC0\u0BB5\u0BCD \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 149,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-108",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0B86\u0BB0\u0BB5\u0BCD \u0B9A\u0BBE\u0BAF\u0BCD \u0B9A\u0BB0\u0BB5\u0BA3\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 155,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-109",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0B95\u0BC7\u0B9A\u0BB5\u0BCD \u0BAA\u0BC1\u0BB2\u0BBF\u0B95\u0BC7\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 162,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-110",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BB5\u0BA8\u0BC7\u0BA4\u0BCD\u0BB0\u0BBE \u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BA3\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 168,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-111",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAE\u0BB0\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5\u0BAE\u0BCD",
+                    text1: "\u0B85\u0B9A\u0BC1\u0BB5\u0BA4\u0BCD\u0BA4\u0BC1 \u0BA8\u0BBE\u0BB0\u0BBE\u0BAF\u0BA3\u0BCD \u0BAA\u0BBE\u0BB2\u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 174,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-112",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B95\u0BBE\u0B9A\u0BBF\u0BA3\u0BBF \u0B95\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BBF\u0B95\u0BC7\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 180,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-113",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BB0\u0BBF\u0BB7\u0BAA\u0BCD \u0BA4\u0BA3\u0BCD\u0B9F\u0BAA\u0BBE\u0BA3\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 186,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-114",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1",
+                    text1: "\u0BB5\u0BB0\u0BCD\u0B9A\u0BBF\u0BA9\u0BBF \u0BAA\u0BCB\u0B95\u0BBF\u0BB0\u0BC6\u0B9F\u0BCD\u0B9F\u0BBF \u0B9A\u0BC0\u0BA9\u0BBF\u0BB5\u0BBE\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 192,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-115",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BC1\u0BA4\u0BB0\u0BCD\u0B9A\u0BA9\u0BA9\u0BCD \u0B9A\u0BAA\u0BB0\u0BBF\u0BA8\u0BBE\u0BA4\u0BCD\u0BA4\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 198,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-116",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0B85\u0BA4\u0BCD\u0BB5\u0BBF\u0B95\u0BBE \u0B95\u0BBF\u0BB0\u0BC1\u0B9F\u0BCD\u0B9F\u0BBF\u0BA3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 204,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-117",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0B85\u0BA9\u0BC1\u0B9A\u0BC1\u0BAF\u0BBE \u0B9A\u0BC1\u0BB5\u0BBE\u0BAE\u0BBF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 211,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-118",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BBE\u0BB0\u0BAE\u0BCD\u0BAA\u0BB0\u0BBF\u0BAF \u0BA4\u0BBF\u0BA9\u0BCD\u0BAA\u0BA3\u0BCD\u0B9F\u0B99\u0BCD...",
+                    text1: "\u0BA4\u0BC1\u0BB0\u0BC1\u0BB5\u0BA9\u0BCD \u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BB0\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 217,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-119",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BB5\u0BB0\u0BB2\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1 \u0B95\u0BC8\u0BA4\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BAF\u0BBE \u0BAA\u0BBE\u0BB2\u0B9A\u0BA8\u0BCD\u0BA4\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 223,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-120",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAE\u0BB0\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5\u0BAE\u0BCD",
+                    text1: "\u0B9A. \u0BB0. \u0B85\u0BB0\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 229,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-121",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0BAF\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 235,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-122",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B85\u0BA3\u0BBF\u0B95\u0BB2\u0BA9\u0B82\u0B95\u0BB3\u0BC1\u0BAE\u0B82 \u0B85\u0BB1\u0BBF\u0BB5\u0BBF..",
+                    text1: "\u0BB5\u0BBF\u0BB0\u0BC1\u0B9A\u0BAA\u0BCD\u0BB0\u0BBF\u0BAF\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 241,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-39",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-wrapper-118",
+                        children: "2023 Event Highlights"
+                    }, void 0, false, {
+                        fileName: "src/screens/Screen10/Screen10.jsx",
+                        lineNumber: 248,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen10/Screen10.jsx",
+                    lineNumber: 247,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen10/Screen10.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen10/Screen10.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen10;
+var _c;
+$RefreshReg$(_c, "Screen10");
+
+  $parcel$ReactRefreshHelpers$01e5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Group":"74UMT","./style.css":"6mTbP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6mTbP":[function() {},{}],"5NHn2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen11", ()=>(0, _screen11.Screen11));
+var _screen11 = require("./Screen11");
+
+},{"./Screen11":"6cUw0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6cUw0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3cce = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3cce.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen11", ()=>Screen11);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _component = require("../../components/Component");
+var _styleCss = require("./style.css");
+const Screen11 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-11",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-40",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "navbar-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-119",
+                                    to: "/",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 12,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-120",
+                                    to: "/research-details",
+                                    children: "Research Details"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 13,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-121",
+                                    to: "/resources",
+                                    children: "Resources"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-122",
+                                    to: "/contact-us",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-21"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "text-wrapper-123",
+                            href: "mailto:thamizh.research.usa@gmail.com",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: "thamizh.research.usa@gmail.com"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-124",
+                            children: "Please email your queries"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen11/Screen11.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
+                    className: "component-2",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen11/Screen11.jsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-41",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "overlap-42",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "ellipse-15"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-56",
+                                    alt: "Image",
+                                    src: "/img/image-19.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-57",
+                                    alt: "Image",
+                                    src: "/img/image-30.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-125",
+                            children: "\u0BA4\u0BA9\u0BCD\u0BA9\u0BBE\u0BB0\u0BCD\u0BB5\u0BA4\u0BCD \u0BA4\u0BCA\u0BA3\u0BCD\u0B9F\u0BC1"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            className: "button-10",
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLScf4e5DQk5hiCPL5BTo8nejKUq5btmbqA7PvzpX-9pmQcLUYg/viewform?usp=sf_link",
+                            rel: "noopener noreferrer",
+                            target: "_blank",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-43",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-126",
+                                    children: "Volunteer"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen11/Screen11.jsx",
+                                    lineNumber: 49,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen11/Screen11.jsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-wrapper-127",
+                            children: "Interested in lending a helping hand?"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen11/Screen11.jsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen11/Screen11.jsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen11/Screen11.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen11/Screen11.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen11;
+var _c;
+$RefreshReg$(_c, "Screen11");
+
+  $parcel$ReactRefreshHelpers$3cce.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Component":"eLDOD","./style.css":"8WfJh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8WfJh":[function() {},{}],"c3jD2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen12", ()=>(0, _screen12.Screen12));
+var _screen12 = require("./Screen12");
+
+},{"./Screen12":"rgYPA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"rgYPA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$269a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$269a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen12", ()=>Screen12);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _component = require("../../components/Component");
+var _image = require("../../components/Image");
+var _styleCss = require("./style.css");
+var _styleWithButtonCss = require("./styleWithButton.css");
+const Screen12 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-12",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "desktop-5",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-44",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "banner-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "vector",
+                                    alt: "Vector",
+                                    src: "/img/vector-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 15,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "mask-group",
+                                    alt: "Mask group",
+                                    src: "/img/mask-group-4.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "logo-6",
+                                    alt: "Logo",
+                                    src: "/img/resarch-badge2024-2.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 17,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "button",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "overlap-group-5",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                className: "rectangle-3",
+                                                href: "https://docs.google.com/forms/d/e/1FAIpQLSc2MHtkp-xyJewRHGusKrn0GYXrggeoheoW25-OoQRXH-ZnMw/viewform",
+                                                rel: "noopener noreferrer",
+                                                target: "_blank",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-19",
+                                                    children: "Register"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 25,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 20,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                            lineNumber: 19,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: "text-wrapper-20",
+                                            to: "/research-details",
+                                            children: "Learn More"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                            lineNumber: 28,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 18,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen12/Screen12.jsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "navbar-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-128",
+                                    to: "/",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-129",
+                                    to: "/research-details",
+                                    children: "Research Details"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-130",
+                                    to: "/resources",
+                                    children: "Resources"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    className: "text-wrapper-131",
+                                    to: "/contact-us",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "rectangle-22"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen12/Screen12.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen12/Screen12.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-45",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "group-123",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-wrapper-132",
+                                    children: "Research Topics"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 49,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "line-6",
+                                    alt: "Line",
+                                    src: "/img/line-1-2.svg"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 50,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-124",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-group-24",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "rectangle-23",
+                                                alt: "Rectangle",
+                                                src: "/img/rectangle-15-4.svg"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 53,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-58",
+                                                alt: "Image",
+                                                src: "/img/image-25-1.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 54,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-59",
+                                                alt: "Image",
+                                                src: "/img/image-23-1.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 55,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-wrapper-133",
+                                                children: [
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 58,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BA9\u0BCD\u0BC8\u0BAE",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 60,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BAF\u0BCD\u0BC8\u0BAE",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 62,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC1\u0B95\u0BB4\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 64,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BC1\u0BB1\u0BB5\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 66,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B8A\u0BB4\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 68,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 70,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BA9\u0BCD\u0BAA\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 72,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BBF\u0BC8\u0BB2\u0BAF\u0BBE\u0BC8\u0BAE",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 74,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BB1\u0BCD\u0BAA\u0BA3\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 76,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B88\u0BC8\u0B95",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9 \u0B89\u0BB1\u0BC1\u0BA4\u0BBF",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 80,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC7\u0B95\u0BBE\u0BAA\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 82,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BC6\u0BB5\u0BB1\u0BBF \u0B8E\u0BA4\u0BBF\u0BB0\u0BCD\u0BAA\u0BCD\u0BAA\u0BBF\u0BAF\u0BB2\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 84,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BB2\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 86,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB3\u0BB5\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0B9A\u0BB2\u0BCD\u0BB5\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 90,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BBE\u0BA9\u0BC1\u0B9F\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 92,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0BB4\u0BCD\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 94,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B89\u0BB1\u0BB5\u0BC1\u0BAE\u0BCD \u0BAA\u0BC8\u0B95\u0BAF\u0BC1\u0BAE\u0BCD"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                        lineNumber: 52,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 51,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-125",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-46",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "rectangle-23",
+                                                alt: "Rectangle",
+                                                src: "/img/rectangle-16-4.svg"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 101,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-wrapper-134",
+                                                children: [
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 104,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BA4\u0BAF\u0BCD\u0BB5\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 108,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0BC1\u0BA3\u0BCD\u0BA3\u0BB1\u0BBF\u0BB5\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 110,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B89\u0BB5\u0BC8\u0BAE\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 112,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 114,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0BB5\u0BBF\u0BB2\u0B99\u0BCD\u0B95\u0BC1\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 116,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B95\u0BB1\u0BCD\u0BAA\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 118,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BA8\u0BA9\u0BCD\u0BB1\u0BBF",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 120,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 122,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 124,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B89\u0BB3\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0BC7\u0BA8\u0BBE\u0B95\u0BCD\u0B95\u0BC1",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 126,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B95\u0BC1\u0B9F\u0BC1\u0BAE\u0BCD\u0BAA\u0BAE\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4 \u0B89\u0BB1\u0BB5\u0BC1\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 128,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BAE\u0BC2\u0B95\u0BB5\u0BBF\u0BAF\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 130,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0B85\u0BB0\u0B9A\u0BBF\u0BAF\u0BB2\u0BCD \u0BC6\u0BA8\u0BB1\u0BBF\u0BAE\u0BC1\u0BC8\u0BB1\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BC6\u0BAE\u0BAF\u0BCD\u0BAF\u0BBF\u0BAF\u0BB2\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 134,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BA3\u0BCD\u0B95\u0BB3\u0BC1\u0BAE\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 136,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BC1\u0BAE\u0BCD \u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BC6\u0BAA\u0BBE\u0BA4\u0BC1\u0BB5\u0BC1\u0B9F\u0BC8\u0BAE",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 138,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BBF\u0BB2\u0BCD \u0B9A\u0BC1\u0BB1\u0BCD\u0BB1\u0BC1\u0B9A\u0BCD\u0B9A\u0BC2\u0BB4\u0BB2\u0BCD \u0B9A\u0BBF\u0BA8\u0BCD\u0BA4\u0BC8\u0BA9\u0B95\u0BB3\u0BCD",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 140,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    "\u0BB5\u0BB3\u0BCD\u0BB3\u0BC1\u0BB5\u0BAE\u0BCD \u0B89\u0BA3\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 102,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-60",
+                                                alt: "Image",
+                                                src: "/img/image-24-1.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 143,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "image-61",
+                                                alt: "Image",
+                                                src: "/img/image-22-1.png"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 144,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                        lineNumber: 100,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 99,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-wrapper-135",
+                                    children: "2024 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B9A\u0BBF\u0BB2 \u0BA4\u0BC8\u0BB2\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BCD - \u0BAE\u0BBE\u0BA4\u0BBF\u0BB0\u0BBF\u0B95\u0BB3\u0BCD"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 147,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen12/Screen12.jsx",
+                            lineNumber: 48,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "how-it-works-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-47",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-wrapper-136",
+                                            children: "On March 31, 2024 we are planning to conduct a 3rd Schaumburg Tamil Fair 2024 for all Thamizh Schools USA research students. The main theme of this fair is \u0BA4\u0BBF\u0BB0\u0BC1\u0B95\u0BCD\u0B95\u0BC1\u0BB1\u0BB3\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1. This will be educational research experience for the parents, kids and visitors. This project is collaboration among Tamil scholar, grand parents, parents, and students. We give sample project, and some documents about the topic for a good start. During the Schaumburg Tamil Fair 2024, Each student will be the representatives of their project, present it through a tri-fold poster board."
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                            lineNumber: 151,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "group-126",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-137",
+                                                    children: "Register"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 160,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-138",
+                                                    children: "Research"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 161,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-139",
+                                                    children: "Choose Topic"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 162,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-140",
+                                                    children: "Evaluate"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 163,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-141",
+                                                    children: "Paper Presentation"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 164,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-wrapper-142",
+                                                    children: "How it works?"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text",
+                                                    children: ""
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 166,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-62",
+                                                    alt: "Image",
+                                                    src: "/img/image-31.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 167,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-63",
+                                                    alt: "Image",
+                                                    src: "/img/image-32.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 168,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-64",
+                                                    alt: "Image",
+                                                    src: "/img/image-35.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 169,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-65",
+                                                    alt: "Image",
+                                                    src: "/img/image-33.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 170,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "image-66",
+                                                    alt: "Image",
+                                                    src: "/img/image-34.png"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 171,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "line-7",
+                                                    alt: "Line",
+                                                    src: "/img/line-1-2.svg"
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 172,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                            lineNumber: 159,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 150,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-wrapper-143",
+                                    children: "The top students for each level will be recognized. Also top students will be showcase their project and recognized by giving trophies during the 5th World Thirukkural Conference at Chicago conduct by Chicago Tamil Sangam/IAS/IATR on April 5-7, 2024. We are confident that it would be an invigorating and rewarding experience for the parents and the students. We would leave it up to parents and students to use their imagination, creativity and their passion to showcase their talent."
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 175,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "image-67",
+                                    alt: "Image",
+                                    src: "/img/image-45.png"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 182,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "group-127",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "overlap-48",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                to: "/resources",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "button-11",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "overlap-group-25",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "text-wrapper-144",
+                                                            children: "2023 Research Articles"
+                                                        }, void 0, false, {
+                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                            lineNumber: 188,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 187,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 186,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 185,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-wrapper-145",
+                                                children: "2023 \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAA\u0BC1\u0BB3\u0BCD\u0BB3\u0BBF\u0BB5\u0BBF\u0BB5\u0BB0\u0B99\u0BCD\u0B95\u0BB3\u0BCD"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 192,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-wrapper-146",
+                                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BC1\u0BAE\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BA9\u0BBF\u0BA4\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0B8E\u0BB5\u0BCD\u0BB5\u0BBE\u0BB1\u0BC1 \u0BA4\u0BA9\u0BBF \u0B9A\u0BBF\u0BB1\u0BAA\u0BCD\u0BAA\u0BC1\u0BAE\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BB0\u0BBE\u0B95 \u0BAE\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1\u0B95\u0BBF\u0BB1\u0BA4\u0BC1"
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 193,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "group-128",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "group-129",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-147",
+                                                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 198,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-148",
+                                                                children: "28"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 199,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "time-4",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "overlap-group-26",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                            className: "ellipse-16"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 202,
+                                                                            columnNumber: 25
+                                                                        }, undefined),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            className: "image-68",
+                                                                            alt: "Image",
+                                                                            src: "/img/image-37.png"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 203,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                    lineNumber: 201,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 200,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 197,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "group-130",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-149",
+                                                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 208,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-150",
+                                                                children: "58"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 209,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "overlap-group-wrapper-2",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "overlap-group-27",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                            className: "ellipse-17"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 212,
+                                                                            columnNumber: 25
+                                                                        }, undefined),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            className: "image-69",
+                                                                            alt: "Image",
+                                                                            src: "/img/image-28.png"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 213,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                    lineNumber: 211,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 210,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 207,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "group-131",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-151",
+                                                                children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 218,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text-wrapper-152",
+                                                                children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 219,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "overlap-group-wrapper-2",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "overlap-group-27",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                            className: "ellipse-18"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 222,
+                                                                            columnNumber: 25
+                                                                        }, undefined),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            className: "image-69",
+                                                                            alt: "Image",
+                                                                            src: "/img/image-29.png"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                            lineNumber: 223,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                    lineNumber: 221,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                                lineNumber: 220,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 217,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 196,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "overlap-49",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _image.Image), {
+                                                    className: "image-instance",
+                                                    src: "/img/image-35-1.png",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        className: "image-70",
+                                                        alt: "Image",
+                                                        src: "/img/image-36.png"
+                                                    }, void 0, false, {
+                                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                                        lineNumber: 229,
+                                                        columnNumber: 79
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                                    lineNumber: 229,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/screens/Screen12/Screen12.jsx",
+                                                lineNumber: 228,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/screens/Screen12/Screen12.jsx",
+                                        lineNumber: 184,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen12/Screen12.jsx",
+                                    lineNumber: 183,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen12/Screen12.jsx",
+                            lineNumber: 149,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen12/Screen12.jsx",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _component.Component), {
+                    className: "component-3",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen12/Screen12.jsx",
+                    lineNumber: 235,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen12/Screen12.jsx",
+            lineNumber: 12,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen12/Screen12.jsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen12;
+var _c;
+$RefreshReg$(_c, "Screen12");
+
+  $parcel$ReactRefreshHelpers$269a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Component":"eLDOD","../../components/Image":"i0rV2","./style.css":"3MP81","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styleWithButton.css":"cRy9N"}],"i0rV2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Image", ()=>(0, _image.Image));
+var _image = require("./Image");
+
+},{"./Image":"gtQKe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gtQKe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$65e7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$65e7.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Image", ()=>Image);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Image = ({ className, src, ...props })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        className: `image ${className}`,
+        href: "https://www.youtube.com/watch?v=d5KpuI0JJJY",
+        rel: "noopener noreferrer",
+        target: "_blank",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "img",
+                alt: "Image",
+                src: src
+            }, void 0, false, {
+                fileName: "src/components/Image/Image.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            props.children
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Image/Image.jsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Image;
+var _c;
+$RefreshReg$(_c, "Image");
+
+  $parcel$ReactRefreshHelpers$65e7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"dttFV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dttFV":[function() {},{}],"3MP81":[function() {},{}],"cRy9N":[function() {},{}],"i6T3l":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen13", ()=>(0, _screen13.Screen13));
+var _screen13 = require("./Screen13");
+
+},{"./Screen13":"eQawB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eQawB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$228e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$228e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Screen13", ()=>Screen13);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _group = require("../../components/Group");
+var _groupWrapper = require("../../components/GroupWrapper");
+var _styleCss = require("./style.css");
+const Screen13 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "screen-13",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "iphone-plus-9",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-50",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-7",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "image-71",
+                                alt: "Image",
+                                src: "/img/image-46.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/iphone-8-plus-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "logo-7",
+                                alt: "Logo",
+                                src: "/img/resarch-badge2024-2.png"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    className: "text-wrapper-153",
+                    to: "/iphone-8-plus-3",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 1 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-132",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "group-133",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "text-wrapper-154",
+                                children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BAA\u0BA3\u0BCD\u0BAA\u0BBE\u0B9F\u0BC1\u0B95\u0BB3\u0BCD"
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "element-11",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-155",
+                                        children: "28"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 26,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-wrapper-156",
+                                        children: "\xa0"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "time-5",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "overlap-group-28",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "ellipse-19"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen13/Screen13.jsx",
+                                            lineNumber: 31,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "image-72",
+                                            alt: "Image",
+                                            src: "/img/image-37.png"
+                                        }, void 0, false, {
+                                            fileName: "src/screens/Screen13/Screen13.jsx",
+                                            lineNumber: 32,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/screens/Screen13/Screen13.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/screens/Screen13/Screen13.jsx",
+                        lineNumber: 23,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-134",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-157",
+                            children: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0BAE\u0BBE\u0BA3\u0BB5\u0BB0\u0BCD\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "element-12",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-155",
+                                    children: "58"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen13/Screen13.jsx",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-wrapper-156",
+                                    children: "\xa0\xa0"
+                                }, void 0, false, {
+                                    fileName: "src/screens/Screen13/Screen13.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "student-3",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-29",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-20"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-73",
+                                        alt: "Image",
+                                        src: "/img/image-28.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 46,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "group-135",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-158",
+                            children: "\u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF \u0B95\u0BBE\u0BB2\u0BAE\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-159",
+                            children: "100 \u0BA8\u0BBE\u0B9F\u0BCD\u0B95\u0BB3\u0BCD"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "volunteer-3",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "overlap-group-30",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "ellipse-21"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 55,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "image-74",
+                                        alt: "Image",
+                                        src: "/img/image-29.png"
+                                    }, void 0, false, {
+                                        fileName: "src/screens/Screen13/Screen13.jsx",
+                                        lineNumber: 56,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/screens/Screen13/Screen13.jsx",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 50,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-wrapper-160",
+                    children: "\u0BA8\u0BBF\u0BB2\u0BC8 2 \u0B86\u0BB0\u0BBE\u0BAF\u0BCD\u0B9A\u0BCD\u0B9A\u0BBF"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-51",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "line-8",
+                            alt: "Line",
+                            src: "/img/line-2-2.svg"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "rectangle-24"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 61,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-136",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0B9F\u0BCD\u0BAA\u0BC1",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BBF\u0BA4\u0BC7\u0B9A\u0BC1 \u0BAA\u0BB5\u0BBE\u0BA9\u0BBF \u0B9A\u0B99\u0BCD\u0B95\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 65,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-137",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B89\u0BA3\u0BC7\u0BB5 \u0BAE\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BC1",
+                    text1: "\u0B87\u0BB2\u0BBE\u0B9A\u0BBF\u0BAF\u0BAA\u0BBF\u0BB0\u0BBF\u0BAF\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-138",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBE\u0BAF\u0BCD\u0BAE\u0BC8",
+                    text1: "\u0B9A\u0BBE\u0BA9\u0B95\u0BBF \u0B9A\u0BC1\u0BB5\u0BBE\u0BAE\u0BBF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 77,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-139",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B85\u0BB1\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1\u0BB5...",
+                    text1: "\u0B86\u0BA4\u0BB5\u0BCD \u0B9A\u0BBF\u0BB0\u0BBF\u0BB0\u0BBE\u0BAE\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 83,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-140",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BC7\u0BB3\u0BBE\u0BA3\u0BCD\u0BAE\u0BC8\u0BAF\u0BBF\u0BA9\u0BCD \u0BAA\u0BC6\u0BB0\u0BC1...",
+                    text1: "\u0B9A\u0BBF\u0BA4\u0BCD\u0BA4\u0BBE\u0BB0\u0BCD\u0BA4\u0BC1 \u0B9A\u0BC6\u0BB2\u0BCD\u0BB5\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 89,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-141",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0B89\u0BA3\u0BB5\u0BC1\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B9A\u0BBF\u0BB0\u0BBF\u0B9A\u0BB0\u0BA3\u0B82"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 95,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-142",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAE\u0BBE\u0BB0\u0BCD\u0B95\u0BB4\u0BBF \u0BAE\u0BBE\u0BA4 \u0B95\u0BCB\u0BB2\u0B99\u0BCD\u0B95\u0BB3\u0BCD",
+                    text1: "\u0B85\u0B9A\u0BC1\u0BB5\u0BBF\u0B95\u0BBE \u0B9A\u0BC1\u0BB0\u0BC7\u0B9A\u0BC1 \u0BAA\u0BC1\u0BB5\u0BA9\u0BC7\u0B9A\u0BC1\u0BB5\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 101,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-143",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0BC7\u0BB0\u0BCD\u0BAE\u0BC8",
+                    text1: "\u0B9A\u0BCC\u0B9A\u0BA9\u0BCD\u0BAF\u0BBE \u0B9A\u0BC6\u0BA8\u0BCD\u0BA4\u0BBF\u0BB2\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-144",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BB1\u0BC8",
+                    text1: "\u0BAE\u0BC1\u0B95\u0BC1\u0BA8\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1 \u0B95\u0BBF\u0BB0\u0BC1\u0B9F\u0BCD\u0B9F\u0BBF\u0BA3\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 113,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-145",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0BAA\u0BC2\u0BB0\u0BCD\u0BB5\u0BBF \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BC1\u0BAE\u0BBF\u0BA8\u0BBE\u0BB0\u0BBE\u0BAF\u0BA3\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 119,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-146",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD\u0B95\u0BCD\u0B95\u0BB2\u0BCD\u0BB5\u0BBF",
+                    text1: "\u0BAF\u0B9A\u0BCD\u0BB5\u0BA8\u0BCD\u0BA4\u0BCD \u0BB0\u0BBE\u0B9C\u0BCD\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 125,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-147",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B86\u0BB0\u0BBE\u0BA4\u0BA9\u0BBE \u0B95\u0BA3\u0BC7\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 131,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-148",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B9A\u0BC1\u0BA4\u0BB0\u0BCD\u0B9A\u0BA9 \u0BA8\u0BBF\u0BAE\u0BB2\u0BCD \u0BA4\u0BAF\u0BBE\u0BB3\u0B95\u0BC1\u0BAE\u0BBE\u0BB0\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 137,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-149",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B9A\u0BBF\u0BB1\u0BCD\u0BAA\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B87\u0BB0\u0BBF\u0B95\u0BCD\u0B95\u0BBF \u0B9A\u0BCB\u0BA9\u0BCD\u0B9A\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 143,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-150",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAE\u0BA9\u0BBF\u0BA4\u0BA8\u0BC7\u0BAF\u0BAE\u0BCD",
+                    text1: "\u0B9A\u0B9E\u0BCD\u0B9A\u0BA9\u0BBE \u0B9A\u0BA8\u0BCD\u0BA4\u0BC0\u0BAA\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 149,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-151",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0BAA\u0BBF\u0BB0\u0BC7\u0BA9\u0B9A\u0BC1 \u0BAA\u0BB5\u0BBE\u0BA9\u0BBF \u0B9A\u0B99\u0BCD\u0B95\u0BB0"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 155,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-152",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B95\u0BCB\u0BB5\u0BBF\u0BB2\u0BCD \u0B95\u0B9F\u0BCD\u0B9F\u0BBF\u0B9F\u0B95\u0BCD\u0B95\u0BB2\u0BC8",
+                    text1: "\u0B87\u0BB2\u0B9F\u0BCD\u0B9A\u0BA9\u0BBE \u0B85\u0BB0\u0BC1\u0BA3\u0BAA\u0BBF\u0BB0\u0B9A\u0BBE\u0BA4\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 162,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-153",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0B92\u0BB4\u0BC1\u0B95\u0BCD\u0B95\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0B85\u0B9A\u0BAF\u0BCD \u0BB5\u0BC0\u0BB0\u0BAE\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 168,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-154",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-1.png",
+                    text: "\u0B9A\u0BBF\u0BB2\u0BAE\u0BCD\u0BAA\u0BBE\u0B9F\u0BCD\u0B9F\u0BAE\u0BCD",
+                    text1: "\u0B85\u0B95\u0BBF\u0BB2\u0BCD \u0BA8\u0BBF\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BA8\u0BCD\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 174,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-155",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-2.png",
+                    text: "\u0BA8\u0BC0\u0BB0\u0BCD\u0BB5\u0BB3\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0BAE\u0BC1\u0B95\u0BCD\u0B95\u0BBF\u0BAF\u0BA4\u0BCD\u0BA4\u0BC1...",
+                    text1: "\u0BA8\u0BC7\u0B95\u0BBE \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 181,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-156",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0B8F\u0BB1\u0BC1\u0BA4\u0BB4\u0BC1\u0BB5\u0BC1\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BB5\u0BB0\u0BC1\u0BA3\u0BCD \u0B9A\u0BC1\u0BAA\u0BCD\u0BAA\u0BBF\u0BB0\u0BAE\u0BA3\u0BBF\u0BAF\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 188,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-157",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BCA\u0BB0\u0BC1\u0BB3\u0BC8 \u0B88\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BB1\u0BC8...",
+                    text1: "\u0B9A\u0BA8\u0BCD\u0BA4\u0BBF\u0BB0\u0BC7\u0B9A\u0BC1 \u0B95\u0BCB\u0BAA\u0BBE\u0BB2\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 195,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-158",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BCA\u0BB0\u0BC1\u0BB3\u0BC8 \u0B88\u0B9F\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BB1\u0BC8...",
+                    text1: "\u0B85\u0B95\u0BCD\u0B9A\u0BB0\u0BBE \u0B85\u0BB0\u0BC1\u0BA3\u0BCD \u0B95\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BBF\u0B95\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 201,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-159",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-22.png",
+                    text: "\u0BAA\u0BCA\u0B99\u0BCD\u0B95\u0BB2\u0BCD \u0BA4\u0BBF\u0BB0\u0BC1\u0BB5\u0BBF\u0BB4\u0BBE",
+                    text1: "\u0B85\u0BA4\u0BBF\u0BA4\u0BBF \u0BA8\u0BBF\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BA8\u0BCD\u0BA4\u0BBE"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 207,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-160",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BB5\u0BBF\u0BB0\u0BC1\u0BA8\u0BCD\u0BA4\u0BCB\u0BAE\u0BCD\u0BAA\u0BB2\u0BCD",
+                    text1: "\u0B87\u0BA9\u0BBF\u0BAF\u0BA9\u0BCD \u0BA4\u0BAE\u0BBF\u0BB4\u0BCD\u0B9A\u0BCD\u0B9A\u0BC6\u0BB2\u0BCD\u0BB5\u0BA9\u0BCD \u0B85\u0BB1\u0BBF\u0BB5\u0BB4\u0B95\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 214,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-161",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BB0\u0BCD \u0BA8\u0B9F\u0BA9\u0B95\u0BCD\u0B95\u0BB2\u0BC8\u0B95\u0BB3\u0BCD",
+                    text1: "\u0BB5\u0BB0\u0BCD\u0B9A\u0BBF\u0BA9\u0BBF \u0BB5\u0BBF\u0B9A\u0BAF\u0B95\u0BBE\u0BB3\u0BBF\u0BB0\u0BBE\u0B9A\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 220,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-162",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    rectangle: "/img/rectangle-15-25.png",
+                    text: "\u0BB5\u0BC0\u0BB0\u0BAE\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0B95\u0BB4\u0BCD \u0BAA\u0BCA\u0BA9\u0BCD\u0B9A\u0BBF\u0BB0\u0BBF\xa0\xa0\u0BAA\u0BCA\u0BA9\u0BCD\u0BA9\u0BB0\u0B9A\u0BC1"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 226,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _group.Group), {
+                    className: "group-163",
+                    href: "https://drive.google.com/drive/folders/1L0W8hGUgy48OG7pn4GXhunhUjEHOXWm7",
+                    text: "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF\u0BCB\u0BB0\u0BCD\u0B95\u0BB3\u0BC8 \u0BAE\u0BA4\u0BBF\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD",
+                    text1: "\u0BA4\u0BBF\u0BAF\u0BBE\u0BA9\u0BB5\u0BCD \u0BB5\u0BC8\u0BA4\u0BCD\u0BA4\u0BBF\u0BAF\u0BA8\u0BBE\u0BA4\u0BA9\u0BCD"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 233,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "overlap-52",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-wrapper-161",
+                            children: "2023 Event Highlights"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 240,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "screenshot-3",
+                            alt: "Screenshot"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 241,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-75",
+                            alt: "Image",
+                            src: "/img/image-38.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 242,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-76",
+                            alt: "Image",
+                            src: "/img/image-39.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 243,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-77",
+                            alt: "Image",
+                            src: "/img/image-40.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 244,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "image-78",
+                            alt: "Image",
+                            src: "/img/image-41.png"
+                        }, void 0, false, {
+                            fileName: "src/screens/Screen13/Screen13.jsx",
+                            lineNumber: 245,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 239,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupWrapper.GroupWrapper), {
+                    className: "group-164",
+                    href: "mailto:thamizh.research.usa@gmail.com"
+                }, void 0, false, {
+                    fileName: "src/screens/Screen13/Screen13.jsx",
+                    lineNumber: 247,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/screens/Screen13/Screen13.jsx",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/screens/Screen13/Screen13.jsx",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Screen13;
+var _c;
+$RefreshReg$(_c, "Screen13");
+
+  $parcel$ReactRefreshHelpers$228e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../components/Group":"74UMT","../../components/GroupWrapper":"3Q5Ke","./style.css":"7c4X8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7c4X8":[function() {},{}],"87Nm6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$36cb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$36cb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HomeWrapper", ()=>HomeWrapper);
+parcelHelpers.export(exports, "ResearchDetailsWrapper", ()=>ResearchDetailsWrapper);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _screen12 = require("../Screen12");
+var _iphonePlus = require("../IphonePlus");
+var _screen7 = require("../Screen7");
+var _iphonePlusScreen = require("../IphonePlusScreen");
+var _styleCss = require("./style.css");
+const HomeWrapper = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "desktopHome",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen12.Screen12), {}, void 0, false, {
+                    fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                    lineNumber: 15,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mobileHome",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iphonePlus.IphonePlus), {}, void 0, false, {
+                    fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = HomeWrapper;
+const ResearchDetailsWrapper = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "desktopHome",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _screen7.Screen7), {}, void 0, false, {
+                    fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                    lineNumber: 28,
+                    columnNumber: 15
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                lineNumber: 27,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mobileHome",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iphonePlusScreen.IphonePlusScreen), {}, void 0, false, {
+                    fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                    lineNumber: 31,
+                    columnNumber: 15
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/screens/WrapperScreens/HomeWrapper.jsx",
+                lineNumber: 30,
+                columnNumber: 11
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c1 = ResearchDetailsWrapper;
+var _c, _c1;
+$RefreshReg$(_c, "HomeWrapper");
+$RefreshReg$(_c1, "ResearchDetailsWrapper");
+
+  $parcel$ReactRefreshHelpers$36cb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Screen12":"c3jD2","../IphonePlus":"5CLJ5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./style.css":"aZE5n","../Screen7":"1XZrb","../IphonePlusScreen":"d96ZZ"}],"aZE5n":[function() {},{}]},["d8m58","1xC6H","d8Dch"], "d8Dch", "parcelRequireb8e7")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
