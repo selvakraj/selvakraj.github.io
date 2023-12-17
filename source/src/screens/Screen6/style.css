@@ -1,0 +1,119 @@
+.screen-6 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen-6 .iphone-plus-5 {
+  background-color: #ffffff;
+  height: 749px;
+  width: 414px;
+}
+
+.screen-6 .overlap-23 {
+  background-color: #00000080;
+  height: 746px;
+  position: relative;
+}
+
+.screen-6 .rectangle-12 {
+  background-color: #ffffff;
+  height: 746px;
+  left: 120px;
+  position: absolute;
+  top: 0;
+  width: 294px;
+}
+
+.screen-6 .text-wrapper-74 {
+  color: #000000;
+  font-family: "Fredoka One", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 385px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.screen-6 .menu-3 {
+  height: 326px;
+  left: 149px;
+  position: absolute;
+  top: 80px;
+  width: 164px;
+}
+
+.screen-6 .text-wrapper-75 {
+  color: #383935;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 57px;
+}
+
+.screen-6 .text-wrapper-76 {
+  color: #383935;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 86px;
+  width: 156px;
+}
+
+.screen-6 .text-wrapper-77 {
+  color: #383935;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 178px;
+  width: 97px;
+}
+
+.screen-6 .overlap-group-16 {
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 267px;
+  width: 156px;
+}
+
+.screen-6 .text-wrapper-78 {
+  color: #3abda5;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 73px;
+}
+
+.screen-6 .rectangle-13 {
+  background-color: #3abda5;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 156px;
+}

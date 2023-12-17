@@ -1,0 +1,239 @@
+.box {
+    height: 2168px;
+    position: absolute;
+    width: 953px;
+    top: 2700px;
+    left: 150px;
+  }
+  
+  /* .box .group {
+    height: 2168px;
+    left: 30px;
+    position: fixed;
+    top: 0;
+    width: 955px;
+  }
+   */
+  .box .text-wrapper {
+    color: #383935;
+    font-family: "Francois One-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    left: 363px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 544px;
+  }
+  
+  .box .assignment {
+    height: 421px;
+    left: 215px;
+    position: absolute;
+    top: 0;
+    width: 583px;
+  }
+  
+  .box .overlap-group {
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: 101px;
+    width: 577px;
+  }
+  
+  .box .element-coordinator-s {
+    color: #000000;
+    font-family: "Hannari-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 432px;
+  }
+  
+  .box .element {
+    color: #000000;
+    font-family: "Hannari-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 424px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 153px;
+  }
+  
+  .box .div {
+    color: #383935;
+    font-family: "Francois One-Regular", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .box .image {
+    height: 533px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 1555px;
+    width: 953px;
+  }
+  
+  .box .group-2 {
+    height: 33px;
+    left: 82px;
+    position: absolute;
+    top: 1481px;
+    width: 759px;
+  }
+  
+  .box .overlap {
+    background-color: #adeeec;
+    border-radius: 16.5px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 33px;
+  }
+  
+  .box .img {
+    height: 22px;
+    left: 5px;
+    object-fit: cover;
+    position: absolute;
+    top: 6px;
+    width: 24px;
+  }
+  
+  .box .p {
+    color: #000000;
+    font-family: "Arimo-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap;
+    width: 712px;
+  }
+  
+  .box .span {
+    font-weight: 700;
+  }
+  
+  .box .text-wrapper-2 {
+    font-family: "Arimo-Regular", Helvetica;
+  }
+  
+  .box .image-2 {
+    height: 538px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 729px;
+    width: 953px;
+  }
+  
+  .box .button {
+    all: unset;
+    box-sizing: border-box;
+    height: 60px;
+    left: 384px;
+    position: absolute;
+    top: 1287px;
+    width: 242px;
+  }
+  
+  .box .div-wrapper {
+    background-color: #86bc00;
+    border-radius: 12px;
+    height: 60px;
+    position: relative;
+    width: 240px;
+  }
+  
+  .box .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Hannari-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 77px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+  }
+  
+  .box .overlap-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    height: 60px;
+    left: 384px;
+    position: absolute;
+    top: 2108px;
+    width: 242px;
+  }
+  
+  .box .group-3 {
+    height: 33px;
+    left: 287px;
+    position: absolute;
+    top: 666px;
+    width: 470px;
+  }
+  
+  .box .overlap-2 {
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 37px;
+  }
+  
+  .box .ellipse {
+    background-color: #86bc0033;
+    border-radius: 16.5px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 33px;
+  }
+  
+  .box .image-3 {
+    height: 22px;
+    left: 3px;
+    object-fit: cover;
+    position: absolute;
+    top: 6px;
+    width: 34px;
+  }
+  
+  .box .element-2 {
+    color: #000000;
+    font-family: "Arimo-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 54px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    top: 5px;
+    width: 414px;
+  }
+  

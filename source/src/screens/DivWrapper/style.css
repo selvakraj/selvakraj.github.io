@@ -1,0 +1,119 @@
+.div-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-wrapper .iphone-plus-3 {
+  background-color: #ffffff;
+  height: 749px;
+  width: 414px;
+}
+
+.div-wrapper .overlap-21 {
+  background-color: #00000080;
+  height: 746px;
+  position: relative;
+}
+
+.div-wrapper .rectangle-8 {
+  background-color: #ffffff;
+  height: 746px;
+  left: 120px;
+  position: absolute;
+  top: 0;
+  width: 294px;
+}
+
+.div-wrapper .text-wrapper-64 {
+  color: #000000;
+  font-family: "Fredoka One", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 385px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.div-wrapper .menu {
+  height: 346px;
+  left: 149px;
+  position: absolute;
+  top: 80px;
+  width: 164px;
+}
+
+.div-wrapper .text-wrapper-65 {
+  color: #383935;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 57px;
+}
+
+.div-wrapper .overlap-group-14 {
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 86px;
+  width: 156px;
+}
+
+.div-wrapper .text-wrapper-66 {
+  color: #3abda5;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 156px;
+}
+
+.div-wrapper .rectangle-9 {
+  background-color: #3abda5;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 156px;
+}
+
+.div-wrapper .text-wrapper-67 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 195px;
+  width: 97px;
+}
+
+.div-wrapper .text-wrapper-68 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 287px;
+  width: 73px;
+}

@@ -1,0 +1,1 @@
+export { IphonePlusScreen } from "./IphonePlusScreen";

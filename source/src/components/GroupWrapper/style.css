@@ -1,0 +1,72 @@
+.group-wrapper {
+  background-color: #f6f7f9;
+  height: 223px;
+  position: relative;
+  width: 414px;
+}
+
+.group-wrapper .text-wrapper-6 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 195px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 123px;
+}
+
+.group-wrapper .text-wrapper-7 {
+  color: #1d7ba4;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 121px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 145px;
+}
+
+.group-wrapper .resarch-badge {
+  height: 38px;
+  left: 117px;
+  object-fit: cover;
+  position: absolute;
+  top: 47px;
+  width: 38px;
+}
+
+.group-wrapper .overlap-group-2 {
+  height: 38px;
+  left: 165px;
+  position: absolute;
+  top: 46px;
+  width: 140px;
+}
+
+.group-wrapper .text-wrapper-8 {
+  color: #062e5d;
+  font-family: "Francois One", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 140px;
+}
+
+.group-wrapper .text-wrapper-9 {
+  color: #062e5d;
+  font-family: "Leckerli One", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 11px;
+}

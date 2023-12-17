@@ -1,0 +1,554 @@
+.screen-13 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen-13 .iphone-plus-9 {
+  background-color: #ffffff;
+  height: 9612px;
+  position: relative;
+  width: 414px;
+}
+
+.screen-13 .overlap-50 {
+  background-image: url(../../../static/img/mask-group-2.png);
+  background-size: 100% 100%;
+  height: 416px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 414px;
+}
+
+.screen-13 .image-71 {
+  display: block;
+  height: 14px;
+  left: 368px;
+  object-fit: cover;
+  position: absolute;
+  top: 29px;
+  width: 19px;
+}
+
+.screen-13 .logo-7 {
+  display: block;
+  height: 35px;
+  left: 20px;
+  object-fit: cover;
+  position: absolute;
+  top: 18px;
+  width: 35px;
+}
+
+.screen-13 .text-wrapper-153 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 760px;
+}
+
+.screen-13 .group-132 {
+  height: 65px;
+  left: 68px;
+  position: absolute;
+  top: 449px;
+  width: 317px;
+}
+
+.screen-13 .group-133 {
+  height: 65px;
+  position: relative;
+  width: 321px;
+}
+
+.screen-13 .text-wrapper-154 {
+  color: #383935;
+  font-family: "Arimo", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 97px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 41px;
+  width: 220px;
+}
+
+.screen-13 .element-11 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  left: 93px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 58px;
+}
+
+.screen-13 .text-wrapper-155 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.screen-13 .text-wrapper-156 {
+  font-size: 34px;
+}
+
+.screen-13 .time-5 {
+  height: 57px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  width: 62px;
+}
+
+.screen-13 .overlap-group-28 {
+  height: 57px;
+  position: relative;
+}
+
+.screen-13 .ellipse-19 {
+  background-color: #fad9c7;
+  border-radius: 18.49px;
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 37px;
+}
+
+.screen-13 .image-72 {
+  height: 56px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 56px;
+}
+
+.screen-13 .group-134 {
+  height: 64px;
+  left: 67px;
+  position: absolute;
+  top: 549px;
+  width: 326px;
+}
+
+.screen-13 .text-wrapper-157 {
+  color: #383935;
+  font-family: "Arimo", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 98px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 41px;
+  width: 224px;
+}
+
+.screen-13 .element-12 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  left: 95px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 55px;
+}
+
+.screen-13 .student-3 {
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 66px;
+}
+
+.screen-13 .overlap-group-29 {
+  height: 62px;
+  position: relative;
+}
+
+.screen-13 .ellipse-20 {
+  background-color: #adeeec;
+  border-radius: 18.49px;
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  width: 37px;
+}
+
+.screen-13 .image-73 {
+  height: 62px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 62px;
+}
+
+.screen-13 .group-135 {
+  height: 61px;
+  left: 74px;
+  position: absolute;
+  top: 649px;
+  width: 307px;
+}
+
+.screen-13 .text-wrapper-158 {
+  color: #383935;
+  font-family: "Arimo", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 91px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 41px;
+  width: 178px;
+}
+
+.screen-13 .text-wrapper-159 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  left: 88px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 215px;
+}
+
+.screen-13 .volunteer-3 {
+  height: 53px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 57px;
+}
+
+.screen-13 .overlap-group-30 {
+  height: 53px;
+  position: relative;
+}
+
+.screen-13 .ellipse-21 {
+  background-color: #fff595;
+  border-radius: 15.87px;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 32px;
+}
+
+.screen-13 .image-74 {
+  height: 53px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 53px;
+}
+
+.screen-13 .text-wrapper-160 {
+  color: #3abda5;
+  font-family: "Francois One", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 226px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 760px;
+}
+
+.screen-13 .overlap-51 {
+  height: 9px;
+  left: 0;
+  position: absolute;
+  top: 794px;
+  width: 414px;
+}
+
+.screen-13 .line-8 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 8px;
+  width: 414px;
+}
+
+.screen-13 .rectangle-24 {
+  background-color: #3abda5;
+  height: 9px;
+  left: 226px;
+  position: absolute;
+  top: 0;
+  width: 160px;
+}
+
+.screen-13 .group-136 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 854px !important;
+}
+
+.screen-13 .group-137 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 1990px !important;
+}
+
+.screen-13 .group-138 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 3126px !important;
+}
+
+.screen-13 .group-139 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 4262px !important;
+}
+
+.screen-13 .group-140 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 4546px !important;
+}
+
+.screen-13 .group-141 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 4830px !important;
+}
+
+.screen-13 .group-142 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 5114px !important;
+}
+
+.screen-13 .group-143 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 2274px !important;
+}
+
+.screen-13 .group-144 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 2558px !important;
+}
+
+.screen-13 .group-145 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 2842px !important;
+}
+
+.screen-13 .group-146 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 1422px !important;
+}
+
+.screen-13 .group-147 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 1706px !important;
+}
+
+.screen-13 .group-148 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 1138px !important;
+}
+
+.screen-13 .group-149 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 3410px !important;
+}
+
+.screen-13 .group-150 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 3694px !important;
+}
+
+.screen-13 .group-151 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 3978px !important;
+}
+
+.screen-13 .group-152 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 5398px !important;
+}
+
+.screen-13 .group-153 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 5682px !important;
+}
+
+.screen-13 .group-154 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 5966px !important;
+}
+
+.screen-13 .group-155 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 6250px !important;
+}
+
+.screen-13 .group-156 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 6534px !important;
+}
+
+.screen-13 .group-157 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 6818px !important;
+}
+
+.screen-13 .group-158 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 7102px !important;
+}
+
+.screen-13 .group-159 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 7386px !important;
+}
+
+.screen-13 .group-160 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 7679px !important;
+}
+
+.screen-13 .group-161 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 7973px !important;
+}
+
+.screen-13 .group-162 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 8258px !important;
+}
+
+.screen-13 .group-163 {
+  left: 64px !important;
+  position: absolute !important;
+  top: 8549px !important;
+}
+
+.screen-13 .overlap-52 {
+  background-color: #3abda5;
+  border-radius: 24px;
+  height: 438px;
+  left: 20px;
+  position: absolute;
+  top: 8885px;
+  width: 374px;
+}
+
+.screen-13 .text-wrapper-161 {
+  color: #ffffff;
+  font-family: "Francois One", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 98px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 32px;
+}
+
+.screen-13 .screenshot-3 {
+  height: 200px;
+  left: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 93px;
+  width: 346px;
+}
+
+.screen-13 .image-75 {
+  height: 66px;
+  left: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 317px;
+  width: 80px;
+}
+
+.screen-13 .image-76 {
+  height: 66px;
+  left: 102px;
+  object-fit: cover;
+  position: absolute;
+  top: 317px;
+  width: 81px;
+}
+
+.screen-13 .image-77 {
+  height: 67px;
+  left: 191px;
+  object-fit: cover;
+  position: absolute;
+  top: 316px;
+  width: 81px;
+}
+
+.screen-13 .image-78 {
+  height: 66px;
+  left: 280px;
+  object-fit: cover;
+  position: absolute;
+  top: 316px;
+  width: 81px;
+}
+
+.screen-13 .group-164 {
+  left: 0 !important;
+  position: absolute !important;
+  top: 9389px !important;
+}

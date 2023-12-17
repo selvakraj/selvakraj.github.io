@@ -1,0 +1,40 @@
+.group {
+  height: 244px;
+  position: relative;
+  width: 286px;
+}
+
+.group .text-wrapper {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 192px;
+  width: 279px;
+}
+
+.group .div {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 226px;
+}
+
+.group .rectangle {
+  display: block;
+  height: 180px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 286px;
+}

@@ -1,0 +1,328 @@
+.desktop-screen {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop-screen .desktop-2 {
+  background-color: #ffffff;
+  height: 4818px;
+  position: relative;
+  width: 1440px;
+}
+
+.desktop-screen .banner-2 {
+  height: 634px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.desktop-screen .text-wrapper-61 {
+  color: #3abda5;
+  font-family: "Francois One", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 125px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 914px;
+}
+
+.desktop-screen .text-wrapper-62 {
+  color: #383935;
+  font-family: "Francois One", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 455px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 914px;
+}
+
+.desktop-screen .group-49 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 1050px !important;
+}
+
+.desktop-screen .group-50 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 1618px !important;
+}
+
+.desktop-screen .group-51 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 2186px !important;
+}
+
+.desktop-screen .group-52 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 2754px !important;
+}
+
+.desktop-screen .group-53 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 1334px !important;
+}
+
+.desktop-screen .group-54 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 1902px !important;
+}
+
+.desktop-screen .group-55 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 2470px !important;
+}
+
+.desktop-screen .group-56 {
+  left: 118px !important;
+  position: absolute !important;
+  top: 3038px !important;
+}
+
+.desktop-screen .group-57 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 1050px !important;
+}
+
+.desktop-screen .group-58 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 1618px !important;
+}
+
+.desktop-screen .group-59 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 2186px !important;
+}
+
+.desktop-screen .group-60 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 2754px !important;
+}
+
+.desktop-screen .group-61 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 1334px !important;
+}
+
+.desktop-screen .group-62 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 1902px !important;
+}
+
+.desktop-screen .group-63 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 2470px !important;
+}
+
+.desktop-screen .group-64 {
+  left: 422px !important;
+  position: absolute !important;
+  top: 3038px !important;
+}
+
+.desktop-screen .group-65 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 1050px !important;
+}
+
+.desktop-screen .group-66 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 1618px !important;
+}
+
+.desktop-screen .group-67 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 2186px !important;
+}
+
+.desktop-screen .group-68 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 2754px !important;
+}
+
+.desktop-screen .group-69 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 1334px !important;
+}
+
+.desktop-screen .group-70 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 1902px !important;
+}
+
+.desktop-screen .group-71 {
+  left: 733px !important;
+  position: absolute !important;
+  top: 2470px !important;
+}
+
+.desktop-screen .group-72 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 1050px !important;
+}
+
+.desktop-screen .group-73 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 1618px !important;
+}
+
+.desktop-screen .group-74 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 2186px !important;
+}
+
+.desktop-screen .group-75 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 2754px !important;
+}
+
+.desktop-screen .group-76 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 1334px !important;
+}
+
+.desktop-screen .group-77 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 1902px !important;
+}
+
+.desktop-screen .group-78 {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 2470px !important;
+}
+
+.desktop-screen .overlap-19 {
+  background-image: url(../../../static/img/rectangle-10.svg);
+  background-size: 100% 100%;
+  height: 1151px;
+  left: 23px;
+  position: absolute;
+  top: 3464px;
+  width: 1387px;
+}
+
+.desktop-screen .screenshot-2 {
+  height: 584px;
+  left: 203px;
+  object-fit: cover;
+  position: absolute;
+  top: 201px;
+  width: 1013px;
+}
+
+.desktop-screen .text-wrapper-63 {
+  color: #ffffff;
+  font-family: "Francois One", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 527px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 68px;
+}
+
+.desktop-screen .image-36 {
+  height: 186px;
+  left: 203px;
+  object-fit: cover;
+  position: absolute;
+  top: 886px;
+  width: 224px;
+}
+
+.desktop-screen .image-37 {
+  height: 187px;
+  left: 476px;
+  object-fit: cover;
+  position: absolute;
+  top: 886px;
+  width: 228px;
+}
+
+.desktop-screen .image-38 {
+  height: 188px;
+  left: 738px;
+  object-fit: cover;
+  position: absolute;
+  top: 884px;
+  width: 229px;
+}
+
+.desktop-screen .image-39 {
+  height: 186px;
+  left: 988px;
+  object-fit: cover;
+  position: absolute;
+  top: 884px;
+  width: 228px;
+}
+
+.desktop-screen .component-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 4655px !important;
+}
+
+.desktop-screen .overlap-20 {
+  height: 9px;
+  left: 119px;
+  position: absolute;
+  top: 972px;
+  width: 1211px;
+}
+
+.desktop-screen .line-4 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 1211px;
+}
+
+.desktop-screen .rectangle-7 {
+  background-color: #3abda5;
+  height: 9px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 263px;
+}

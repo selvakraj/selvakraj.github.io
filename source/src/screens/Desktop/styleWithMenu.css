@@ -1,0 +1,108 @@
+
+.desktop .overlap-44 {
+  height: 711px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop .banner-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .vector {
+  height: 711px;
+  margin-left: -5669px;
+  margin-top: -6235px;
+  position: relative;
+  width: 1440px;
+}
+
+.desktop .mask-group {
+  height: 608px;
+  left: 0;
+  position: absolute;
+  top: 63px;
+  width: 1439px;
+}
+
+.desktop .logo-6 {
+  height: 57px;
+  left: 211px;
+  object-fit: cover;
+  position: absolute;
+  top: 23px;
+  width: 57px;
+}
+
+.desktop .navbar-3 {
+  height: 35px;
+  left: 778px;
+  position: absolute;
+  top: 29px;
+  width: 539px;
+}
+
+.desktop .text-wrapper-128 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .text-wrapper-129 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 113px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .text-wrapper-130 {
+  color: #3abda5;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 315px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .text-wrapper-131 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 458px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .rectangle-22 {
+  background-color: #3abda5;
+  height: 5px;
+  right: 120px;
+  position: absolute;
+  top: 30px;
+  width: 110px;
+}

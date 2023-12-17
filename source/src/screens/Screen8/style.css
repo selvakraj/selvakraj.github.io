@@ -1,0 +1,173 @@
+.screen-8 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen-8 .iphone-plus-6 {
+  background-color: #ffffff;
+  height: 1841px;
+  overflow: hidden;
+  position: relative;
+  width: 414px;
+}
+
+.screen-8 .overlap-33 {
+  background-image: url(../../../static/img/mask-group-1.png);
+  background-size: 100% 100%;
+  height: 766px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 414px;
+}
+
+.screen-8 .image-49 {
+  display: block;
+  height: 14px;
+  left: 368px;
+  object-fit: cover;
+  position: absolute;
+  top: 29px;
+  width: 19px;
+}
+
+.screen-8 .logo-4 {
+  display: block;
+  height: 35px;
+  left: 20px;
+  object-fit: cover;
+  position: absolute;
+  top: 18px;
+  width: 35px;
+}
+
+.screen-8 .group-87 {
+  left: 0 !important;
+  position: absolute !important;
+  top: 1618px !important;
+}
+
+.screen-8 .text-wrapper-101 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: -1874px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 349px;
+  width: 73px;
+}
+
+.screen-8 .group-88 {
+  height: 718px;
+  left: 20px;
+  position: absolute;
+  top: 811px;
+  width: 378px;
+}
+
+.screen-8 .overlap-34 {
+  background-color: #3abda5;
+  border-radius: 24px;
+  height: 718px;
+  position: relative;
+  width: 374px;
+}
+
+.screen-8 .text-wrapper-102 {
+  color: #ffffff;
+  font-family: "Francois One", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 128px;
+  width: 330px;
+}
+
+.screen-8 .overlap-35 {
+  height: 290px;
+  left: 59px;
+  position: absolute;
+  top: 372px;
+  width: 270px;
+}
+
+.screen-8 .ellipse-11 {
+  background-color: #fed24c;
+  border-radius: 80.5px/78.5px;
+  height: 157px;
+  left: 40px;
+  position: absolute;
+  top: 16px;
+  width: 161px;
+}
+
+.screen-8 .image-50 {
+  height: 143px;
+  left: 14px;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+  position: absolute;
+  top: 30px;
+  width: 194px;
+}
+
+.screen-8 .image-51 {
+  height: 290px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 270px;
+}
+
+.screen-8 .button-9 {
+  height: 60px;
+  left: 60px;
+  position: absolute;
+  top: 252px;
+  width: 242px;
+}
+
+.screen-8 .overlap-group-19 {
+  background-color: #fed24c;
+  border-radius: 12px;
+  height: 60px;
+  position: relative;
+  width: 240px;
+}
+
+.screen-8 .text-wrapper-103 {
+  color: #383935;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+}
+
+.screen-8 .text-wrapper-104 {
+  color: #ffffff;
+  font-family: "Archivo Black", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 38px;
+  width: 344px;
+}

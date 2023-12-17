@@ -1,0 +1,86 @@
+.component {
+  background-color: #f6f7f9;
+  height: 163px;
+  position: relative;
+  width: 1440px;
+}
+
+.component .overlap-group {
+  height: 64px;
+  left: 234px;
+  position: absolute;
+  top: 51px;
+  width: 234px;
+}
+
+.component .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Arimo", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.component .p {
+  color: #062e5d;
+  font-family: "Francois One", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 231px;
+}
+
+.component .text-wrapper-3 {
+  color: #062e5d;
+  font-family: "Leckerli One", Helvetica;
+  font-size: 34px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 18px;
+}
+
+.component .resarch {
+  height: 69px;
+  left: 144px;
+  object-fit: cover;
+  position: absolute;
+  top: 47px;
+  width: 69px;
+}
+
+.component .text-wrapper-4 {
+  color: #000000;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 1103px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 46px;
+}
+
+.component .text-wrapper-5 {
+  color: #1d7ba4;
+  font-family: "Hannari-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 1103px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 80px;
+}
